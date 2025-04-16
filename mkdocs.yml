@@ -5,71 +5,9 @@ repo_url: https://github.com/mdsreq-fga-unb/2024.2-T03-CafeDoSitio
 
 nav:
   - Início: index.md
-  #- Visão do Produto e Projeto:
-    #- Cenário Atual do Cliente e Negócio: sections/2-docPage/1-cenarioAtual.md
-    #- Solução Proposta: sections/2-docPage/2-solucaoProposta.md
-    #- Estratégias de Engenharia de Software: sections/2-docPage/3-estrategiasEngSoftware.md
-    #- Engenharia de Requisitos: sections/2-docPage/4-engenhariaRequisitos.md
-    #- Cronograma e Entregas: sections/2-docPage/5-cronogramaEntregas.md
-    #- Interação entre Equipe e Cliente: sections/2-docPage/6-interacaoEquipeCliente.md
-    #- Requisitos de Software: sections/2-docPage/7-Requisitos.md
-    #- DoR e DoD: sections/2-docPage/8-DoR&DoD.md
-    #- Backlog do Produto: sections/2-docPage/9-backlogDeProduto.md
-    #- Lições Aprendidas: sections/2-docPage/10-LicoesAprendidas.md
-    #- Entregas:
-    #- Unidade 1: sections/5-entregas/Unidade1.md
-    #- Unidade 2: sections/5-entregas/Unidade2.md
-    #- Unidade 3:
-    #  - Video: sections/5-entregas/Unidade3/Video.md
-    #  - PBB: sections/5-entregas/Unidade3/PBB.md
-    #  - USM: sections/5-entregas/Unidade3/USM.md
-    #- Unidade 4:
-    #  - Caso de Uso: sections/5-entregas/Unidade4/casoDeUso.md
-    #  - Videos: sections/5-entregas/Unidade4/videos.md
-    #- Ciclos e Backlog:
-    #- Visão do Backlog: sections/2-docPage/9-backlogDeProduto.md
-    #- Sprint 1:
-    #  - Historico do Backlog: sections/4-sprints/sprint1/HistoricoBacklog.md
-    #  - Reuniões:
-    #    - Kick Off com Stakeholders: sections/4-sprints/sprint1/reuniões/[Stakeholders]04Nov2024.md
-    #    - Sprint Planning: sections/4-sprints/sprint1/reuniões/[Equipe]04Nov2024.md
-    #    - Lean Inception pt.1: sections/4-sprints/sprint1/reuniões/[Stakeholders]06Nov2024.md
-    #    - Lean Inception pt.2: sections/4-sprints/sprint1/reuniões/[Stakeholders]07Nov2024.md
-    #    - Lean Inception pt.3: sections/4-sprints/sprint1/reuniões/[Equipe]07Nov2024.md
-    #    - Lean Inception pt.4: sections/4-sprints/sprint1/reuniões/[Equipe]08Nov2024.md
-    #- Sprint 2:
-    #  - Histórico do Backlog: sections/4-sprints/sprint2/HistoricoBacklog.md
-    #  - Reuniões:
-    #    - Sprint Review: sections/4-sprints/sprint2/reuniões/[Equipe]11Nov2024pt1.md
-    #    - Sprint Planning: sections/4-sprints/sprint2/reuniões/[Equipe]11Nov2024pt2.md
-    #- Sprint 3:
-    #  - Histórico do Backlog: sections/4-sprints/sprint3/HistoricoBacklog.md
-    #  - Reuniões:
-    #    - Sprint Review: sections/4-sprints/sprint3/reuniões/[Equipe]18Nov2024pt1.md
-    #    - Sprint Planning: sections/4-sprints/sprint3/reuniões/[Equipe]18Nov2024pt2.md
-    #- Sprint 4:
-    #  - Histórico do Backlog: sections/4-sprints/sprint4/HistoricoBacklog.md
-    #  - Reuniões:
-    #    - Reunião de Validação: sections/4-sprints/sprint4/reuniões/[Stakeholders]25Nov2024.md
-    #    - Sprint Review: sections/4-sprints/sprint4/reuniões/[Equipe]25Nov2024Pt1.md
-    #    - Sprint Planning: sections/4-sprints/sprint4/reuniões/[Equipe]25Nov2024Pt2.md
-    #    - Reunião de Alinhamento: sections/4-sprints/sprint4/reuniões/[Stakeholders]29Nov2024.md
-    #- Sprint 5:
-    #  - Histórico do Backlog: sections/4-sprints/sprint5/HistoricoBacklog.md
-    #  - Reuniões:
-    #    - Sprint Planning: sections/4-sprints/sprint5/reuniões/[Equipe]09Dez2024Pt1.md
-    #    - Sprint Review: sections/4-sprints/sprint5/reuniões/[Equipe]09Dez2024Pt2.md
-    #    - Reunião de Alinhamento: sections/4-sprints/sprint5/reuniões/[Stakeholders]06Dez2024.md
-    #- Sprint 6:
-    #  - Histórico do Backlog: sections/4-sprints/sprint6/HistoricoBacklog.md
-    #  - Reuniões:
-    #    - Reunião de Alinhamento: sections/4-sprints/sprint6/reuniões/[Stakeholders]13Dez2024.md
-    #    - Sprint Review: sections/4-sprints/sprint6/reuniões/[Equipe]16Dez2024.md
-    #- Políticas:
-    #- GCS: sections/3-politicas/gcs.md
 
 theme:
-  name: readthedocs #tem que mudar pra material depois ( mudei pq deu erro no build)
+  name: material 
   language: pt-BR
 
   features:
@@ -82,15 +20,15 @@ theme:
 
   palette:
     - scheme: default
-      primary: 'green'
-      accent: 'lime'
+      primary: 'deep purple'
+      accent: 'indigo'
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
         
     - scheme: slate
-      primary: 'green'
-      accent: 'lime'
+      primary: 'deep purple'
+      accent: 'indigo'
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
