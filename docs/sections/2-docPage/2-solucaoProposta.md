@@ -2,6 +2,8 @@
 
 ## 2.1. Objetivos do Produto
 
+a teste de commit
+
 Primordialmente, o principal objetivo deste software é facilitar o acesso às informações institucionais e de Atendimento da Família do Sítio para os Usuários. Este objetivo será alcançado com a resolução das 5 Causas indicadas no Diagrama espinha de peixe, presente na Figura 1 da seção [Cenário Atual do Cliente e Negócio](./1-cenarioAtual.md):
 
 1. Blogs;
