@@ -1,40 +1,68 @@
-# Git Pushups
-Este repositório é dedicado à disciplina de **Requisitos de Software**, ofertada no curso de **Engenharia de Software** da **Universidade de Brasília (UnB)**.  
-O tema escolhido pelo **Grupo GitPushups** é o desenvolvimento de uma ferramenta para gerenciamento de aulas de academia por venda de créditos em academias como Vidya Ioga e Race Bootcamp.
+# 🎉 **Bem-vindo ao Gitpushup!** 🎉
 
-## 📚 Documentação do Projeto
+(adicionar)
 
-Para acessar a documentação do projeto clique aqui
+## 🚀 O que é o Gitpushup?
 
-## 👥 Desenvolvedores
+(adicionar)
+
+## 📚 **Documentação do Projeto**
+
+(adicionar)
+
+[**Clique aqui para acessar a documentação**](#)
+
+---
+
+## 🌟 **Os Desenvolvedores** 🌟
 
 <center>
-    <table style="margin-left: auto; margin-right: auto;">
+    <table style="margin-left: auto; margin-right: auto; border-collapse: collapse;">
         <tr>
-            <td align="center">
+            <td align="center" style="padding: 10px;">
                 <a href="https://github.com/isacostaf">
-                    <img style="border-radius: 50%;" src="https://github.com/isacostaf.png" width="150px;"/>
-                    <h5 class="text-center">Isabelle<br>da Costa</h5>
+                    <img style="border-radius: 50%; border: 3px solid #4CAF50;" src="https://github.com/isacostaf.png" width="150px;"/>
+                    <h5 style="font-family: 'Arial', sans-serif; color: #4CAF50;">Isabelle<br>Costa</h5>
                 </a>
             </td>
-            <td align="center">
+            <td align="center" style="padding: 10px;">
                 <a href="https://github.com/henriquecarv3">
-                    <img style="border-radius: 50%;" src="https://github.com/henriquecarv3.png" width="150px;"/>
-                    <h5 class="text-center">Henrique<br>Carvalho</h5>
+                    <img style="border-radius: 50%; border: 3px solid #2196F3;" src="https://github.com/henriquecarv3.png" width="150px;"/>
+                    <h5 style="font-family: 'Arial', sans-serif; color: #2196F3;">Henrique<br>Carvalho</h5>
                 </a>
             </td>
-            <td align="center">
+            <td align="center" style="padding: 10px;">
                 <a href="https://github.com/EduardoWaski">
-                    <img style="border-radius: 50%;" src="https://github.com/EduardoWaski.png" width="150px;"/>
-                    <h5 class="text-center">Eduardo<br>Waski</h5>
+                    <img style="border-radius: 50%; border: 3px solid #FF5722;" src="https://github.com/EduardoWaski.png" width="150px;"/>
+                    <h5 style="font-family: 'Arial', sans-serif; color: #FF5722;">Eduardo<br>Waski</h5>
                 </a>
             </td>
-            <td align="center">
+            <td align="center" style="padding: 10px;">
                 <a href="https://github.com/Luidooo">
-                    <img style="border-radius: 50%;" src="https://github.com/Luidooo.png" width="150px;"/>
-                    <h5 class="text-center">Luiz<br>Oliveira</h5>
+                    <img style="border-radius: 50%; border: 3px solid #9C27B0;" src="https://github.com/Luidooo.png" width="150px;"/>
+                    <h5 style="font-family: 'Arial', sans-serif; color: #9C27B0;">Luiz<br>Oliveira</h5>
                 </a>
             </td>
         </tr>
     </table>
 </center>
+
+---
+
+## 🔥 Como Funciona o GitPushup?
+
+(adicionar)
+
+---
+
+## 🌈 **Destaques do Projeto:**
+
+(adicionar)
+
+---
+
+## ✨ **Contribua para o Galt!**
+
+(adicionar)
+
+---
