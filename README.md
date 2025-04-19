@@ -61,7 +61,7 @@
 
 ---
 
-## ✨ **Contribua para o Galt!**
+## ✨ **Contribua para o GitPushup!**
 
 (adicionar)
 
