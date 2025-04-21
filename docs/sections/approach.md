@@ -8,7 +8,7 @@ O projeto adotará a **abordagem ágil** de desenvolvimento de software. Esta ab
 
 Essas características são essenciais para o contexto da franquia de academias, que está em expansão e requer soluções **flexíveis** e **evolutivas**.
 
-![Diagrama de Causa e Efeito](images/triangle_agile.png){.centered-img}
+![Diagrama de Causa e Efeito](../images/triangle_agile.png){.centered-img}
 
 
 A abordagem ágil se caracteriza por **recursos e prazos fixos**, com **variação nos requisitos**. Isso significa que se prioriza a **entrega dentro do prazo estipulado**, com os **recursos disponíveis**, garantindo que os **requisitos mais importantes para o funcionamento do sistema** sejam entregues primeiro.

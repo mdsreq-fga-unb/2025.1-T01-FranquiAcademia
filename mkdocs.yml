@@ -1,17 +1,24 @@
 site_name: DeltaCore
 
 repo_name: "2025.1-T01-FranquiAcademia"
-repo_url: https://github.com/mdsreq-fga-unb/2024.2-T03-CafeDoSitio
+repo_url: https://github.com/mdsreq-fga-unb/2025.1-T01-FranquiAcademia
 
 nav:
   - Início: index.md
-  - Introdução do Cliente: intro_client.md
-  - Solução Proposta: solution.md
-  - Estratégia de Produção:
-      - Abordagem: approach.md
-      - Ciclo de Vida: life_cicle.md
-      - Processo: process.md
+  - Visão do Produto e Projeto:
+    - Cenário Atual do Cliente e Negócio: sections/intro_client.md
+    - Solução Proposta: sections/solution.md
+    - Estratégias de Engenharia de Software: sections/approach.md
+    # - Lições Aprendidas: sections/documento-licoes.md
 
+
+  #    - Introdução do Cliente: sections/intro_client.md
+  #    - Solução Proposta: section/solution.md
+  #    - Estratégia de Produção:
+  #        - Abordagem: sections/approach.md
+  #        - Ciclo de Vida: secions/life_cicle.md
+  #        - Processo: sections/process.md
+  #
       
 
 
