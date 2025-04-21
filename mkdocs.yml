@@ -1,10 +1,19 @@
-site_name: Sem name 
+site_name: DeltaCore
 
 repo_name: "2025.1-T01-FranquiAcademia"
 repo_url: https://github.com/mdsreq-fga-unb/2024.2-T03-CafeDoSitio
 
 nav:
   - Início: index.md
+  - Introdução do Cliente: intro_client.md
+  - Solução Proposta: solution.md
+  - Estratégia de Produção:
+      - Abordagem: approach.md
+      - Ciclo de Vida: life_cicle.md
+      - Processo: process.md
+
+      
+
 
 theme:
   name: material 
@@ -33,9 +42,8 @@ theme:
         icon: material/toggle-switch
         name: Switch to light mode
   
-        #logo: assets/CafeSitioLogo.png
-        #favicon: assets/CafeSitioLogo.png
-        #highlightjs: true
-
 extra_css:
   - stylesheets/styles.css
+
+markdown_extensions:
+  - attr_list
