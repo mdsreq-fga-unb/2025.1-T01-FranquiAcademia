@@ -17,9 +17,10 @@ A abordagem ágil se caracteriza por **recursos e prazos fixos**, com **variaç�
 
 ## Ciclo de Vida
 
-O ciclo de vida adotado será o **ciclo de vida iterativo incremental**, baseado em iterações curtas com entregas contínuas de valor. Esse modelo permite que funcionalidades críticas, como automação da comunicação com os alunos e painéis de análise de dados, sejam entregues e validadas pelo cliente de forma progressiva.
 
-![Ciclo de Vida Iterativo Incremental](../images/life_cicle.png){.centered-img}
+**Ciclo de Vida:** O ciclo de vida adotado será o ciclo de vida **Ágil**, com foco em entregas frequentes e iterativas de valor ao cliente, promovendo colaboração constante, resposta rápida a mudanças e melhoria contínua. Esse modelo favorece a validação antecipada de funcionalidades, como a automação da comunicação com os alunos e os painéis analíticos, garantindo alinhamento com as necessidades do usuário final ao longo do desenvolvimento.
+
+![Ciclo de Vida Ágil](../images/agil_cicle.png){.centered-img}
 
 ## Processo de Engenharia de Software
 
