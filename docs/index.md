@@ -1,6 +1,6 @@
 
 <div align="center">
-<h1><b>Franquia Academia Race e Vidya</b></h1>
+<h1><b>DeltaCore</b></h1>
 </div>
 ---
 
@@ -12,9 +12,9 @@ A disciplina dá ensino aos estudantes na comunicação desenvolvedores e stakeh
 
 O conteúdo inclui técnicas para elicitação, modelagem, documentação, e gerenciamento de requisitos, além de aspectos humanos e sociais que impactam essa área. São abordadas ferramentas e métodos para verificação e validação de requisitos, bem como frameworks adaptativos e tradicionais para o processo de engenharia.
 
-## 2. O projeto da Franquia de Academia Race e Vydia
+## 2. O projeto DeltaCore
 
-O projeto para a <objetivo do projeto>
+O projeto DeltaCore 
 
 - Obj 1
 - Obj n

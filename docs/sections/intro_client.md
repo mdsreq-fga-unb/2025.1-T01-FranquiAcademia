@@ -2,6 +2,7 @@
 
 ## 1.1 Introdução ao Negócio e Contexto
 
+
 Um dos segmentos que mais crescem é o meio fitness. Com o aumento do uso das redes sociais, esse segmento tem ganhado cada vez mais força, em especial o setor voltado ao bem-estar. Tendo isso em mente, nosso cliente é dono de duas franquias de studios fitness: **Vidya Yoga** e **Race Bootcamp**, ambas pertencentes ao grupo **Smart Fit**.
 
 **Vidya Yoga** é um studio fitness que combina as práticas de yoga com uma sala aquecida a 40°C e iluminação que varia de acordo com os momentos e posições, utilizando paletas de cores quentes. Essa prática é conhecida como *hot yoga*. Sua principal missão é trazer tranquilidade à mente e ao corpo, alinhando ambos. Possui unidades em todas as regiões do Brasil, com foco em grandes capitais e áreas de alto poder aquisitivo. Seu público-alvo principal são mulheres jovens, de 20 a 40 anos, que se preocupam com sua saúde física e mental.
@@ -32,9 +33,7 @@ Com base nessas informações, é possível alinhar uma demanda já expressa pel
 
 Isso eliminaria essa etapa essencial da rotina da recepção, atualmente feita de forma manual e, segundo o cliente, com baixa efetividade, já que os responsáveis frequentemente deixam de enviar as mensagens, e ele não consegue acompanhar essa tarefa de forma adequada.
 
-Isso eliminaria essa etapa essencial da rotina da recepção, atualmente feita de forma manual e, segundo o cliente, com baixa efetividade, já que os responsáveis frequentemente deixam de enviar as mensagens, e ele não consegue acompanhar essa tarefa de forma adequada.
-
-![Diagrama de Causa e Efeito](images/fishBone2.png)
+![Diagrama de Causa e Efeito](../images/fishBone2.png)
 
 
 ## 1.3 Desafios do Projeto

@@ -9,7 +9,11 @@ nav:
     - Cenário Atual do Cliente e Negócio: sections/intro_client.md
     - Solução Proposta: sections/solution.md
     - Estratégias de Engenharia de Software: sections/approach.md
+    - Cronograma e Entregas: sections/schedule.md
+    - Interação entre Equipe e Cliente: sections/interection-po.md
     - Lições Aprendidas: sections/lessons-learned.md
+  - Entregas:
+    - Entrega 1: entregas/1.md
 
 
 
