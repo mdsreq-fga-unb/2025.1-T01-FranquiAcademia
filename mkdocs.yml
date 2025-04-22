@@ -9,17 +9,8 @@ nav:
     - Cenário Atual do Cliente e Negócio: sections/intro_client.md
     - Solução Proposta: sections/solution.md
     - Estratégias de Engenharia de Software: sections/approach.md
-    # - Lições Aprendidas: sections/documento-licoes.md
+    - Lições Aprendidas: sections/lessons-learned.md
 
-
-  #    - Introdução do Cliente: sections/intro_client.md
-  #    - Solução Proposta: section/solution.md
-  #    - Estratégia de Produção:
-  #        - Abordagem: sections/approach.md
-  #        - Ciclo de Vida: secions/life_cicle.md
-  #        - Processo: sections/process.md
-  #
-      
 
 
 theme:
