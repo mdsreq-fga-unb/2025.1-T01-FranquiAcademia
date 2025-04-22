@@ -32,7 +32,7 @@ A equipe de desenvolvimento será composta pelos seguintes papéis e responsáve
 **Frequência de Interações com o Cliente:**
 
 - **Revisões de Sprint (quinzenal):** Envolvimento direto do cliente para validação e feedback.
-- **Interações Adicionais por Slack:** Acesso direto do cliente ao canal da equipe para esclarecimentos e solicitações rápidas.
+- **Interações Adicionais por WhatsApp:** Acesso direto do cliente ao canal da equipe para esclarecimentos e solicitações rápidas.
 
 ### 5.3 Processo de Validação
 
