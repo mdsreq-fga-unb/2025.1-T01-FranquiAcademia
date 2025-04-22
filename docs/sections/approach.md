@@ -4,7 +4,6 @@
 
 O projeto adotará a **abordagem ágil** de desenvolvimento de software. Esta abordagem foi escolhida por promover:
 
-- Entregas incrementais  
 - Priorização da colaboração contínua com o cliente  
 - Adaptações rápidas às mudanças de requisitos
 
