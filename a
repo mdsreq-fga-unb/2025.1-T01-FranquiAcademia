@@ -1,0 +1,10 @@
+um repo
+    -3 codebases
+    
+3 branchs
+    -Documentacao
+        -gh-pages(N MEXE) -> mkdocks usa para deploy 
+        -git-pages(equivalente a main)
+        -mkdocs (equivalente a developer)
+    -FrontEnd
+    -BackEnd
