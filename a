@@ -7,4 +7,14 @@ um repo
         -git-pages(equivalente a main)
         -mkdocs (equivalente a developer)
     -FrontEnd
+        -FT_main
+        -FT_developer
+
     -BackEnd
+        -BE_main
+        -BE_developer
+
+        notion -> peguei task -> codar a task (?) ->
+
+        sprint
+            main
