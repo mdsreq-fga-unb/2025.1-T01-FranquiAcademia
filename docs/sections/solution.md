@@ -6,6 +6,11 @@ O objetivo do produto é fornecer uma plataforma capaz de operar sem interrupç�
 
 A plataforma também manterá as funções essenciais que o sistema antigo já oferecia, como a visualização das marcações de aulas.
 
+**Objetivos específicos da solução:**
+
+ - **1. ....**
+ - **2. N requisito**
+
 ---
 
 ## 2.2 Características da Solução
