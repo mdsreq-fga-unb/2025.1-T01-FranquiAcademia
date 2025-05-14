@@ -14,13 +14,13 @@ O conteúdo inclui técnicas para elicitação, modelagem, documentação, e ger
 
 ## 2. O projeto DeltaCore
 
-O projeto DeltaCore visa solucionar os desafios enfrentados por duas franquias de studios fitness, o Vidya Yoga e o Race Bootcamp, ambas pertencentes ao grupo Smart Fit. As franquias enfrentam dificuldades relacionadas à instabilidade do sistema atual de gestão, ausência de ferramentas de análise e comunicação ineficiente com os alunos.
+O projeto DeltaCore visa solucionar os desafios enfrentados por **três** franquias de studios fitness: **Vidya Yoga**, **Race Bootcamp** e **One Pilates**, todas pertencentes ao grupo Smart Fit. As franquias enfrentam dificuldades relacionadas à instabilidade do sistema atual de gestão, ausência de ferramentas de análise e comunicação ineficiente com os alunos.
 
 Com isso, propõe-se funcionalidades que automatizem a comunicação com os alunos e permitam análises detalhadas do comportamento dos usuários e do funcionamento dos studios.
 
 
 ## 3. Os Contribuidores
-A equipe de desenvolvedores do projeto FranquiAcademia Race e Vydia é composta por 6 membros do curso de Engenharia de Software da Universidade de Brasília.
+A equipe de desenvolvedores do projeto DeltaCore, apelidada carinhosamente de gitPushUps, é composta por 6 membros do curso de Engenharia de Software da Universidade de Brasília.
 
 <div align="center">
   <table>

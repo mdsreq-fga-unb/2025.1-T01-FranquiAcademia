@@ -2,14 +2,15 @@
 
 ## 1.1 Introdução ao Negócio e Contexto
 
-
-Um dos segmentos que mais crescem é o meio fitness. Com o aumento do uso das redes sociais, esse segmento tem ganhado cada vez mais força, em especial o setor voltado ao bem-estar. Tendo isso em mente, nosso cliente é dono de duas franquias de studios fitness: **Vidya Yoga** e **Race Bootcamp**, ambas pertencentes ao grupo **Smart Fit**.
+Um dos segmentos que mais crescem é o meio fitness. Com o aumento do uso das redes sociais, esse segmento tem ganhado cada vez mais força, em especial o setor voltado ao bem-estar. Tendo isso em mente, nosso cliente é dono de **três** franquias de studios fitness: **Vidya Yoga**, **Race Bootcamp** e **One Pilates**, todas pertencentes ao grupo **Smart Fit**.
 
 **Vidya Yoga** é um studio fitness que combina as práticas de yoga com uma sala aquecida a 40°C e iluminação que varia de acordo com os momentos e posições, utilizando paletas de cores quentes. Essa prática é conhecida como *hot yoga*. Sua principal missão é trazer tranquilidade à mente e ao corpo, alinhando ambos. Possui unidades em todas as regiões do Brasil, com foco em grandes capitais e áreas de alto poder aquisitivo. Seu público-alvo principal são mulheres jovens, de 20 a 40 anos, que se preocupam com sua saúde física e mental.
 
 **Race Bootcamp** é um studio com equipamentos de academia, focado em esteiras e pesos livres. O controle da temperatura da sala e a iluminação são usados para incentivar os participantes a atingirem seu limite físico. É um ambiente controlado, onde os interessados podem usufruir dos equipamentos e orientação de professores, com o objetivo de descobrir e superar seus limites. Tem como principal propósito fornecer um ambiente ideal para que atletas amadores possam redefinir seus conceitos de limite físico. Assim como o Vidya Yoga, o Race Bootcamp está presente em todas as regiões do Brasil, com foco em grandes capitais e regiões de alto poder aquisitivo. Seu público-alvo são homens e mulheres jovens, de 25 a 40 anos, praticantes de corrida e atletas amadores interessados em conhecer seus próprios limites.
 
-Ambas as franquias funcionam no sistema *pay per use*, sendo necessário comprar créditos pelos sites de cada studio fitness. Cada crédito equivale a uma determinada quantidade de aulas. Como ambos os studios possuem conceitos diferenciados dos studios fitness tradicionais, oferecem uma quantidade significativa de aulas experimentais, que podem ser agendadas pelo site, seguindo o mesmo processo da compra de créditos.
+**One Pilates** é um studio de pilates que propõe um estilo próprio de pilates, que mistura equipamentos de ponta, treino intenso, coletivo e dinâmico, tudo isso dentro de uma esfera urbana e moderna, refletindo o ritmo da metrópole.
+
+Todas as franquias funcionam no sistema *pay per use*, sendo necessário comprar créditos pelos sites de cada studio fitness. Cada crédito equivale a uma determinada quantidade de aulas. Como ambos os studios possuem conceitos diferenciados dos studios fitness tradicionais, oferecem uma quantidade significativa de aulas experimentais, que podem ser agendadas pelo site, seguindo o mesmo processo da compra de créditos.
 
 ## 1.2 Identificação da Oportunidade ou Problema
 
