@@ -15,6 +15,7 @@ nav:
     - Requisitos: sections/7-requirements.md
     - DoR & DoD: sections/8-DoR_DoD.md
     - Backlog: sections/9-BackLog.md
+    - Engenharia de Requisitos: sections/10-engineering_requirements.md
   - Entregas:
     - Entrega 1: entregas/1.md
     - Entrega 2: entregas/2.md

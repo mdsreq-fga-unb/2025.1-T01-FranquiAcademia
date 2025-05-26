@@ -11,7 +11,8 @@
 
 
 ## Unidade 2:
-**a** aaa
-**b** bbb
-**c** ccc
+**Desafio:** A equipe enfrentava dificuldades para conciliar os diferentes horários disponíveis dos membros, o que impactava diretamente na realização de reuniões e no acompanhamento coletivo das tarefas. A limitação de tempo de alguns integrantes gerava atrasos no alinhamento de entregas e dificultava a tomada de decisões em grupo.
 
+**Ação de Melhoria:** Foram adotadas práticas mais flexíveis, como o uso sistemático de ferramentas de colaboração assíncrona (por exemplo documentos compartilhados no google docs). Reuniões síncronas foram reduzidas ao essencial, priorizando temas que realmente exigissem interação simultânea. Além disso, definiram-se tarefas designadas nominalmente, previamente acordadas com todos.
+
+**Resultado Esperado:** Maior autonomia da equipe, melhora no fluxo de trabalho mesmo com agendas diferentes, redução de dependências de reuniões e agilidade na execução das atividades, sem comprometer a qualidade da comunicação e do acompanhamento.

@@ -4,14 +4,14 @@ O projeto DeltaCore seguirá a metodologia ágil DSDM, com entregas incrementais
 
 ### 4.1 Cronograma de Entregas (Baseado nas Fases DSDM e Sprints Anteriores)
 
-| **Entrega/Iteração** | **Período Aproximado** | **Entrega Principal** | **Descrição das Atividades (Adaptado ao DSDM)** |
-|----------------------|------------------------|-------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Estudo de Viabilidade & Negócio** | 08/04 – 21/04            | Visão do Projeto e Plano de Negócio Detalhado       | Alinhamento detalhado com o cliente para entender as necessidades das três franquias. Criação da Visão do Projeto, identificação dos benefícios de negócio e esboço do plano de entrega. Priorização inicial de requisitos. |
-| **Desenho Funcional Inicial** | 22/04 – 05/05            | Protótipo de Telas e Arquitetura de Alto Nível      | Criação de protótipos de baixa fidelidade para as funcionalidades chave. Definição da arquitetura geral do sistema. Obtenção de feedback inicial do usuário sobre os protótipos.                                                  |
-| **Entrega Incremento 1 (Foco Agendamento)** | 06/05 – 19/05            | tem que dinir | tem que descrever | 
-| **Entrega Incremento 2 (Foco Comunicação)** | 20/05 – 02/06            | tem que dinir | tem que descrever | 
-| **Entrega Incremento 3 (Foco Análise)** | 03/06 – 16/06            |  tem que dinir | tem que descrever | 
-| **Implementação & Revisão Final** | 17/06 – 30/06            |  tem que dinir | tem que descrever | 
+| Entrega/Iteração                             | Período Aproximado | Entrega Principal                                                                 |
+| :------------------------------------------- | :----------------- | :---------------------------------------------------------------------------------- |
+| Estudo de Viabilidade & Negócio              | 08/04 – 21/04      | Visão do Projeto e Plano de Negócio Detalhado                                     |
+| Desenho Funcional Inicial                    | 22/04 – 05/05      | Protótipo de Telas e Arquitetura de Alto Nível                                    |
+| Entrega Incremento 1 (MVP - Funcionalidades Essenciais) | 06/05 – 19/05      | Funcionalidades de Cadastro, Login, Listagem de Aulas/Reservas (US01, US02, US03, US04, US06) |
+| Entrega Incremento 2 (MVP - Comunicação e Dashboards) | 20/05 – 02/06      | Mensagens Automatizadas e Dashboard Básico (US10, US11, US14, US13, US20, US24)          |
+| Implementação & Revisão Final                | 03/06 – 16/06      | Versão Final do MVP                                                                 |
+
 
 ### 4.2 Reuniões e Revisões (Adaptado ao DSDM)
 
