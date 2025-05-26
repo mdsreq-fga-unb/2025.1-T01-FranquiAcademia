@@ -1,0 +1,1459 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../8-DoR_DoD/">
+      
+      
+        <link rel="next" href="../../entregas/1/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>Backlog - DeltaCore</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/styles.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#9-backlog-do-produto" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="DeltaCore" class="md-header__button md-logo" aria-label="DeltaCore" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DeltaCore
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Backlog
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/mdsreq-fga-unb/2025.1-T01-FranquiAcademia" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2025.1-T01-FranquiAcademia
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="DeltaCore" class="md-nav__button md-logo" aria-label="DeltaCore" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    DeltaCore
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/mdsreq-fga-unb/2025.1-T01-FranquiAcademia" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2025.1-T01-FranquiAcademia
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Início
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Visão do Produto e Projeto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Visão do Produto e Projeto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1-intro_client/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cenário Atual do Cliente e Negócio
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2-solution/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Solução Proposta
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3-approach/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Estratégias de Engenharia de Software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4-schedule/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cronograma e Entregas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5-interection-po/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interação entre Equipe e Cliente
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6-lessons-learned/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lições Aprendidas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7-requirements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Requisitos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../8-DoR_DoD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DoR & DoD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Backlog
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Backlog
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#9-backlog-do-produto" class="md-nav__link">
+    <span class="md-ellipsis">
+      9 BackLog do Produto
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9 BackLog do Produto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#backlog" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backlog
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Backlog">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#temas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Temas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#epicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Épicos
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-stories" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Stories
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criterios-de-priorizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Critérios de Priorização
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Critérios de Priorização">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#moscow" class="md-nav__link">
+    <span class="md-ellipsis">
+      MoSCoW
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wsjf-weighted-shortest-job-first" class="md-nav__link">
+    <span class="md-ellipsis">
+      WSJF (Weighted Shortest Job First)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="WSJF (Weighted Shortest Job First)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fatores-avaliados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fatores avaliados:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fórmula:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#priorizacao-de-requisitos-com-wsjf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Priorização de Requisitos com WSJF
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Priorização de Requisitos com WSJF">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mvp-minimum-viable-product" class="md-nav__link">
+    <span class="md-ellipsis">
+      MVP (Minimum Viable Product)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Entregas
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Entregas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entregas/1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entrega 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entregas/2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entrega 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#9-backlog-do-produto" class="md-nav__link">
+    <span class="md-ellipsis">
+      9 BackLog do Produto
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9 BackLog do Produto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#backlog" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backlog
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Backlog">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#temas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Temas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#epicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Épicos
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-stories" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Stories
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criterios-de-priorizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Critérios de Priorização
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Critérios de Priorização">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#moscow" class="md-nav__link">
+    <span class="md-ellipsis">
+      MoSCoW
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wsjf-weighted-shortest-job-first" class="md-nav__link">
+    <span class="md-ellipsis">
+      WSJF (Weighted Shortest Job First)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="WSJF (Weighted Shortest Job First)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fatores-avaliados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fatores avaliados:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fórmula:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#priorizacao-de-requisitos-com-wsjf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Priorização de Requisitos com WSJF
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Priorização de Requisitos com WSJF">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mvp-minimum-viable-product" class="md-nav__link">
+    <span class="md-ellipsis">
+      MVP (Minimum Viable Product)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h2 id="9-backlog-do-produto">9 BackLog do Produto</h2>
+<!--
+a talda Explicar o que é o backlog) - falta
+criar epicos - falta
+temas - falta
+user stories - falta
+explicar metodologia - check
+aplicar a metodologia - check
+validar mvp - falta
+-->
+
+<h3 id="backlog">Backlog</h3>
+<p>O <strong>backlog</strong> representa uma lista dinâmica e priorizada de tudo o que precisa ser construído para o seu produto. Ele serve como um <strong>plano de trabalho vivo</strong> para a equipe de desenvolvimento, abrangendo desde novas funcionalidades até melhorias e correções de bugs. Essa lista está em constante <strong>evolução</strong>, refletindo o crescimento do produto e o surgimento de novas necessidades, garantindo que a equipe esteja sempre focada nas <strong>prioridades e objetivos do projeto</strong>.</p>
+<p>Dentro do backlog, as <strong>Histórias de Usuário (User Stories)</strong> são elementos cruciais. Elas descrevem as necessidades dos usuários finais de maneira <strong>simples e direta</strong>, permitindo que toda a equipe compreenda o <strong>valor</strong> de cada funcionalidade. Uma User Story é estruturada para responder a três perguntas fundamentais: <strong>quem</strong> é o usuário, <strong>o que</strong> ele deseja fazer e <strong>qual o benefício</strong> dessa ação. Esse formato mantém o foco nas <strong>necessidades do usuário</strong>, incentivando a criação de soluções que realmente agregam valor ao produto.</p>
+<p>Para descrever uma História de Usuário de forma eficaz, siga a estrutura: <strong>"Eu, como [tipo de usuário], quero [ação que desejo realizar], para que [benefício ou valor que obtenho com essa ação]."</strong></p>
+<p>Por exemplo: "Eu, como cliente, quero poder filtrar as aulas por horário, para encontrar rapidamente as opções que se encaixam na minha rotina."</p>
+<p>Histórias de Usuário mais complexas ou que abrangem diversas funcionalidades são agrupadas em <strong>Épicos</strong>. Um épico é uma descrição de uma <strong>necessidade de grande escala</strong>, que será posteriormente <strong>dividida em histórias menores e mais detalhadas</strong>. Esse processo ajuda a equipe a entender a dimensão do projeto e a planejar o desenvolvimento em partes <strong>mais gerenciáveis e priorizáveis</strong>. Os épicos podem ser definidos com base nas principais funcionalidades ou nos objetivos do produto, e cada um se desdobra em várias histórias de usuário que detalham as tarefas específicas.</p>
+<p>Os <strong>Temas</strong>, por sua vez, funcionam como <strong>agrupamentos de histórias e épicos</strong> que compartilham um <strong>propósito ou objetivo comum</strong> dentro do produto. Eles são úteis para <strong>organizar o backlog</strong> em seções que representam áreas ou funcionalidades do sistema, facilitando a priorização do desenvolvimento de acordo com as <strong>metas do projeto</strong>. Diferente dos épicos, que geralmente têm um escopo mais limitado, os temas são mais amplos e podem englobar múltiplos épicos e histórias de usuário, fornecendo uma <strong>visão geral das grandes áreas do produto</strong>.</p>
+<h4 id="temas">Temas</h4>
+<ul>
+<li><strong>TM01: Gestão de Usuários e Acesso</strong><ul>
+<li>Objetivo: Permitir o gerenciamento de contas de usuários de forma segura e eficiente.</li>
+</ul>
+</li>
+<li><strong>TM02: Gestão de Aulas e Reservas</strong><ul>
+<li>Objetivo: Facilitar a visualização e o gerenciamento das aulas e reservas pelos usuários.</li>
+</ul>
+</li>
+<li><strong>TM03: Comunicação Automatizada</strong><ul>
+<li>Objetivo: Automatizar a comunicação com os usuários para melhorar o engajamento e a retenção.</li>
+</ul>
+</li>
+<li><strong>TM04: Análise de Dados e Dashboards</strong><ul>
+<li>Objetivo: Fornecer ferramentas para a análise de dados e visualização de informações relevantes para a gestão.</li>
+</ul>
+</li>
+</ul>
+<h4 id="epicos">Épicos</h4>
+<ul>
+<li><strong>EP01: Gerenciamento de Contas de Usuário</strong><ul>
+<li>Descrição: Permitir a criação, edição e autenticação de contas de usuários no sistema.</li>
+<li>Tema: TM01</li>
+</ul>
+</li>
+<li><strong>EP02: Visualização e Filtragem de Aulas</strong><ul>
+<li>Descrição: Permitir que os usuários visualizem a lista de aulas disponíveis e as filtrem por critérios relevantes.</li>
+<li>Tema: TM02</li>
+</ul>
+</li>
+<li><strong>EP03: Visualização e Filtragem de Reservas</strong><ul>
+<li>Descrição: Permitir que os usuários visualizem suas reservas e as filtrem por critérios relevantes.</li>
+<li>Tema: TM02</li>
+</ul>
+</li>
+<li><strong>EP04: Automação de Envio de Mensagens</strong><ul>
+<li>Descrição: Implementar a capacidade de enviar mensagens automáticas aos usuários com base em regras definidas.</li>
+<li>Tema: TM03</li>
+</ul>
+</li>
+<li><strong>EP05: Criação e Gestão de Mensagens Automatizadas</strong><ul>
+<li>Descrição: Permitir a criação, edição, listagem, ativação e inativação de mensagens automatizadas.</li>
+<li>Tema: TM03</li>
+</ul>
+</li>
+<li><strong>EP06: Gestão de Regras de Envio</strong><ul>
+<li>Descrição: Permitir a criação, edição e exclusão de regras que determinam o envio de mensagens automatizadas.</li>
+<li>Tema: TM03</li>
+</ul>
+</li>
+<li><strong>EP07: Criação e Visualização de Dashboards de Análise</strong><ul>
+<li>Descrição: Implementar a criação e visualização de painéis para análise de dados relevantes.</li>
+<li>Tema: TM04</li>
+</ul>
+</li>
+<li><strong>EP08: Gestão de Filtros de Dashboard</strong><ul>
+<li>Descrição: Permitir a criação, edição e listagem de filtros para os dados exibidos nos dashboards.</li>
+<li>Tema: TM04</li>
+</ul>
+</li>
+<li><strong>EP09: Interação com Dashboards</strong><ul>
+<li>Descrição: Permitir a filtragem, favoritar e exportação dos dados dos dashboards.</li>
+<li>Tema: TM04</li>
+</ul>
+</li>
+<li><strong>EP10: Exportação de Dados da Plataforma</strong><ul>
+<li>Descrição: Permitir a exportação dos dados brutos da plataforma em formatos comuns.</li>
+<li>Tema: TM04</li>
+</ul>
+</li>
+</ul>
+<h3 id="user-stories">User Stories</h3>
+<p><strong>Épico: Gerenciamento de Contas de Usuário (EP01)</strong></p>
+<ul>
+<li><strong>US01:</strong> Eu, como novo usuário, quero me cadastrar no sistema, para que eu possa acessar as funcionalidades da plataforma. (RF01)</li>
+<li><strong>US02:</strong> Eu, como usuário existente, quero editar minhas informações de cadastro, para manter meus dados atualizados. (RF02)</li>
+<li><strong>US03:</strong> Eu, como usuário cadastrado, quero realizar login no sistema, para acessar minhas aulas e reservas. (RF03)</li>
+</ul>
+<p><strong>Épico: Visualização e Filtragem de Aulas (EP02)</strong></p>
+<ul>
+<li><strong>US04:</strong> Eu, como usuário, quero visualizar a lista de aulas disponíveis, para escolher as que me interessam. (RF04)</li>
+<li><strong>US05:</strong> Eu, como usuário, quero filtrar a lista de aulas por data, para encontrar aulas em dias específicos. (RF05)</li>
+<li><strong>US06:</strong> Eu, como usuário, quero filtrar a lista de aulas por tema, para encontrar aulas do meu interesse. (RF05)</li>
+<li><strong>US07:</strong> Eu, como usuário, quero filtrar a lista de aulas por instrutor, para encontrar aulas com meu instrutor preferido. (RF05)</li>
+</ul>
+<p><strong>Épico: Visualização e Filtragem de Reservas (EP03)</strong></p>
+<ul>
+<li><strong>US08:</strong> Eu, como usuário, quero visualizar minhas reservas de aulas, para acompanhar meus agendamentos. (RF06)</li>
+<li><strong>US09:</strong> Eu, como usuário, quero filtrar minhas reservas por data, para encontrar reservas em um período específico. (RF07)</li>
+</ul>
+<p><strong>Épico: Automação de Envio de Mensagens (EP04)</strong></p>
+<ul>
+<li><strong>US10:</strong> Eu, como gestor, quero que o sistema envie mensagens automáticas para os usuários, para melhorar a comunicação. (RF08)</li>
+</ul>
+<p><strong>Épico: Criação e Gestão de Mensagens Automatizadas (EP05)</strong></p>
+<ul>
+<li><strong>US11:</strong> Eu, como gestor, quero criar novas mensagens automatizadas, para comunicar informações importantes aos usuários. (RF09)</li>
+<li><strong>US12:</strong> Eu, como gestor, quero editar mensagens automatizadas existentes, para manter a comunicação atualizada. (RF10)</li>
+<li><strong>US13:</strong> Eu, como gestor, quero apagar mensagens automatizadas, para remover comunicações desnecessárias. (RF11)</li>
+<li><strong>US14:</strong> Eu, como gestor, quero listar todas as mensagens automatizadas, para ter uma visão geral das comunicações configuradas. (RF12)</li>
+<li><strong>US15:</strong> Eu, como gestor, quero ativar mensagens automatizadas, para iniciar o envio de comunicações específicas. (RF13)</li>
+<li><strong>US16:</strong> Eu, como gestor, quero inativar mensagens automatizadas, para pausar o envio de comunicações específicas. (RF13)</li>
+</ul>
+<p><strong>Épico: Gestão de Regras de Envio (EP06)</strong></p>
+<ul>
+<li><strong>US17:</strong> Eu, como gestor, quero criar regras de envio para mensagens automatizadas, para definir quando as comunicações devem ser enviadas. (RF14)</li>
+<li><strong>US18:</strong> Eu, como gestor, quero editar regras de envio existentes, para ajustar as condições de envio das mensagens. (RF15)</li>
+<li><strong>US19:</strong> Eu, como gestor, quero apagar regras de envio, para remover condições de envio desnecessárias. (RF16)</li>
+</ul>
+<p><strong>Épico: Criação e Visualização de Dashboards de Análise (EP07)</strong></p>
+<ul>
+<li><strong>US20:</strong> Eu, como gestor, quero criar dashboards de análise de dados, para visualizar informações importantes sobre o negócio. (RF17)</li>
+</ul>
+<p><strong>Épico: Gestão de Filtros de Dashboard (EP08)</strong></p>
+<ul>
+<li><strong>US21:</strong> Eu, como gestor, quero criar filtros para os dados do dashboard, para analisar informações específicas. (RF18)</li>
+<li><strong>US22:</strong> Eu, como gestor, quero editar filtros existentes nos dashboards, para ajustar a análise de dados. (RF19)</li>
+<li><strong>US23:</strong> Eu, como gestor, quero listar os filtros disponíveis para os dashboards, para saber como posso analisar os dados. (RF20)</li>
+</ul>
+<p><strong>Épico: Interação com Dashboards (EP09)</strong></p>
+<ul>
+<li><strong>US24:</strong> Eu, como gestor, quero filtrar os dados dos dashboards, para visualizar informações específicas. (RF21)</li>
+<li><strong>US25:</strong> Eu, como gestor, quero favoritar dashboards de análise, para acessar rapidamente as informações mais importantes. (RF22)</li>
+<li><strong>US26:</strong> Eu, como gestor, quero exportar os dashboards, para compartilhar as análises com outras pessoas. (RF23)</li>
+</ul>
+<p><strong>Épico: Exportação de Dados da Plataforma (EP10)</strong></p>
+<ul>
+<li><strong>US27:</strong> Eu, como administrador, quero exportar os dados da plataforma original, para realizar análises mais detalhadas externamente. (RF24)</li>
+</ul>
+<h2 id="criterios-de-priorizacao">Critérios de Priorização</h2>
+<h3 id="moscow">MoSCoW</h3>
+<p>O <strong>MoSCoW</strong> é usado para coletar a percepção de importância do cliente, informando o <strong>valor do negócio</strong> sobre cada item (requisito, funcionalidade, etc.). Essa prioridade qualitativa é convertida em números para compor os elementos da fórmula do <strong>WSJF</strong>, enquanto os outros fatores da fórmula são estimados pela equipe.</p>
+<p><strong>MoSCoW</strong> é um acrônimo que representa quatro níveis de prioridade:</p>
+<table>
+<thead>
+<tr>
+<th>Letra</th>
+<th>Significado</th>
+<th>Descrição</th>
+<th>Peso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M</td>
+<td>Must have</td>
+<td>Requisitos obrigatórios para o sistema funcionar. Sem eles, o projeto falha.</td>
+<td>4</td>
+</tr>
+<tr>
+<td>S</td>
+<td>Should have</td>
+<td>Requisitos importantes, mas não vitais. Podem ser adiados, se necessário.</td>
+<td>3</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Could have</td>
+<td>Requisitos desejáveis, que agregam valor, mas são opcionais.</td>
+<td>2</td>
+</tr>
+<tr>
+<td>W</td>
+<td>Won’t have (this time)</td>
+<td>Requisitos que não serão incluídos na entrega atual, mas podem ser considerados futuramente.</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="wsjf-weighted-shortest-job-first">WSJF (Weighted Shortest Job First)</h2>
+<p><strong>WSJF</strong> é uma técnica utilizada para priorizar funcionalidades com base na relação entre o <strong>valor entregue</strong> e o <strong>esforço necessário</strong> para implementá-las.</p>
+<h3 id="fatores-avaliados">Fatores avaliados:</h3>
+<ul>
+<li><strong>Valor do Negócio</strong>: Peso derivado da priorização MoSCoW (de 1 a 4)</li>
+<li><strong>Urgência</strong>: Avaliação de quão urgente é a entrega da funcionalidade (1 a 5)</li>
+<li><strong>Redução de Risco</strong>: Quanto a funcionalidade ajuda a reduzir riscos (1 a 5)<br />
+  (5 = pouco arriscado / 1 = muito arriscado)</li>
+<li><strong>Tamanho do Trabalho</strong>: Estimativa em dias para a conclusão da tarefa</li>
+</ul>
+<h3 id="formula">Fórmula:</h3>
+<p>WSJF = (Valor do Negócio + Urgência + Redução de Risco) / Tamanho do Trabalho</p>
+<blockquote>
+<p>Quanto maior o WSJF, maior a prioridade do requisito.</p>
+</blockquote>
+<h1 id="priorizacao-de-requisitos-com-wsjf">Priorização de Requisitos com WSJF</h1>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>TÍTULO</th>
+<th>MoSCoW</th>
+<th>Urgência</th>
+<th>Redução de Risco</th>
+<th>WSJF</th>
+<th>MVP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RF01</td>
+<td>Cadastrar usuários</td>
+<td>M</td>
+<td>5</td>
+<td>2</td>
+<td>2.20</td>
+<td>X</td>
+</tr>
+<tr>
+<td>RF02</td>
+<td>Editar usuários</td>
+<td>M</td>
+<td>4</td>
+<td>3</td>
+<td>3.67</td>
+<td>X</td>
+</tr>
+<tr>
+<td>RF03</td>
+<td>Realizar login</td>
+<td>M</td>
+<td>5</td>
+<td>1</td>
+<td>3.33</td>
+<td>X</td>
+</tr>
+<tr>
+<td>RF04</td>
+<td>Listar Aulas</td>
+<td>S</td>
+<td>3</td>
+<td>3</td>
+<td>2.25</td>
+<td></td>
+</tr>
+<tr>
+<td>RF05</td>
+<td>Filtrar Aulas</td>
+<td>S</td>
+<td>3</td>
+<td>4</td>
+<td>2.00</td>
+<td></td>
+</tr>
+<tr>
+<td>RF06</td>
+<td>Listar Reservas</td>
+<td>S</td>
+<td>3</td>
+<td>3</td>
+<td>2.25</td>
+<td></td>
+</tr>
+<tr>
+<td>RF07</td>
+<td>Filtrar Reservas</td>
+<td>S</td>
+<td>3</td>
+<td>4</td>
+<td>2.00</td>
+<td></td>
+</tr>
+<tr>
+<td>RF08</td>
+<td>Enviar Mensagens Automatizadas</td>
+<td>M</td>
+<td>4</td>
+<td>3</td>
+<td>2.20</td>
+<td>X</td>
+</tr>
+<tr>
+<td>RF09</td>
+<td>Criar Mensagens Automatizadas</td>
+<td>M</td>
+<td>4</td>
+<td>3</td>
+<td>2.20</td>
+<td>X</td>
+</tr>
+<tr>
+<td>RF10</td>
+<td>Editar Mensagens Automatizadas</td>
+<td>S</td>
+<td>3</td>
+<td>4</td>
+<td>3.33</td>
+<td></td>
+</tr>
+<tr>
+<td>RF11</td>
+<td>Apagar Mensagens Automatizadas</td>
+<td>M</td>
+<td>3</td>
+<td>4</td>
+<td>5.50</td>
+<td>X</td>
+</tr>
+<tr>
+<td>RF12</td>
+<td>Listar Mensagens Automatizadas</td>
+<td>M</td>
+<td>4</td>
+<td>3</td>
+<td>3.67</td>
+<td>X</td>
+</tr>
+<tr>
+<td>RF13</td>
+<td>Ativar ou Inativar Mensagens Automatizadas</td>
+<td>C</td>
+<td>2</td>
+<td>4</td>
+<td>2.67</td>
+<td></td>
+</tr>
+<tr>
+<td>RF14</td>
+<td>Criar Regras de Envio</td>
+<td>S</td>
+<td>3</td>
+<td>3</td>
+<td>1.80</td>
+<td></td>
+</tr>
+<tr>
+<td>RF15</td>
+<td>Editar Regras de Envio</td>
+<td>C</td>
+<td>2</td>
+<td>4</td>
+<td>2.67</td>
+<td></td>
+</tr>
+<tr>
+<td>RF16</td>
+<td>Apagar Regras de Envio</td>
+<td>S</td>
+<td>3</td>
+<td>4</td>
+<td>3.33</td>
+<td></td>
+</tr>
+<tr>
+<td>RF17</td>
+<td>Criar Dashboard de Análise de dados</td>
+<td>M</td>
+<td>4</td>
+<td>2</td>
+<td>1.25</td>
+<td>X</td>
+</tr>
+<tr>
+<td>RF18</td>
+<td>Criar filtros para dados do dashboard</td>
+<td>S</td>
+<td>3</td>
+<td>3</td>
+<td>1.80</td>
+<td></td>
+</tr>
+<tr>
+<td>RF19</td>
+<td>Editar filtros para dados do dashboard</td>
+<td>C</td>
+<td>2</td>
+<td>4</td>
+<td>2.67</td>
+<td></td>
+</tr>
+<tr>
+<td>RF20</td>
+<td>Listar filtros para dados do dashboard</td>
+<td>S</td>
+<td>3</td>
+<td>3</td>
+<td>3.00</td>
+<td></td>
+</tr>
+<tr>
+<td>RF21</td>
+<td>Filtrar dados de Dashboards</td>
+<td>M</td>
+<td>4</td>
+<td>2</td>
+<td>2.00</td>
+<td>X</td>
+</tr>
+<tr>
+<td>RF22</td>
+<td>Favoritar Dashboards de análises de dado</td>
+<td>C</td>
+<td>2</td>
+<td>4</td>
+<td>2.67</td>
+<td></td>
+</tr>
+<tr>
+<td>RF23</td>
+<td>Exportar Dashboards</td>
+<td>C</td>
+<td>3</td>
+<td>4</td>
+<td>1.80</td>
+<td></td>
+</tr>
+<tr>
+<td>RF24</td>
+<td>Exportar Dados da Plataforma Original</td>
+<td>C</td>
+<td>3</td>
+<td>3</td>
+<td>1.60</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="mvp-minimum-viable-product">MVP (Minimum Viable Product)</h2>
+<p>O MVP (Produto Mínimo Viável) representa a versão inicial do sistema com as funcionalidades essenciais para atender às necessidades primárias dos usuários e validar as hipóteses do projeto. A seleção dos requisitos para o MVP foi baseada na priorização <strong>MoSCoW</strong>, incluindo os itens classificados como <strong>"Must Have"</strong> (M).</p>
+<p>Os seguintes requisitos funcionais compõem o MVP:</p>
+<ul>
+<li><strong>RF01: Cadastrar usuários:</strong> Permitir que novos usuários criem suas contas no sistema.</li>
+<li><strong>RF02: Editar usuários:</strong> Permitir que os usuários editem suas informações de perfil.</li>
+<li><strong>RF03: Realizar login:</strong> Permitir que usuários autenticados acessem o sistema.</li>
+<li><strong>RF08: Enviar Mensagens Automatizadas:</strong> Implementar a funcionalidade básica de envio de mensagens automáticas.</li>
+<li><strong>RF09: Criar Mensagens Automatizadas:</strong> Permitir a criação de modelos de mensagens automatizadas.</li>
+<li><strong>RF11: Apagar Mensagens Automatizadas:</strong> Permitir a exclusão de mensagens automatizadas.</li>
+<li><strong>RF12: Listar Mensagens Automatizadas:</strong> Exibir a lista de mensagens automatizadas configuradas.</li>
+<li><strong>RF17: Criar Dashboard de Análise de dados:</strong> Implementar a estrutura básica de um dashboard para visualização de dados.</li>
+<li><strong>RF21: Filtrar dados de Dashboards:</strong> Permitir a aplicação de filtros básicos nos dashboards.</li>
+</ul>
+<p>Os seguintes requisitos não funcionais também serão considerados no MVP para garantir uma experiência básica de qualidade:</p>
+<ul>
+<li><strong>RNF02: Tempo de resposta para listagem de aulas e reservas:</strong> As listagens devem carregar dentro de um tempo aceitável para uma boa experiência inicial.</li>
+<li><strong>RNF06: Capacidade de usuários simultâneos autenticados:</strong> O sistema deve suportar um número razoável de usuários para os testes iniciais e lançamento.</li>
+<li><strong>RNF07: Segurança das senhas de usuários e administradores:</strong> As senhas devem ser armazenadas de forma segura desde o início.</li>
+<li><strong>RNF08: Backup dos dados transacionais e de análise:</strong> Implementar um sistema de backup básico para evitar perda de dados críticos.</li>
+</ul>
+<p>O foco do MVP é entregar um produto funcional que permita a validação das principais funcionalidades e a coleta de feedback inicial dos usuários, servindo como base para as próximas iterações e desenvolvimento de funcionalidades adicionais.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.tabs.link", "header.autohide", "navigation.instant", "navigation.top", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+    
+  </body>
+</html>
