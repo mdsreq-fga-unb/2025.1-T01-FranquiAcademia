@@ -2,15 +2,135 @@
 
 <!--
 a talda Explicar o que é o backlog) - falta
+criar epicos - falta
+temas - falta
+user stories - falta
 explicar metodologia - check
 aplicar a metodologia - check
 validar mvp - falta
 -->
 
+### Backlog 
 
-# Critérios de Priorização
+O **backlog** representa uma lista dinâmica e priorizada de tudo o que precisa ser construído para o seu produto. Ele serve como um **plano de trabalho vivo** para a equipe de desenvolvimento, abrangendo desde novas funcionalidades até melhorias e correções de bugs. Essa lista está em constante **evolução**, refletindo o crescimento do produto e o surgimento de novas necessidades, garantindo que a equipe esteja sempre focada nas **prioridades e objetivos do projeto**.
 
-## MoSCoW
+Dentro do backlog, as **Histórias de Usuário (User Stories)** são elementos cruciais. Elas descrevem as necessidades dos usuários finais de maneira **simples e direta**, permitindo que toda a equipe compreenda o **valor** de cada funcionalidade. Uma User Story é estruturada para responder a três perguntas fundamentais: **quem** é o usuário, **o que** ele deseja fazer e **qual o benefício** dessa ação. Esse formato mantém o foco nas **necessidades do usuário**, incentivando a criação de soluções que realmente agregam valor ao produto.
+
+Para descrever uma História de Usuário de forma eficaz, siga a estrutura: **"Eu, como [tipo de usuário], quero [ação que desejo realizar], para que [benefício ou valor que obtenho com essa ação]."**
+
+Por exemplo: "Eu, como cliente, quero poder filtrar as aulas por horário, para encontrar rapidamente as opções que se encaixam na minha rotina."
+
+Histórias de Usuário mais complexas ou que abrangem diversas funcionalidades são agrupadas em **Épicos**. Um épico é uma descrição de uma **necessidade de grande escala**, que será posteriormente **dividida em histórias menores e mais detalhadas**. Esse processo ajuda a equipe a entender a dimensão do projeto e a planejar o desenvolvimento em partes **mais gerenciáveis e priorizáveis**. Os épicos podem ser definidos com base nas principais funcionalidades ou nos objetivos do produto, e cada um se desdobra em várias histórias de usuário que detalham as tarefas específicas.
+
+Os **Temas**, por sua vez, funcionam como **agrupamentos de histórias e épicos** que compartilham um **propósito ou objetivo comum** dentro do produto. Eles são úteis para **organizar o backlog** em seções que representam áreas ou funcionalidades do sistema, facilitando a priorização do desenvolvimento de acordo com as **metas do projeto**. Diferente dos épicos, que geralmente têm um escopo mais limitado, os temas são mais amplos e podem englobar múltiplos épicos e histórias de usuário, fornecendo uma **visão geral das grandes áreas do produto**.
+
+#### Temas
+
+* **TM01: Gestão de Usuários e Acesso**
+    * Objetivo: Permitir o gerenciamento de contas de usuários de forma segura e eficiente.
+* **TM02: Gestão de Aulas e Reservas**
+    * Objetivo: Facilitar a visualização e o gerenciamento das aulas e reservas pelos usuários.
+* **TM03: Comunicação Automatizada**
+    * Objetivo: Automatizar a comunicação com os usuários para melhorar o engajamento e a retenção.
+* **TM04: Análise de Dados e Dashboards**
+    * Objetivo: Fornecer ferramentas para a análise de dados e visualização de informações relevantes para a gestão.
+
+#### Épicos
+
+* **EP01: Gerenciamento de Contas de Usuário**
+    * Descrição: Permitir a criação, edição e autenticação de contas de usuários no sistema.
+    * Tema: TM01
+* **EP02: Visualização e Filtragem de Aulas**
+    * Descrição: Permitir que os usuários visualizem a lista de aulas disponíveis e as filtrem por critérios relevantes.
+    * Tema: TM02
+* **EP03: Visualização e Filtragem de Reservas**
+    * Descrição: Permitir que os usuários visualizem suas reservas e as filtrem por critérios relevantes.
+    * Tema: TM02
+* **EP04: Automação de Envio de Mensagens**
+    * Descrição: Implementar a capacidade de enviar mensagens automáticas aos usuários com base em regras definidas.
+    * Tema: TM03
+* **EP05: Criação e Gestão de Mensagens Automatizadas**
+    * Descrição: Permitir a criação, edição, listagem, ativação e inativação de mensagens automatizadas.
+    * Tema: TM03
+* **EP06: Gestão de Regras de Envio**
+    * Descrição: Permitir a criação, edição e exclusão de regras que determinam o envio de mensagens automatizadas.
+    * Tema: TM03
+* **EP07: Criação e Visualização de Dashboards de Análise**
+    * Descrição: Implementar a criação e visualização de painéis para análise de dados relevantes.
+    * Tema: TM04
+* **EP08: Gestão de Filtros de Dashboard**
+    * Descrição: Permitir a criação, edição e listagem de filtros para os dados exibidos nos dashboards.
+    * Tema: TM04
+* **EP09: Interação com Dashboards**
+    * Descrição: Permitir a filtragem, favoritar e exportação dos dados dos dashboards.
+    * Tema: TM04
+* **EP10: Exportação de Dados da Plataforma**
+    * Descrição: Permitir a exportação dos dados brutos da plataforma em formatos comuns.
+    * Tema: TM04
+
+### User Stories
+
+**Épico: Gerenciamento de Contas de Usuário (EP01)**
+
+* **US01:** Eu, como novo usuário, quero me cadastrar no sistema, para que eu possa acessar as funcionalidades da plataforma. (RF01)
+* **US02:** Eu, como usuário existente, quero editar minhas informações de cadastro, para manter meus dados atualizados. (RF02)
+* **US03:** Eu, como usuário cadastrado, quero realizar login no sistema, para acessar minhas aulas e reservas. (RF03)
+
+**Épico: Visualização e Filtragem de Aulas (EP02)**
+
+* **US04:** Eu, como usuário, quero visualizar a lista de aulas disponíveis, para escolher as que me interessam. (RF04)
+* **US05:** Eu, como usuário, quero filtrar a lista de aulas por data, para encontrar aulas em dias específicos. (RF05)
+* **US06:** Eu, como usuário, quero filtrar a lista de aulas por tema, para encontrar aulas do meu interesse. (RF05)
+* **US07:** Eu, como usuário, quero filtrar a lista de aulas por instrutor, para encontrar aulas com meu instrutor preferido. (RF05)
+
+**Épico: Visualização e Filtragem de Reservas (EP03)**
+
+* **US08:** Eu, como usuário, quero visualizar minhas reservas de aulas, para acompanhar meus agendamentos. (RF06)
+* **US09:** Eu, como usuário, quero filtrar minhas reservas por data, para encontrar reservas em um período específico. (RF07)
+
+**Épico: Automação de Envio de Mensagens (EP04)**
+
+* **US10:** Eu, como gestor, quero que o sistema envie mensagens automáticas para os usuários, para melhorar a comunicação. (RF08)
+
+**Épico: Criação e Gestão de Mensagens Automatizadas (EP05)**
+
+* **US11:** Eu, como gestor, quero criar novas mensagens automatizadas, para comunicar informações importantes aos usuários. (RF09)
+* **US12:** Eu, como gestor, quero editar mensagens automatizadas existentes, para manter a comunicação atualizada. (RF10)
+* **US13:** Eu, como gestor, quero apagar mensagens automatizadas, para remover comunicações desnecessárias. (RF11)
+* **US14:** Eu, como gestor, quero listar todas as mensagens automatizadas, para ter uma visão geral das comunicações configuradas. (RF12)
+* **US15:** Eu, como gestor, quero ativar mensagens automatizadas, para iniciar o envio de comunicações específicas. (RF13)
+* **US16:** Eu, como gestor, quero inativar mensagens automatizadas, para pausar o envio de comunicações específicas. (RF13)
+
+**Épico: Gestão de Regras de Envio (EP06)**
+
+* **US17:** Eu, como gestor, quero criar regras de envio para mensagens automatizadas, para definir quando as comunicações devem ser enviadas. (RF14)
+* **US18:** Eu, como gestor, quero editar regras de envio existentes, para ajustar as condições de envio das mensagens. (RF15)
+* **US19:** Eu, como gestor, quero apagar regras de envio, para remover condições de envio desnecessárias. (RF16)
+
+**Épico: Criação e Visualização de Dashboards de Análise (EP07)**
+
+* **US20:** Eu, como gestor, quero criar dashboards de análise de dados, para visualizar informações importantes sobre o negócio. (RF17)
+
+**Épico: Gestão de Filtros de Dashboard (EP08)**
+
+* **US21:** Eu, como gestor, quero criar filtros para os dados do dashboard, para analisar informações específicas. (RF18)
+* **US22:** Eu, como gestor, quero editar filtros existentes nos dashboards, para ajustar a análise de dados. (RF19)
+* **US23:** Eu, como gestor, quero listar os filtros disponíveis para os dashboards, para saber como posso analisar os dados. (RF20)
+
+**Épico: Interação com Dashboards (EP09)**
+
+* **US24:** Eu, como gestor, quero filtrar os dados dos dashboards, para visualizar informações específicas. (RF21)
+* **US25:** Eu, como gestor, quero favoritar dashboards de análise, para acessar rapidamente as informações mais importantes. (RF22)
+* **US26:** Eu, como gestor, quero exportar os dashboards, para compartilhar as análises com outras pessoas. (RF23)
+
+**Épico: Exportação de Dados da Plataforma (EP10)**
+
+* **US27:** Eu, como administrador, quero exportar os dados da plataforma original, para realizar análises mais detalhadas externamente. (RF24)
+
+
+## Critérios de Priorização
+
+### MoSCoW
 
 O **MoSCoW** é usado para coletar a percepção de importância do cliente, informando o **valor do negócio** sobre cada item (requisito, funcionalidade, etc.). Essa prioridade qualitativa é convertida em números para compor os elementos da fórmula do **WSJF**, enquanto os outros fatores da fórmula são estimados pela equipe.
 
@@ -37,47 +157,66 @@ O **MoSCoW** é usado para coletar a percepção de importância do cliente, inf
   (5 = pouco arriscado / 1 = muito arriscado)
 - **Tamanho do Trabalho**: Estimativa em dias para a conclusão da tarefa
 
+
+
+
 ### Fórmula:
 
 WSJF = (Valor do Negócio + Urgência + Redução de Risco) / Tamanho do Trabalho
 
 > Quanto maior o WSJF, maior a prioridade do requisito.
 
-
 # Priorização de Requisitos com WSJF
 
-| ID   | TÍTULO                                       | MoSCoW | Valor (MoSCoW) | Urgência | Redução de Risco | Tamanho do Trabalho (dias) | WSJF  | MVP |
-|------|----------------------------------------------|--------|----------------|----------|-----------------|-----------------------------|-------|-----|
-| RF01 | Cadastrar usuários                           | M      | 4              | 5        | 2               | 5                           | 2.20  | X   |
-| RF02 | Editar usuários                              | M      | 4              | 4        | 3               | 3                           | 3.67  | X   |
-| RF03 | Realizar login                               | M      | 4              | 5        | 1               | 3                           | 3.33  | X   |
-| RF04 | Listar Aulas                                 | S      | 3              | 3        | 3               | 4                           | 2.25  |     |
-| RF05 | Filtrar Aulas                                | S      | 3              | 3        | 4               | 5                           | 2.00  |     |
-| RF06 | Listar Reservas                              | S      | 3              | 3        | 3               | 4                           | 2.25  |     |
-| RF07 | Filtrar Reservas                             | S      | 3              | 3        | 4               | 5                           | 2.00  |     |
-| RF08 | Enviar Mensagens Automatizadas               | M      | 4              | 4        | 3               | 5                           | 2.20  | X   |
-| RF09 | Criar Mensagens Automatizadas                | M      | 4              | 4        | 3               | 5                           | 2.20  | X   |
-| RF10 | Editar Mensagens Automatizadas               | S      | 3              | 3        | 4               | 3                           | 3.33  |     |
-| RF11 | Apagar Mensagens Automatizadas               | M      | 4              | 3        | 4               | 2                           | 5.50  | X   |
-| RF12 | Listar Mensagens Automatizadas               | M      | 4              | 4        | 3               | 3                           | 3.67  | X   |
-| RF13 | Ativar ou Inativar Mensagens Automatizadas   | C      | 2              | 2        | 4               | 3                           | 2.67  |     |
-| RF14 | Criar Regras de Envio                         | S      | 3              | 3        | 3               | 5                           | 1.80  |     |
-| RF15 | Editar Regras de Envio                        | C      | 2              | 2        | 4               | 3                           | 2.67  |     |
-| RF16 | Apagar Regras de Envio                       | S      | 3              | 3        | 4               | 3                           | 3.33  |     |
-| RF17 | Criar Dashboard de Análise de dados          | M      | 4              | 4        | 2               | 8                           | 1.25  | X   |
-| RF18 | Criar filtros para dados do dashboard         | S      | 3              | 3        | 3               | 5                           | 1.80  |     |
-| RF19 | Editar filtros para dados do dashboard        | C      | 2              | 2        | 4               | 3                           | 2.67  |     |
-| RF20 | Listar filtros para dados do dashboard        | S      | 3              | 3        | 3               | 3                           | 3.00  |     |
-| RF21 | Filtrar dados de Dashboards                  | M      | 4              | 4        | 2               | 5                           | 2.00  | X   |
-| RF22 | Favoritar Dashboards de análises de dado     | C      | 2              | 2        | 4               | 3                           | 2.67  |     |
-| RF23 | Exportar Dashboards                          | C      | 2              | 3        | 4               | 5                           | 1.80  |     |
-| RF24 | Exportar Dados da Plataforma Original        | C      | 2              | 3        | 3               | 5                           | 1.60  |     |
+| ID    | TÍTULO                                       | MoSCoW | Urgência | Redução de Risco | WSJF  | MVP |
+|-------|----------------------------------------------|--------|----------|-----------------|-------|-----|
+| RF01  | Cadastrar usuários                           | M      | 5        | 2               | 2.20  | X   |
+| RF02  | Editar usuários                              | M      | 4        | 3               | 3.67  | X   |
+| RF03  | Realizar login                               | M      | 5        | 1               | 3.33  | X   |
+| RF04  | Listar Aulas                                 | S      | 3        | 3               | 2.25  |     |
+| RF05  | Filtrar Aulas                                | S      | 3        | 4               | 2.00  |     |
+| RF06  | Listar Reservas                              | S      | 3        | 3               | 2.25  |     |
+| RF07  | Filtrar Reservas                             | S      | 3        | 4               | 2.00  |     |
+| RF08  | Enviar Mensagens Automatizadas               | M      | 4        | 3               | 2.20  | X   |
+| RF09  | Criar Mensagens Automatizadas                | M      | 4        | 3               | 2.20  | X   |
+| RF10  | Editar Mensagens Automatizadas               | S      | 3        | 4               | 3.33  |     |
+| RF11  | Apagar Mensagens Automatizadas               | M      | 3        | 4               | 5.50  | X   |
+| RF12  | Listar Mensagens Automatizadas               | M      | 4        | 3               | 3.67  | X   |
+| RF13  | Ativar ou Inativar Mensagens Automatizadas   | C      | 2        | 4               | 2.67  |     |
+| RF14  | Criar Regras de Envio                         | S      | 3        | 3               | 1.80  |     |
+| RF15  | Editar Regras de Envio                        | C      | 2        | 4               | 2.67  |     |
+| RF16  | Apagar Regras de Envio                       | S      | 3        | 4               | 3.33  |     |
+| RF17  | Criar Dashboard de Análise de dados          | M      | 4        | 2               | 1.25  | X   |
+| RF18  | Criar filtros para dados do dashboard         | S      | 3        | 3               | 1.80  |     |
+| RF19  | Editar filtros para dados do dashboard        | C      | 2        | 4               | 2.67  |     |
+| RF20  | Listar filtros para dados do dashboard        | S      | 3        | 3               | 3.00  |     |
+| RF21  | Filtrar dados de Dashboards                  | M      | 4        | 2               | 2.00  | X   |
+| RF22  | Favoritar Dashboards de análises de dado     | C      | 2        | 4               | 2.67  |     |
+| RF23  | Exportar Dashboards                          | C      | 3        | 4               | 1.80  |     |
+| RF24  | Exportar Dados da Plataforma Original        | C      | 3        | 3               | 1.60  |     |
 
 
+## MVP (Minimum Viable Product)
 
+O MVP (Produto Mínimo Viável) representa a versão inicial do sistema com as funcionalidades essenciais para atender às necessidades primárias dos usuários e validar as hipóteses do projeto. A seleção dos requisitos para o MVP foi baseada na priorização **MoSCoW**, incluindo os itens classificados como **"Must Have"** (M).
 
+Os seguintes requisitos funcionais compõem o MVP:
 
+* **RF01: Cadastrar usuários:** Permitir que novos usuários criem suas contas no sistema.
+* **RF02: Editar usuários:** Permitir que os usuários editem suas informações de perfil.
+* **RF03: Realizar login:** Permitir que usuários autenticados acessem o sistema.
+* **RF08: Enviar Mensagens Automatizadas:** Implementar a funcionalidade básica de envio de mensagens automáticas.
+* **RF09: Criar Mensagens Automatizadas:** Permitir a criação de modelos de mensagens automatizadas.
+* **RF11: Apagar Mensagens Automatizadas:** Permitir a exclusão de mensagens automatizadas.
+* **RF12: Listar Mensagens Automatizadas:** Exibir a lista de mensagens automatizadas configuradas.
+* **RF17: Criar Dashboard de Análise de dados:** Implementar a estrutura básica de um dashboard para visualização de dados.
+* **RF21: Filtrar dados de Dashboards:** Permitir a aplicação de filtros básicos nos dashboards.
 
+Os seguintes requisitos não funcionais também serão considerados no MVP para garantir uma experiência básica de qualidade:
 
+* **RNF02: Tempo de resposta para listagem de aulas e reservas:** As listagens devem carregar dentro de um tempo aceitável para uma boa experiência inicial.
+* **RNF06: Capacidade de usuários simultâneos autenticados:** O sistema deve suportar um número razoável de usuários para os testes iniciais e lançamento.
+* **RNF07: Segurança das senhas de usuários e administradores:** As senhas devem ser armazenadas de forma segura desde o início.
+* **RNF08: Backup dos dados transacionais e de análise:** Implementar um sistema de backup básico para evitar perda de dados críticos.
 
-
+O foco do MVP é entregar um produto funcional que permita a validação das principais funcionalidades e a coleta de feedback inicial dos usuários, servindo como base para as próximas iterações e desenvolvimento de funcionalidades adicionais.
