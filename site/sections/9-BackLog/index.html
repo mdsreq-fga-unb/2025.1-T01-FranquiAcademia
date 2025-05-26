@@ -12,7 +12,7 @@
         <link rel="prev" href="../8-DoR_DoD/">
       
       
-        <link rel="next" href="../../entregas/1/">
+        <link rel="next" href="../10-engineering_requirements/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -613,7 +613,7 @@
           <li class="md-nav__item">
   <a href="#fatores-avaliados" class="md-nav__link">
     <span class="md-ellipsis">
-      Fatores avaliados:
+      Fatores Avaliados:
     </span>
   </a>
   
@@ -661,6 +661,27 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-engineering_requirements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Engenharia de Requisitos
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -875,7 +896,7 @@
           <li class="md-nav__item">
   <a href="#fatores-avaliados" class="md-nav__link">
     <span class="md-ellipsis">
-      Fatores avaliados:
+      Fatores Avaliados:
     </span>
   </a>
   
@@ -1087,7 +1108,7 @@ validar mvp - falta
 </ul>
 <h2 id="criterios-de-priorizacao">Critérios de Priorização</h2>
 <h3 id="moscow">MoSCoW</h3>
-<p>O <strong>MoSCoW</strong> é usado para coletar a percepção de importância do cliente, informando o <strong>valor do negócio</strong> sobre cada item (requisito, funcionalidade, etc.). Essa prioridade qualitativa é convertida em números para compor os elementos da fórmula do <strong>WSJF</strong>, enquanto os outros fatores da fórmula são estimados pela equipe.</p>
+<p>O <strong>MoSCoW</strong> é uma técnica utilizada para categorizar a importância de cada item (requisito, funcionalidade) sob a perspectiva do cliente, informando o <strong>valor de negócio</strong>. Essa priorização qualitativa é convertida em valores numéricos que serão utilizados na fórmula do <strong>WSJF</strong>, enquanto os demais fatores da fórmula são estimados pela equipe de desenvolvimento.</p>
 <p><strong>MoSCoW</strong> é um acrônimo que representa quatro níveis de prioridade:</p>
 <table>
 <thead>
@@ -1101,275 +1122,287 @@ validar mvp - falta
 <tbody>
 <tr>
 <td>M</td>
-<td>Must have</td>
-<td>Requisitos obrigatórios para o sistema funcionar. Sem eles, o projeto falha.</td>
+<td><strong>Must have</strong></td>
+<td>Requisitos <strong>obrigatórios</strong> para o funcionamento do sistema. Sem eles, o projeto é considerado um fracasso.</td>
 <td>4</td>
 </tr>
 <tr>
 <td>S</td>
-<td>Should have</td>
-<td>Requisitos importantes, mas não vitais. Podem ser adiados, se necessário.</td>
+<td><strong>Should have</strong></td>
+<td>Requisitos <strong>importantes</strong>, mas não cruciais. Podem ser adiados se houver necessidade.</td>
 <td>3</td>
 </tr>
 <tr>
 <td>C</td>
-<td>Could have</td>
-<td>Requisitos desejáveis, que agregam valor, mas são opcionais.</td>
+<td><strong>Could have</strong></td>
+<td>Requisitos <strong>desejáveis</strong> que agregam valor ao produto, mas são opcionais.</td>
 <td>2</td>
 </tr>
 <tr>
 <td>W</td>
-<td>Won’t have (this time)</td>
-<td>Requisitos que não serão incluídos na entrega atual, mas podem ser considerados futuramente.</td>
+<td><strong>Won’t have (this time)</strong></td>
+<td>Requisitos que <strong>não serão incluídos</strong> na entrega atual, mas poderão ser considerados em futuras iterações.</td>
 <td>1</td>
 </tr>
 </tbody>
 </table>
 <hr />
 <h2 id="wsjf-weighted-shortest-job-first">WSJF (Weighted Shortest Job First)</h2>
-<p><strong>WSJF</strong> é uma técnica utilizada para priorizar funcionalidades com base na relação entre o <strong>valor entregue</strong> e o <strong>esforço necessário</strong> para implementá-las.</p>
-<h3 id="fatores-avaliados">Fatores avaliados:</h3>
+<p>O <strong>WSJF</strong> é um método empregado para priorizar funcionalidades com base na relação entre o <strong>valor a ser entregue</strong> e o <strong>esforço necessário</strong> para sua implementação.</p>
+<h3 id="fatores-avaliados">Fatores Avaliados:</h3>
 <ul>
-<li><strong>Valor do Negócio</strong>: Peso derivado da priorização MoSCoW (de 1 a 4)</li>
-<li><strong>Urgência</strong>: Avaliação de quão urgente é a entrega da funcionalidade (1 a 5)</li>
-<li><strong>Redução de Risco</strong>: Quanto a funcionalidade ajuda a reduzir riscos (1 a 5)<br />
-  (5 = pouco arriscado / 1 = muito arriscado)</li>
-<li><strong>Tamanho do Trabalho</strong>: Estimativa em dias para a conclusão da tarefa</li>
+<li><strong>Valor do Negócio</strong>: Pontuação derivada da priorização MoSCoW (escala de 1 a 4).</li>
+<li><strong>Urgência</strong>: Avaliação da <strong>criticidade temporal</strong> da entrega da funcionalidade (escala de 1 a 5).<ul>
+<li><strong>1 (Muito Urgente):</strong> A funcionalidade precisa ser entregue o mais rápido possível para evitar perdas significativas ou aproveitar uma oportunidade imediata.</li>
+<li><strong>2 (Urgente):</strong> A entrega da funcionalidade é importante e deve ser priorizada logo após os itens muito urgentes.</li>
+<li><strong>3 (Média Urgência):</strong> A funcionalidade pode ser entregue em um prazo razoável, sem impacto imediato crítico.</li>
+<li><strong>4 (Pouco Urgente):</strong> A entrega da funcionalidade pode ser planejada para um momento posterior, sem grande impacto.</li>
+<li><strong>5 (Não Urgente):</strong> A entrega da funcionalidade pode ser adiada significativamente ou até mesmo reconsiderada.</li>
+</ul>
+</li>
+<li><strong>Redução de Risco</strong>: Avaliação de como a funcionalidade contribui para <strong>mitigar riscos</strong> do projeto (escala de 1 a 5).<ul>
+<li><strong>5 (Baixa Redução de Risco):</strong> A funcionalidade tem pouco ou nenhum impacto na redução de riscos do projeto.</li>
+<li><strong>4 (Baixa a Média Redução de Risco):</strong> A funcionalidade oferece uma pequena contribuição para a redução de riscos.</li>
+<li><strong>3 (Média Redução de Risco):</strong> A funcionalidade contribui moderadamente para a redução de riscos.</li>
+<li><strong>2 (Média a Alta Redução de Risco):</strong> A funcionalidade é importante para mitigar riscos significativos.</li>
+<li><strong>1 (Alta Redução de Risco):</strong> A funcionalidade é crucial para evitar ou mitigar riscos críticos que podem impactar severamente o projeto.</li>
+</ul>
+</li>
 </ul>
 <h3 id="formula">Fórmula:</h3>
-<p>WSJF = (Valor do Negócio + Urgência + Redução de Risco) / Tamanho do Trabalho</p>
+<p><code>WSJF = (Valor do Negócio + Urgência + Redução de Risco) / Tamanho do Trabalho</code></p>
 <blockquote>
-<p>Quanto maior o WSJF, maior a prioridade do requisito.</p>
+<p>Quanto maior o valor do WSJF, maior a prioridade do requisito.</p>
 </blockquote>
 <h1 id="priorizacao-de-requisitos-com-wsjf">Priorização de Requisitos com WSJF</h1>
 <table>
 <thead>
 <tr>
-<th>ID</th>
-<th>TÍTULO</th>
-<th>MoSCoW</th>
-<th>Urgência</th>
-<th>Redução de Risco</th>
-<th>WSJF</th>
-<th>MVP</th>
+<th style="text-align: left;">ID</th>
+<th style="text-align: left;">TÍTULO</th>
+<th style="text-align: left;">MoSCoW</th>
+<th style="text-align: left;">Urgência</th>
+<th style="text-align: left;">Redução de Risco</th>
+<th style="text-align: left;">WSJF</th>
+<th style="text-align: left;">MVP</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>RF01</td>
-<td>Cadastrar usuários</td>
-<td>M</td>
-<td>5</td>
-<td>2</td>
-<td>2.20</td>
-<td>X</td>
+<td style="text-align: left;">RF01</td>
+<td style="text-align: left;">Cadastrar usuários</td>
+<td style="text-align: left;">M</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">2.20</td>
+<td style="text-align: left;">X</td>
 </tr>
 <tr>
-<td>RF02</td>
-<td>Editar usuários</td>
-<td>M</td>
-<td>4</td>
-<td>3</td>
-<td>3.67</td>
-<td>X</td>
+<td style="text-align: left;">RF02</td>
+<td style="text-align: left;">Editar usuários</td>
+<td style="text-align: left;">M</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">3.67</td>
+<td style="text-align: left;">X</td>
 </tr>
 <tr>
-<td>RF03</td>
-<td>Realizar login</td>
-<td>M</td>
-<td>5</td>
-<td>1</td>
-<td>3.33</td>
-<td>X</td>
+<td style="text-align: left;">RF03</td>
+<td style="text-align: left;">Realizar login</td>
+<td style="text-align: left;">M</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">3.33</td>
+<td style="text-align: left;">X</td>
 </tr>
 <tr>
-<td>RF04</td>
-<td>Listar Aulas</td>
-<td>S</td>
-<td>3</td>
-<td>3</td>
-<td>2.25</td>
-<td></td>
+<td style="text-align: left;">RF04</td>
+<td style="text-align: left;">Listar Aulas</td>
+<td style="text-align: left;">S</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">2.25</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td>RF05</td>
-<td>Filtrar Aulas</td>
-<td>S</td>
-<td>3</td>
-<td>4</td>
-<td>2.00</td>
-<td></td>
+<td style="text-align: left;">RF05</td>
+<td style="text-align: left;">Filtrar Aulas</td>
+<td style="text-align: left;">S</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">2.00</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td>RF06</td>
-<td>Listar Reservas</td>
-<td>S</td>
-<td>3</td>
-<td>3</td>
-<td>2.25</td>
-<td></td>
+<td style="text-align: left;">RF06</td>
+<td style="text-align: left;">Listar Reservas</td>
+<td style="text-align: left;">S</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">2.25</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td>RF07</td>
-<td>Filtrar Reservas</td>
-<td>S</td>
-<td>3</td>
-<td>4</td>
-<td>2.00</td>
-<td></td>
+<td style="text-align: left;">RF07</td>
+<td style="text-align: left;">Filtrar Reservas</td>
+<td style="text-align: left;">S</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">2.00</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td>RF08</td>
-<td>Enviar Mensagens Automatizadas</td>
-<td>M</td>
-<td>4</td>
-<td>3</td>
-<td>2.20</td>
-<td>X</td>
+<td style="text-align: left;">RF08</td>
+<td style="text-align: left;">Enviar Mensagens Automatizadas</td>
+<td style="text-align: left;">M</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">2.20</td>
+<td style="text-align: left;">X</td>
 </tr>
 <tr>
-<td>RF09</td>
-<td>Criar Mensagens Automatizadas</td>
-<td>M</td>
-<td>4</td>
-<td>3</td>
-<td>2.20</td>
-<td>X</td>
+<td style="text-align: left;">RF09</td>
+<td style="text-align: left;">Criar Mensagens Automatizadas</td>
+<td style="text-align: left;">M</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">2.20</td>
+<td style="text-align: left;">X</td>
 </tr>
 <tr>
-<td>RF10</td>
-<td>Editar Mensagens Automatizadas</td>
-<td>S</td>
-<td>3</td>
-<td>4</td>
-<td>3.33</td>
-<td></td>
+<td style="text-align: left;">RF10</td>
+<td style="text-align: left;">Editar Mensagens Automatizadas</td>
+<td style="text-align: left;">S</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">3.33</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td>RF11</td>
-<td>Apagar Mensagens Automatizadas</td>
-<td>M</td>
-<td>3</td>
-<td>4</td>
-<td>5.50</td>
-<td>X</td>
+<td style="text-align: left;">RF11</td>
+<td style="text-align: left;">Apagar Mensagens Automatizadas</td>
+<td style="text-align: left;">M</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">5.50</td>
+<td style="text-align: left;">X</td>
 </tr>
 <tr>
-<td>RF12</td>
-<td>Listar Mensagens Automatizadas</td>
-<td>M</td>
-<td>4</td>
-<td>3</td>
-<td>3.67</td>
-<td>X</td>
+<td style="text-align: left;">RF12</td>
+<td style="text-align: left;">Listar Mensagens Automatizadas</td>
+<td style="text-align: left;">M</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">3.67</td>
+<td style="text-align: left;">X</td>
 </tr>
 <tr>
-<td>RF13</td>
-<td>Ativar ou Inativar Mensagens Automatizadas</td>
-<td>C</td>
-<td>2</td>
-<td>4</td>
-<td>2.67</td>
-<td></td>
+<td style="text-align: left;">RF13</td>
+<td style="text-align: left;">Ativar ou Inativar Mensagens Automatizadas</td>
+<td style="text-align: left;">C</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">2.67</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td>RF14</td>
-<td>Criar Regras de Envio</td>
-<td>S</td>
-<td>3</td>
-<td>3</td>
-<td>1.80</td>
-<td></td>
+<td style="text-align: left;">RF14</td>
+<td style="text-align: left;">Criar Regras de Envio</td>
+<td style="text-align: left;">S</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">1.80</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td>RF15</td>
-<td>Editar Regras de Envio</td>
-<td>C</td>
-<td>2</td>
-<td>4</td>
-<td>2.67</td>
-<td></td>
+<td style="text-align: left;">RF15</td>
+<td style="text-align: left;">Editar Regras de Envio</td>
+<td style="text-align: left;">C</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">2.67</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td>RF16</td>
-<td>Apagar Regras de Envio</td>
-<td>S</td>
-<td>3</td>
-<td>4</td>
-<td>3.33</td>
-<td></td>
+<td style="text-align: left;">RF16</td>
+<td style="text-align: left;">Apagar Regras de Envio</td>
+<td style="text-align: left;">S</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">3.33</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td>RF17</td>
-<td>Criar Dashboard de Análise de dados</td>
-<td>M</td>
-<td>4</td>
-<td>2</td>
-<td>1.25</td>
-<td>X</td>
+<td style="text-align: left;">RF17</td>
+<td style="text-align: left;">Criar Dashboard de Análise de dados</td>
+<td style="text-align: left;">M</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">1.25</td>
+<td style="text-align: left;">X</td>
 </tr>
 <tr>
-<td>RF18</td>
-<td>Criar filtros para dados do dashboard</td>
-<td>S</td>
-<td>3</td>
-<td>3</td>
-<td>1.80</td>
-<td></td>
+<td style="text-align: left;">RF18</td>
+<td style="text-align: left;">Criar filtros para dados do dashboard</td>
+<td style="text-align: left;">S</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">1.80</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td>RF19</td>
-<td>Editar filtros para dados do dashboard</td>
-<td>C</td>
-<td>2</td>
-<td>4</td>
-<td>2.67</td>
-<td></td>
+<td style="text-align: left;">RF19</td>
+<td style="text-align: left;">Editar filtros para dados do dashboard</td>
+<td style="text-align: left;">C</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">2.67</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td>RF20</td>
-<td>Listar filtros para dados do dashboard</td>
-<td>S</td>
-<td>3</td>
-<td>3</td>
-<td>3.00</td>
-<td></td>
+<td style="text-align: left;">RF20</td>
+<td style="text-align: left;">Listar filtros para dados do dashboard</td>
+<td style="text-align: left;">S</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">3.00</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td>RF21</td>
-<td>Filtrar dados de Dashboards</td>
-<td>M</td>
-<td>4</td>
-<td>2</td>
-<td>2.00</td>
-<td>X</td>
+<td style="text-align: left;">RF21</td>
+<td style="text-align: left;">Filtrar dados de Dashboards</td>
+<td style="text-align: left;">M</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">2.00</td>
+<td style="text-align: left;">X</td>
 </tr>
 <tr>
-<td>RF22</td>
-<td>Favoritar Dashboards de análises de dado</td>
-<td>C</td>
-<td>2</td>
-<td>4</td>
-<td>2.67</td>
-<td></td>
+<td style="text-align: left;">RF22</td>
+<td style="text-align: left;">Favoritar Dashboards de análises de dado</td>
+<td style="text-align: left;">C</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">2.67</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td>RF23</td>
-<td>Exportar Dashboards</td>
-<td>C</td>
-<td>3</td>
-<td>4</td>
-<td>1.80</td>
-<td></td>
+<td style="text-align: left;">RF23</td>
+<td style="text-align: left;">Exportar Dashboards</td>
+<td style="text-align: left;">C</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">1.80</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td>RF24</td>
-<td>Exportar Dados da Plataforma Original</td>
-<td>C</td>
-<td>3</td>
-<td>3</td>
-<td>1.60</td>
-<td></td>
+<td style="text-align: left;">RF24</td>
+<td style="text-align: left;">Exportar Dados da Plataforma Original</td>
+<td style="text-align: left;">C</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">1.60</td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
