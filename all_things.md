@@ -88,125 +88,29 @@ Esforço
 Dependência
 Priorização
 RF01. Cadastrar usuários
-4
-2
-2
-16
 RF02. Editar usuários
-4
-2
-1
-15
 RF03. Realizar login
-4
-2
-1
-15
 RF04. Listar Aulas
-2
-1
-2
-9
 RF05. Filtrar Aulas
-2
-2
-1
-9
 RF06. Listar Reservas
-2
-1
-2
-9
 RF07. Filtrar Reservas
-2
-2
-1
-7
 RF08. Enviar Mensagens Automatizadas
-4
-3
-2
-15
 RF09. Criar Mensagens Automatizadas
-4
-2
-3
-17
 RF10. Editar Mensagens Automatizadas
-3
-2
-2
-12
 RF11. Apagar Mensagens Automatizadas
-4
-1
-1
-16
 RF12. Listar Mensagens Automatizadas
-4
-1
-1
-16
 RF13. Ativar ou Inativar Mensagens Automatizadas
-2
-2
-1
-7
 RF14. Criar Regras de Envio
-3
-3
-3
-12
 RF15. Editar Regras de Envio
-2
-3
-1
-6
 RF16. Apagar Regras de Envio
-2
-2
-1
-7
 RF17. Criar Dashboard de Análise de dados
-4
-4
-3
-15
 RF18. Criar filtros para dados do dashboard
-2
-3
-2
-7
 RF19. Editar filtros para dados do dashboard
-1
-3
-1
-8
 RF20. Listar filtros para dados do dashboard
-2
-1
-1
-3
 RF21. Filtrar dados de Dashboards
-4
-3
-1
-1
 RF22. Favoritar Dashboards de análises de dado
-1
-2
-1
-15
 RF23. Exportar Dashboards
-1
-4
-1
-1
 RF24. Exportar Dados da Plataforma Original
-4
-4
-3
-15
 
 
 

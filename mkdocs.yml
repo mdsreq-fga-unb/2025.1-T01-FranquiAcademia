@@ -6,16 +6,18 @@ repo_url: https://github.com/mdsreq-fga-unb/2025.1-T01-FranquiAcademia
 nav:
   - Início: index.md
   - Visão do Produto e Projeto:
-    - Cenário Atual do Cliente e Negócio: sections/intro_client.md
-    - Solução Proposta: sections/solution.md
-    - Estratégias de Engenharia de Software: sections/approach.md
-    - Cronograma e Entregas: sections/schedule.md
-    - Interação entre Equipe e Cliente: sections/interection-po.md
-    - Lições Aprendidas: sections/lessons-learned.md
+    - Cenário Atual do Cliente e Negócio: sections/1-intro_client.md
+    - Solução Proposta: sections/2-solution.md
+    - Estratégias de Engenharia de Software: sections/3-approach.md
+    - Cronograma e Entregas: sections/4-schedule.md
+    - Interação entre Equipe e Cliente: sections/5-interection-po.md
+    - Lições Aprendidas: sections/6-lessons-learned.md
+    - Requisitos: sections/7-requirements.md
+    - DoR & DoD: sections/8-DoR&DoD.md
+    - Backlog: sections/9-BackLog.md
   - Entregas:
     - Entrega 1: entregas/1.md
-
-
+    - Entrega 2: entregas/2.md
 
 theme:
   name: material 

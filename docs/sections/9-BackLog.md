@@ -1,5 +1,15 @@
 ## 9 BackLog do Produto
+
 ### 9.1 ...
+
+<!--
+(Explicar o que é o backlog)
+//explicar metodologia
+//aplicar a metodologia
+//validar mvp
+-->
+
+
 # Critérios de Priorização
 
 ## MoSCoW
@@ -43,3 +53,41 @@ WSJF = (Valor do Negócio + Urgência + Redução de Risco) / Tamanho do Trabalh
 |------|------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|------------------|-----|
 | RF01 | Selecionar data e horário para agendamento                             | O sistema deve permitir que o cliente selecione data e horário disponíveis para realizar agendamentos.                                                                                           | M      | 7                | X   |
 |
+
+# Priorização de Requisitos com WSJF
+
+| ID   | TÍTULO                                       | MoSCoW | Valor (MoSCoW) | Urgência | Redução de Risco | Tamanho do Trabalho (dias) | WSJF  | MVP |
+|------|----------------------------------------------|--------|----------------|----------|-----------------|-----------------------------|-------|-----|
+| RF01 | Cadastrar usuários                           | M      | 4              | 5        | 2               | 5                           | 2.20  | X   |
+| RF02 | Editar usuários                              | M      | 4              | 4        | 3               | 3                           | 3.67  | X   |
+| RF03 | Realizar login                               | M      | 4              | 5        | 1               | 3                           | 3.33  | X   |
+| RF04 | Listar Aulas                                 | S      | 3              | 3        | 3               | 4                           | 2.25  |     |
+| RF05 | Filtrar Aulas                                | S      | 3              | 3        | 4               | 5                           | 2.00  |     |
+| RF06 | Listar Reservas                              | S      | 3              | 3        | 3               | 4                           | 2.25  |     |
+| RF07 | Filtrar Reservas                             | S      | 3              | 3        | 4               | 5                           | 2.00  |     |
+| RF08 | Enviar Mensagens Automatizadas               | M      | 4              | 4        | 3               | 5                           | 2.20  | X   |
+| RF09 | Criar Mensagens Automatizadas                | M      | 4              | 4        | 3               | 5                           | 2.20  | X   |
+| RF10 | Editar Mensagens Automatizadas               | S      | 3              | 3        | 4               | 3                           | 3.33  |     |
+| RF11 | Apagar Mensagens Automatizadas               | M      | 4              | 3        | 4               | 2                           | 5.50  | X   |
+| RF12 | Listar Mensagens Automatizadas               | M      | 4              | 4        | 3               | 3                           | 3.67  | X   |
+| RF13 | Ativar ou Inativar Mensagens Automatizadas   | C      | 2              | 2        | 4               | 3                           | 2.67  |     |
+| RF14 | Criar Regras de Envio                         | S      | 3              | 3        | 3               | 5                           | 1.80  |     |
+| RF15 | Editar Regras de Envio                        | C      | 2              | 2        | 4               | 3                           | 2.67  |     |
+| RF16 | Apagar Regras de Envio                       | S      | 3              | 3        | 4               | 3                           | 3.33  |     |
+| RF17 | Criar Dashboard de Análise de dados          | M      | 4              | 4        | 2               | 8                           | 1.25  | X   |
+| RF18 | Criar filtros para dados do dashboard         | S      | 3              | 3        | 3               | 5                           | 1.80  |     |
+| RF19 | Editar filtros para dados do dashboard        | C      | 2              | 2        | 4               | 3                           | 2.67  |     |
+| RF20 | Listar filtros para dados do dashboard        | S      | 3              | 3        | 3               | 3                           | 3.00  |     |
+| RF21 | Filtrar dados de Dashboards                  | M      | 4              | 4        | 2               | 5                           | 2.00  | X   |
+| RF22 | Favoritar Dashboards de análises de dado     | C      | 2              | 2        | 4               | 3                           | 2.67  |     |
+| RF23 | Exportar Dashboards                          | C      | 2              | 3        | 4               | 5                           | 1.80  |     |
+| RF24 | Exportar Dados da Plataforma Original        | C      | 2              | 3        | 3               | 5                           | 1.60  |     |
+
+
+
+
+
+
+
+
+
