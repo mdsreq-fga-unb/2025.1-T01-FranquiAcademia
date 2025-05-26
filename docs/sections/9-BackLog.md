@@ -1,12 +1,10 @@
 ## 9 BackLog do Produto
 
-### 9.1 ...
-
 <!--
-(Explicar o que é o backlog)
-//explicar metodologia
-//aplicar a metodologia
-//validar mvp
+a talda Explicar o que é o backlog) - falta
+explicar metodologia - check
+aplicar a metodologia - check
+validar mvp - falta
 -->
 
 
@@ -45,14 +43,6 @@ WSJF = (Valor do Negócio + Urgência + Redução de Risco) / Tamanho do Trabalh
 
 > Quanto maior o WSJF, maior a prioridade do requisito.
 
----
-
-# BACKLOG 
-
-| ID   | TÍTULO                                                                 | DESCRIÇÃO                                                                                                                                                                                        | MosCow | Priorização WSJF | MVP |
-|------|------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|------------------|-----|
-| RF01 | Selecionar data e horário para agendamento                             | O sistema deve permitir que o cliente selecione data e horário disponíveis para realizar agendamentos.                                                                                           | M      | 7                | X   |
-|
 
 # Priorização de Requisitos com WSJF
 
