@@ -78,3 +78,9 @@ A implementação do sistema trará impactos significativos na gestão da franqu
 - Fortalecimento da imagem da marca por meio da modernização dos serviços.
 
 Esses fatores contribuirão para uma expansão estruturada da franquia.
+
+## Histórico de Versão:
+
+| Data       | Versão | Descrição                | Autor              | Revisores               |
+| :--------- | :----- | :------------------------- | :----------------- | :---------------------- |
+| 22/04/2025 | 1.0    | Criação do Documento     | **Luis Eduardo Lima** | **Isabelle** |

@@ -19,3 +19,12 @@ O projeto DeltaCore seguirá a metodologia ágil DSDM, com entregas incrementais
 -   **Facilitated Workshops:** Sessões colaborativas planejadas no início de fases ou entregas para detalhamento de requisitos e design.
 -   **Reviews de Protótipos/Incrementos:** Demonstrações regulares das entregas ao cliente para obter feedback e garantir o alinhamento com as necessidades.
 -   **Retrospectivas (Adaptado):** Realizadas ao final de entregas significativas ou fases para reflexão da equipe sobre o processo e identificação de melhorias.
+
+
+
+
+## Histórico de Versão:
+
+| Data       | Versão | Descrição                | Autor              | Revisores               |
+| :--------- | :----- | :------------------------- | :----------------- | :---------------------- |
+| 22/04/2025 | 1.0    | Criação do Documento     | **Cibelly** | **Henrique Carvalho** |

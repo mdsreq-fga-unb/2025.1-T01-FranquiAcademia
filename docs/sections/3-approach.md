@@ -48,3 +48,10 @@ O processo de desenvolvimento escolhido é o **DSDM (Dynamic Systems Development
 A escolha do **DSDM (Dynamic Systems Development Method)** como processo de engenharia de software se baseia na sua forte ênfase no envolvimento do usuário, entregas frequentes e no tratamento do tempo, custo e qualidade como restrições fixas. Dada a natureza dinâmica e em crescimento da franquia de academias, a capacidade do DSDM de priorizar requisitos e entregar valor de forma incremental, mantendo o foco nas necessidades do negócio, torna-o uma abordagem bem alinhada com os objetivos do projeto.
 
 O envolvimento contínuo dos stakeholders garantido pelo DSDM facilitará a validação das funcionalidades desenvolvidas, como a automação da comunicação e as ferramentas de análise, assegurando que o sistema atenda às expectativas e necessidades das três franquias. Além disso, a estrutura do DSDM promove uma colaboração eficaz dentro da equipe e uma resposta adaptável às mudanças que possam surgir durante o desenvolvimento.
+
+
+## Histórico de Versão:
+
+| Data       | Versão | Descrição                | Autor              | Revisores               |
+| :--------- | :----- | :------------------------- | :----------------- | :---------------------- |
+| 22/04/2025 | 1.0    | Criação do Documento     | **Eduardo Waski** | **Luis Eduardo Lima** |

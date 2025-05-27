@@ -1,15 +1,5 @@
 ## 9 BackLog do Produto
 
-<!--
-a talda Explicar o que é o backlog) - falta
-criar epicos - falta
-temas - falta
-user stories - falta
-explicar metodologia - check
-aplicar a metodologia - check
-validar mvp - falta
--->
-
 ### Backlog 
 
 O **backlog** representa uma lista dinâmica e priorizada de tudo o que precisa ser construído para o seu produto. Ele serve como um **plano de trabalho vivo** para a equipe de desenvolvimento, abrangendo desde novas funcionalidades até melhorias e correções de bugs. Essa lista está em constante **evolução**, refletindo o crescimento do produto e o surgimento de novas necessidades, garantindo que a equipe esteja sempre focada nas **prioridades e objetivos do projeto**.
@@ -165,41 +155,46 @@ O **WSJF** é um método empregado para priorizar funcionalidades com base na re
     * **2 (Média a Alta Redução de Risco):** A funcionalidade é importante para mitigar riscos significativos.
     * **1 (Alta Redução de Risco):** A funcionalidade é crucial para evitar ou mitigar riscos críticos que podem impactar severamente o projeto.
 
-### Fórmula:
+### Fórmula original:
 
 `WSJF = (Valor do Negócio + Urgência + Redução de Risco) / Tamanho do Trabalho`
+
+Para o contexto da disciplina, onde se consideadaptaremos a fórmula original do WSJF para focar no valor entregue, utilizando a seguinte adaptação.
+
+`WSJF = (Valor do Negócio + Urgência + Redução de Risco)`
 
 > Quanto maior o valor do WSJF, maior a prioridade do requisito.
 
 # Priorização de Requisitos com WSJF
 
-| ID    | TÍTULO                                       | MoSCoW | Urgência | Redução de Risco | WSJF  | MVP |
-| :------ | :------------------------------------------- | :----- | :-------- | :--------------- | :---- | :-- |
-| RF01  | Cadastrar usuários                           | M      | 5         | 2                | 2.20  | X   |
-| RF02  | Editar usuários                              | M      | 4         | 3                | 3.67  | X   |
-| RF03  | Realizar login                               | M      | 5         | 1                | 3.33  | X   |
-| RF04  | Listar Aulas                                 | S      | 3         | 3                | 2.25  |     |
-| RF05  | Filtrar Aulas                                | S      | 3         | 4                | 2.00  |     |
-| RF06  | Listar Reservas                              | S      | 3         | 3                | 2.25  |     |
-| RF07  | Filtrar Reservas                             | S      | 3         | 4                | 2.00  |     |
-| RF08  | Enviar Mensagens Automatizadas               | M      | 4         | 3                | 2.20  | X   |
-| RF09  | Criar Mensagens Automatizadas                | M      | 4         | 3                | 2.20  | X   |
-| RF10  | Editar Mensagens Automatizadas               | S      | 3         | 4                | 3.33  |     |
-| RF11  | Apagar Mensagens Automatizadas               | M      | 3         | 4                | 5.50  | X   |
-| RF12  | Listar Mensagens Automatizadas               | M      | 4         | 3                | 3.67  | X   |
-| RF13  | Ativar ou Inativar Mensagens Automatizadas   | C      | 2         | 4                | 2.67  |     |
-| RF14  | Criar Regras de Envio                         | S      | 3         | 3                | 1.80  |     |
-| RF15  | Editar Regras de Envio                        | C      | 2         | 4                | 2.67  |     |
-| RF16  | Apagar Regras de Envio                       | S      | 3         | 4                | 3.33  |     |
-| RF17  | Criar Dashboard de Análise de dados          | M      | 4         | 2                | 1.25  | X   |
-| RF18  | Criar filtros para dados do dashboard         | S      | 3         | 3                | 1.80  |     |
-| RF19  | Editar filtros para dados do dashboard        | C      | 2         | 4                | 2.67  |     |
-| RF20  | Listar filtros para dados do dashboard        | S      | 3         | 3                | 3.00  |     |
-| RF21  | Filtrar dados de Dashboards                  | M      | 4         | 2                | 2.00  | X   |
-| RF22  | Favoritar Dashboards de análises de dado     | C      | 2         | 4                | 2.67  |     |
-| RF23  | Exportar Dashboards                          | C      | 3         | 4                | 1.80  |     |
-| RF24  | Exportar Dados da Plataforma Original        | C      | 3         | 3                | 1.60  |     |
+### Priorização de Requisitos com WSJF
 
+| ID   | TÍTULO                                      | MoSCoW | Urgência | Redução de Risco | WSJF-DeltaCore | MVP |
+| :----- | :------------------------------------------ | :----- | :------- | :--------------- | :------------- | :-- |
+| RF01 | Cadastrar usuários                          | M      | 5        | 2                | 7              | X   |
+| RF02 | Editar usuários                             | M      | 4        | 3                | 7              | X   |
+| RF03 | Realizar login                              | M      | 5        | 1                | 6              | X   |
+| RF04 | Listar Aulas                                | S      | 3        | 3                | 6              |     |
+| RF05 | Filtrar Aulas                               | S      | 3        | 4                | 7              |     |
+| RF06 | Listar Reservas                             | S      | 3        | 3                | 6              |     |
+| RF07 | Filtrar Reservas                            | S      | 3        | 4                | 7              |     |
+| RF08 | Enviar Mensagens Automatizadas              | M      | 4        | 3                | 7              | X   |
+| RF09 | Criar Mensagens Automatizadas               | M      | 4        | 3                | 7              | X   |
+| RF10 | Editar Mensagens Automatizadas              | S      | 3        | 4                | 7              |     |
+| RF11 | Apagar Mensagens Automatizadas              | M      | 3        | 4                | 7              | X   |
+| RF12 | Listar Mensagens Automatizadas              | M      | 4        | 3                | 7              | X   |
+| RF13 | Ativar ou Inativar Mensagens Automatizadas | C      | 2        | 4                | 6              |     |
+| RF14 | Criar Regras de Envio                      | S      | 3        | 3                | 6              |     |
+| RF15 | Editar Regras de Envio                     | C      | 2        | 4                | 6              |     |
+| RF16 | Apagar Regras de Envio                     | S      | 3        | 4                | 7              |     |
+| RF17 | Criar Dashboard de Análise de dados        | M      | 4        | 2                | 6              | X   |
+| RF18 | Criar filtros para dados do dashboard       | S      | 3        | 3                | 6              |     |
+| RF19 | Editar filtros para dados do dashboard      | C      | 2        | 4                | 6              |     |
+| RF20 | Listar filtros para dados do dashboard      | S      | 3        | 3                | 6              |     |
+| RF21 | Filtrar dados de Dashboards                | M      | 4        | 2                | 6              | X   |
+| RF22 | Favoritar Dashboards de análises de dado   | C      | 2        | 4                | 6              |     |
+| RF23 | Exportar Dashboards                         | C      | 3        | 4                | 7              |     |
+| RF24 | Exportar Dados da Plataforma Original       | C      | 3        | 3                | 6              |     |
 
 ## MVP (Minimum Viable Product)
 
@@ -225,3 +220,10 @@ Os seguintes requisitos não funcionais também serão considerados no MVP para 
 * **RNF08: Backup dos dados transacionais e de análise:** Implementar um sistema de backup básico para evitar perda de dados críticos.
 
 O foco do MVP é entregar um produto funcional que permita a validação das principais funcionalidades e a coleta de feedback inicial dos usuários, servindo como base para as próximas iterações e desenvolvimento de funcionalidades adicionais.
+
+
+## Histórico de Versão:
+
+| Data       | Versão | Descrição                | Autor              | Revisores               |
+| :--------- | :----- | :------------------------- | :----------------- | :---------------------- |
+| 26/04/2025 | 1.0    | Criação do Documento     | **Eduardo Waski, Luis Eduardo Lima, Isabelly** | **Henrique, Filipe, Cibelly** |

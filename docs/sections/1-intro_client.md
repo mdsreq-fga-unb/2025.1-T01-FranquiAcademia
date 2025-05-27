@@ -20,9 +20,7 @@ Nosso cliente, franqueado de academias, utiliza esse sistema e relata **inconsis
 
 - Erros na exibição das informações
 - Abas e páginas que deixam de aparecer aleatoriamente
-- Instabilidade nos momentos de maior demanda — ou seja, durante os horários de pico da academia
 
-Nessas ocasiões, o sistema fica fora do ar, obrigando os recepcionistas a anotarem informações de forma assíncrona e descentralizada, geralmente com papel e caneta, sem acesso aos dados necessários no site e possivelmente perdendo informação importante.
 
 Outro ponto crítico é a total ausência de ferramentas de **análise de dados** já concentrados no sistema. Não há nenhuma funcionalidade que permita o cruzamento de informações para identificar, por exemplo:
 
@@ -46,7 +44,6 @@ Os principais desafios enfrentados pelo cliente envolvem:
 - A falta de integração de dados, dificultando a análise e tomada de decisões
 - A baixa automação na comunicação, que impacta negativamente a experiência dos alunos
 - A escalabilidade do modelo atual, que compromete a padronização com o crescimento da franquia
-- O desafio técnico de fornecer **constância para o sistema nos horários de pico**
 
 ## 1.4 Segmentação de Clientes
 
@@ -57,3 +54,11 @@ O sistema seria usado basicamente por apenas um grupo:
 - **Recepcionistas (18 a 40 anos)**: Grupo formado por pessoas de diferentes idades, com no mínimo um conhecimento básico em tecnologia. São capazes de operar sistemas de forma simples e funcional, mas não possuem domínio avançado sobre ferramentas mais complexas.
 
 - **Gerente/Dono da franquia**: Grupo formado pelos possíveis gerentes que podem vir a ser contratados caso o negócio escale, e o dono da franquia. São capazes de operar o sistema com desenvoltura e possuem ênfase em acompanhar e verificar o trabalho feito.
+
+
+## Histórico de Versão:
+
+| Data       | Versão | Descrição                | Autor              | Revisores               |
+| :--------- | :----- | :------------------------- | :----------------- | :---------------------- |
+| 22/04/2025 | 1.0    | Criação do Documento     | **Filipe Bressanelli** | **Henrique Carvalho** |
+| 26/05/2025 | 1.1    | Edição do Documento     | **Luís Eduardo Lima** | **Eduardo Waski** |

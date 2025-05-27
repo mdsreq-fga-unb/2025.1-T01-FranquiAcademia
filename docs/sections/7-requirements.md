@@ -72,3 +72,10 @@ A tabela a seguir apresenta os Requisitos Não Funcionais criados para o projeto
 | RNF10 | Compatibilidade com navegadores web modernos          | O sistema deve ser totalmente compatível com as versões mais recentes do Chrome, Firefox e Safari.                      | Outros (Portabilidade) |
 | RNF11 | Log de atividades dos usuários administradores        | O sistema deve manter um registro de todas as ações realizadas pelos usuários com perfil de administrador.              | Segurança            |
 | RNF12 | Tempo de recuperação após falha                       | O sistema deve ser capaz de se recuperar de uma falha em no máximo 15 minutos, com o mínimo de perda de dados possível.    | Outros (Confiabilidade) |
+
+
+## Histórico de Versão:
+
+| Data       | Versão | Descrição                | Autor              | Revisores               |
+| :--------- | :----- | :------------------------- | :----------------- | :---------------------- |
+| 26/05/2025 | 1.0    | Criação do Documento     | **Luis Eduardo Lima** | **Eduardo Waski** |
