@@ -2,7 +2,7 @@
 
 O projeto DeltaCore seguirá a metodologia ágil DSDM, com entregas incrementais e foco no envolvimento do usuário. A duração total prevista é de aproximadamente três meses, organizada em iterações que culminam em entregas valiosas.
 
-### 4.1 Cronograma de Entregas (Baseado nas Fases DSDM e Sprints Anteriores)
+### 4.1 Cronograma de Entregas (Baseado nas Fases DSDM)
 
 | Entrega/Iteração                             | Período Aproximado | Entrega Principal                                                                 |
 | :------------------------------------------- | :----------------- | :---------------------------------------------------------------------------------- |

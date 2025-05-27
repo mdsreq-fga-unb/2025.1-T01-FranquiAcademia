@@ -30,3 +30,8 @@ A Engenharia de Requisitos é o processo de definir, documentar e manter os requ
         * **Critérios de Aceitação:** Condições específicas que devem ser atendidas para que uma funcionalidade seja considerada completa.
         * **Prazos de Execução:** Estimativas de tempo para o desenvolvimento de cada item do backlog.
     * O backlog é **continuamente organizado e atualizado** para refletir mudanças, novas necessidades e prioridades do projeto.
+
+
+
+// listar as etapas de Engenharia de requisitos ao decorrer do  "timebox"
+pegar o exemplo deles

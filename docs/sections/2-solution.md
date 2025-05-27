@@ -2,9 +2,7 @@
 
 ## 2.1 Objetivos do Produto
 
-O objetivo do produto é fornecer uma plataforma capaz de operar sem interrupções no funcionamento, mesmo durante os horários de pico. Além disso, agregar uma seção específica para o cruzamento e a análise de dados sobre os clientes, a academia e os funcionários, além de uma funcionalidade que envia mensagens personalizadas para cada tipo diferente de segmento de cliente, sem ser necessária a operação manual da equipe da recepção. 
-
-A plataforma também manterá as funções essenciais que o sistema antigo já oferecia, como a visualização das marcações de aulas.
+O objetivo principal do produto é **agregar funcionalidades de análise de dados**, permitindo o cruzamento e a apresentação de informações relevantes sobre clientes, academia e funcionários. Adicionalmente, visa implementar uma **funcionalidade de envio automatizado de mensagens personalizadas** para diferentes segmentos de clientes, eliminando a necessidade de operação manual pela equipe da recepção. A plataforma também **manterá as funcionalidades essenciais do sistema anterior**, como a visualização das marcações de aulas.
 
 ---
 
@@ -16,18 +14,14 @@ Dentre as principais características previstas, destacam-se:
 
 - Automação da comunicação com alunos, incluindo mensagens de boas-vindas, lembretes de aula e incentivo para retorno em caso de faltas.
 - Painel analítico com relatórios, estatísticas e indicadores de desempenho, contando com diversos filtros para personalização.
-- Interface simples e intuitiva.
-- Sistema livre de interrupções em momentos de alta demanda.
 - Painel de visualização dos agendamentos.
 
 **Objetivos Específicos:**
 
-* **OE01: Estabilidade do Sistema:** Garantir a operação contínua do sistema durante os horários de pico de acesso, eliminando as interrupções relatadas no sistema atual.
 * **OE02: Análise de Dados:** Desenvolver funcionalidades para coletar, cruzar e apresentar dados relevantes sobre clientes (inativos, pós-experimental, sem créditos), aulas e funcionários, permitindo a geração de insights para a tomada de decisão.
 * **OE03: Automação de Mensagens:** Implementar um sistema para o envio automático de mensagens personalizadas a diferentes segmentos de clientes, com base em regras de negócio definidas, visando melhorar o atendimento, a fidelização e a recuperação de alunos.
 * **OE04: Gestão de Usuários:** Manter e potencialmente aprimorar as funcionalidades de gestão de usuários existentes no sistema Angulare, como a visualização de créditos e histórico de visitas.
 * **OE05: Visualização de Agendamentos:** Assegurar a continuidade da funcionalidade de visualização da agenda dos studios, com horários e profissionais responsáveis pelas aulas.
-* **OE06: Interface Intuitiva:** Desenvolver uma interface de usuário simples e intuitiva, adequada para os diferentes perfis de usuários (recepcionistas, gerentes).
 
 
 ---

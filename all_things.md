@@ -436,3 +436,10 @@ Requisitos legais foram respeitados.
 A documentação foi atualizada e o feedback do cliente foi incorporado.
 
 
+
+
+
+
+o objetivo em si
+a parte de engenharia de requisitos
+

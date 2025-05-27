@@ -38,4 +38,4 @@ Para um item do backlog ser considerado **Done**:
 
 | Data       | Versão | Descrição                | Autor              | Revisores               |
 | :--------- | :----- | :------------------------- | :----------------- | :---------------------- |
-| 25/05/2025 | 1.0    | Criação do Documento     | **Filipe de cria** | **O taldo do revisor brabo** |
+| 25/05/2025 | 1.0    | Criação do Documento     | **henriquede cria** | **O taldo do revisor brabo** |
