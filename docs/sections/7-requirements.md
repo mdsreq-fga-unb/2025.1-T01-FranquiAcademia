@@ -1,4 +1,4 @@
-## 7 Requsitos de Software
+## 7 Requisitos de Software
 
 ### 7.1 Requisitos Funcionais
 
@@ -6,7 +6,7 @@ Os requisitos funcionais descrevem as funcionalidades específicas que o sistema
 
 <br>
 
-|**ID**|**TÍTULO** |**DESCRIÇÃO** |**OBJETIVO ESPECÍFICO** |
+| **ID** | **TÍTULO** | **DESCRIÇÃO** | **OBJETIVO ESPECÍFICO** |
 | :----- | :--------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------ |
 |**RF01**|Cadastrar usuários                             |O sistema deve permitir o cadastro de novos usuários, incluindo informações como nome, e-mail, etc.                                        |OE04                          |
 |**RF02**|Editar usuários                                |O sistema deve permitir a edição das informações de usuários já cadastrados.                                                              |OE04                          |
@@ -22,16 +22,34 @@ Os requisitos funcionais descrevem as funcionalidades específicas que o sistema
 |**RF14**|Criar Regras de Envio                           |O sistema deve permitir a criação de regras que determinam quando as mensagens automatizadas devem ser enviadas.                           |OE03                          |
 |**RF15**|Editar Regras de Envio                          |O sistema deve permitir a edição das regras de envio existentes.                                                                         |OE03                          |
 |**RF16**|Apagar Regras de Envio                         |O sistema deve permitir a exclusão de regras de envio.                                                                                   |OE03                          |
-|**RF17**|Criar Dashboard de Análise de dados            |O sistema deve permitir visualizar os dados disponíveis (reservas, primeiras aulas, aulas por professor, horário com maior reservas...)no formato de gráficos de barras e/ou pizza, chamando-os como dashboards. |OE02|
-|**RF18**|Criar filtros para dados do dashboard          |O sistema deve permitir a criação de filtros para manipular os dados exibidos nos dashboards.                                             |OE02                          |
-|**RF19**|Editar filtros para dados do dashboard         |O sistema deve permitir a edição dos filtros existentes nos dashboards.                                                                 |OE02                          |
-|**RF20**|Listar filtros para dados do dashboard         |O sistema deve exibir uma lista dos filtros disponíveis para os dashboards.                                                              |OE02                          |
-|**RF21**|Filtrar dados de Dashboards                    |O sistema deve permitir que os usuários apliquem filtros para visualizar dados específicos nos dashboards.                                |OE02                          |
-|**RF22**|Favoritar Dashboard de análises de dado       |O sistema deve permitir que os usuários marquem dashboards como favoritos para acesso rápido.                                            |OE02                          |
+|**RF17**|Consultar Dados de Reservas | O sistema deve permitir visualizar os dados de reservas (total de reservas, reservas por dia/semana/mês, etc.) no formato de gráficos de barras e/ou pizza. | OE02 |
+|**RF18**| Consultar Dados de Primeiras Aulas | O sistema deve permitir visualizar os dados de primeiras aulas (total de primeiras aulas, primeiras aulas por período, etc.) no formato de gráficos de barras e/ou pizza. | OE02 |
+|**RF19**| Consultar Dados de Aulas por Professor | O sistema deve permitir visualizar os dados de aulas por professor (total de aulas ministradas por professor, aulas ministradas por professor por período, etc.) no formato de gráficos de barras e/ou pizza. | OE02 |
+|**RF20**| Consultar Horários de Maior Reserva | O sistema deve permitir visualizar os horários com maior número de reservas (horários com mais reservas por dia/semana, etc.) no formato de gráficos de barras e/ou pizza. | OE02 |
+|**RF21**| Filtrar Dados de Consultas | O sistema deve permitir que os usuários apliquem filtros para visualizar dados específicos nas consultas (ex: filtrar reservas por data, filtrar aulas por professor e período, etc.). | OE02 |
+|**RF22**| Salvar Consultas Favoritas de Análise de Dados | O sistema deve permitir que os usuários salvem consultas com filtros aplicados como favoritas para acesso rápido. | OE02 |
 |**RF23**|Exportar Dashboard criados pelo usuário em csv   |O sistema deve permitir a exportação dos dashboards criados pelo cliente em formato CSV. |0E02|
 |**RF24**|Exportar Dashboards em PDF |O sistema deve permitir a exportação dos dashboards em formato PDF adequados.|0E02|
 |**RF25**|Importar planilha csv de dados das reservas de aulas da Plataforma Original| O sistema deve permitir que o usuário importe um arquivo csv com os dados da planilha de reservas de aula da plataforma Original|0E03|
 |**RF26**|Integrar planilha csv de dados das reservas de aulas da Plataforma Original com o banco de dados de aulas |O sistema deve ser capaz de ler o arquivo csv e integrar na base de dados de aula do sistema |OE03|
+
+<!--
+
+alguns outros requisitos que acho que talvez podem entrar
+
+| **RF17** | Comparar Total de Reservas por Período | O sistema deve permitir comparar o total de reservas em diferentes períodos (diário, semanal, mensal) através de gráficos de barras e/ou pizza. | OE02 |
+| **RF18** | Comparar Primeiras Aulas por Período | O sistema deve permitir comparar o número de primeiras aulas realizadas em diferentes períodos (semanal, mensal) através de gráficos de barras e/ou pizza. | OE02 |
+| **RF19** | Comparar Aulas Ministradas por Professor | O sistema deve permitir comparar a quantidade de aulas ministradas por cada professor, apresentando os dados em gráficos de barras (eixo X: professores, eixo Y: quantidade de aulas). | OE02 |
+| **RF20** | Comparar Horários de Pico | O sistema deve permitir comparar a quantidade de reservas por horário, identificando os horários de pico (maior número de reservas) através de gráficos de barras. | OE02 |
+| **RF21** | Comparar Retenção de Alunos | O sistema deve permitir comparar a taxa de retenção de alunos (ex: alunos que retornam após a primeira aula) entre diferentes períodos ou turmas, utilizando gráficos de barras ou linhas. | OE02 |
+| **RF22** | Comparar Inatividade de Alunos | O sistema deve permitir comparar o número de alunos inativos (ex: alunos que não reservam aulas há um determinado período) entre diferentes períodos ou franquias, utilizando gráficos de barras ou pizza. | OE02 |
+| **RF23** | Comparar Uso de Créditos | O sistema deve permitir comparar o uso de créditos pelos alunos, identificando padrões de consumo e alunos com poucos créditos restantes, através de gráficos de barras. | OE02 |
+| **RF24** | Comparar Dados Demográficos | O sistema deve permitir comparar dados demográficos dos alunos (idade, gênero) com outros dados (frequência, tipo de aula) utilizando gráficos de barras ou pizza. | OE02 |
+| **RF25** | Filtrar Dados para Comparação | O sistema deve permitir que os usuários apliquem filtros para refinar os dados a serem comparados (ex: comparar aulas por professor em um período específico). | OE02 |
+| **RF26** | Salvar Comparativos Favoritos | O sistema deve permitir que os usuários salvem as configurações de comparação (filtros e tipos de gráficos) como favoritas para acesso rápido. | OE02 |
+
+-->
+
 
 <!-- **cometnario** Oi professor, somente será possivel exportar um dashboard por vez, fiquei na duvida se colocava isso na descricao do requisitos, pq parece mais uma regra de negocio-->
 
