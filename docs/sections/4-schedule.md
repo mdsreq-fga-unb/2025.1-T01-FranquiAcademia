@@ -6,11 +6,11 @@ O projeto DeltaCore seguirá a metodologia ágil DSDM, com entregas incrementais
 
 | Entrega/Iteração                             | Período Aproximado | Entrega Principal                                                                 |
 | :------------------------------------------- | :----------------- | :---------------------------------------------------------------------------------- |
-| Estudo de Viabilidade & Negócio              | 08/04 – 21/04      | Visão do Projeto e Plano de Negócio Detalhado                                     |
-| Desenho Funcional Inicial                    | 22/04 – 05/05      | Protótipo de Telas e Arquitetura de Alto Nível                                    |
-| Entrega Incremento 1 (MVP - Funcionalidades Essenciais) | 06/05 – 19/05      | Funcionalidades de Cadastro, Login, Listagem de Aulas/Reservas (US01, US02, US03, US04, US06) |
-| Entrega Incremento 2 (MVP - Comunicação e Dashboards) | 20/05 – 02/06      | Mensagens Automatizadas e Dashboard Básico (US10, US11, US14, US13, US20, US24)          |
-| Implementação & Revisão Final                | 03/06 – 16/06      | Versão Final do MVP                                                                 |
+| Estudo de Viabilidade & Negócio              | 05/05 – 03/06      | Visão do Projeto e Plano de Negócio Detalhado                                     |
+| Desenho Funcional Inicial                    | 04/06 – 11/06      | Protótipo de Telas e Arquitetura de Alto Nível                                    |
+| Entrega Incremento 1 (MVP - Funcionalidades Essenciais) | 12/06 – 24/06      | Funcionalidades de Cadastro, Login, Listagem de Aulas/Reservas (US01, US02, US03, US04, US06) |
+| Entrega Incremento 2 (MVP - Comunicação e Dashboards) | 25/06 – 09/07      | Mensagens Automatizadas e Dashboard Básico (US10, US11, US14, US13, US20, US24)          |
+| Implementação & Revisão Final                | 10/07 – 17/07      | Versão Final do MVP                                                                 |
 
 
 ### 4.2 Reuniões e Revisões (Adaptado ao DSDM)
