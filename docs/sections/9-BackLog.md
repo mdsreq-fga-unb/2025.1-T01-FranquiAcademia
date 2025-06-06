@@ -391,3 +391,4 @@ O foco do MVP é entregar um produto funcional que permita a validação das pri
 | Data       | Versão | Descrição                | Autor              | Revisores               |
 | :--------- | :----- | :------------------------- | :----------------- | :---------------------- |
 | 26/04/2025 | 1.0    | Criação do Documento     | **Eduardo Waski, Luis Eduardo Lima, Isabelly** | **Henrique, Filipe, Cibelly** |
+| 05/06/2025 | 1.1    | Modificação do backlog | **Luis Eduardo Lima, Isabelly** | **Henrique, Filipe, Cibelly, Eduardo Waski** |
