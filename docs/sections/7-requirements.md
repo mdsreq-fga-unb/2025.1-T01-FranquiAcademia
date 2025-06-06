@@ -81,18 +81,14 @@ A tabela a seguir apresenta os Requisitos Não Funcionais criados para o projeto
 
 | ID    | Nome do Requisito                                      | Descrição do Requisito                                                                                                | Classificação URPS   |
 |-------|--------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|----------------------|
-| RNF01 | Responsividade em dispositivos móveis                  | O sistema deve ser responsivo e acessível em diferentes tamanhos de tela (mobile, tablet, desktop).                      | Usabilidade          |
-| RNF02 | Tempo de resposta da interface                        | A interface deve ter um tempo de resposta inferior a 2 segundos por ação do usuário.                                    | Performance          |
-| RNF03 | Clareza das mensagens de erro                         | O sistema deve exibir mensagens de erro claras e que orientem o usuário sobre como corrigir o problema.                    | Usabilidade          |
-| RNF04 | Intuitividade da navegação                             | A navegação do sistema deve ser intuitiva e facilitada por menus laterais e filtros.                                  | Usabilidade          |
-| RNF05 | Acessibilidade para usuários com deficiência visual    | O sistema deve seguir as diretrizes WCAG 2.1 Nível AA para garantir a acessibilidade por leitores de tela.              | Usabilidade          |
-| RNF06 | Capacidade de usuários simultâneos                     | O sistema deve suportar pelo menos 100 usuários simultâneos sem degradação significativa no tempo de resposta.          | Performance          |
-| RNF07 | Segurança das senhas                                   | As senhas dos usuários devem ser armazenadas de forma criptografada utilizando um algoritmo forte (ex: bcrypt).           | Segurança            |
-| RNF08 | Backup dos dados                                       | O sistema deve realizar backups automáticos dos dados diariamente.                                                       | Outros (Confiabilidade) |
-| RNF09 | Facilidade de manutenção do código                    | O código do sistema deve ser bem estruturado e comentado para facilitar a manutenção e futuras atualizações.             | Outros (Manutenibilidade) |
-| RNF10 | Compatibilidade com navegadores web modernos          | O sistema deve ser totalmente compatível com as versões mais recentes do Chrome, Firefox e Safari.                      | Outros (Portabilidade) |
-| RNF11 | Log de atividades dos usuários administradores        | O sistema deve manter um registro de todas as ações realizadas pelos usuários com perfil de administrador.              | Segurança            |
-| RNF12 | Tempo de recuperação após falha                       | O sistema deve ser capaz de se recuperar de uma falha em no máximo 15 minutos, com o mínimo de perda de dados possível.    | Outros (Confiabilidade) |
+
+| RNF01 | Tempo de carregamento de tela                        | O frontend deve ter um tempo de carregamento inferior a 3 segundos| Performance          |
+| RNF02 | Clareza das mensagens de erro                         | O sistema deve exibir mensagens de erro para o usuário e suas possíveis causas.                    | Usabilidade          |
+| RNF03 | Navegação utilizando menus laterais e bem visíveis.                                 | Usabilidade          |
+| RNF04 | Acessibilidade para usuários com dificuldade de visualização    | O sistema deve conter ajustes para tamanho de fontes.              | Usabilidade          |
+| RNF05 | Capacidade de usuários simultâneos                     | O sistema deve suportar pelo menos 100 usuários simultâneos sem degradação significativa no tempo de resposta.          | Performance          |
+| RNF06 | Manutenibilidade do código                    | O código do sistema deve ser bem estruturado e comentado para facilitar a manutenção e futuras atualizações. Devendo ser mantida uma arquitetura de projeto bem definida           | Outros (Manutenibilidade) |
+| RNF7 | Compatibilidade com navegadores web modernos          | O sistema deve ser totalmente compatível com as versões do Chrome, Firefox e Safari referentes ao ano de 2025.                       | Outros (Portabilidade) |
 
 
 ## Histórico de Versão:
@@ -100,3 +96,5 @@ A tabela a seguir apresenta os Requisitos Não Funcionais criados para o projeto
 | Data       | Versão | Descrição                | Autor              | Revisores               |
 | :--------- | :----- | :------------------------- | :----------------- | :---------------------- |
 | 26/05/2025 | 1.0    | Criação do Documento     | **Luis Eduardo Lima** | **Eduardo Waski** |
+| 04/06/2025 | 1.1    | Revisão dos RNFs         |
+**Eduardo Waski**     | **Luis Eduardo**  |
