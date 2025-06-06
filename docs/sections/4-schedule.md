@@ -28,3 +28,4 @@ O projeto DeltaCore seguirá a metodologia ágil DSDM, com entregas incrementais
 | Data       | Versão | Descrição                | Autor              | Revisores               |
 | :--------- | :----- | :------------------------- | :----------------- | :---------------------- |
 | 22/04/2025 | 1.0    | Criação do Documento     | **Cibelly** | **Henrique Carvalho** |
+| 04/06/2025 | 1.1    | Modificanco datas        | **Henrique Carvalho** | **Luis Lima** | 

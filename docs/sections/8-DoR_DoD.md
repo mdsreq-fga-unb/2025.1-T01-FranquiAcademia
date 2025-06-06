@@ -4,7 +4,7 @@ Esta seção apresenta os conceitos de **Definition of Ready (DoR)** e **Definit
 
 ### 8.1 Definition of Ready (DoR)
 
-O DoR é um **acordo** entre o **time** e o **Product Owner (PO)**, indicando quando um requisito estará **preparado para ser puxado para uma Timebox**. Ele define os **critérios** que devem ser atendidos para que uma **user story**, **caso de uso** ou **cenário** esteja **pronto para ser desenvolvido**. Isso garante **clareza nos requisitos** e **ausência de impedimentos**.
+O DoR é um **acordo** entre o **time** e o **Product Owner (PO)**, indicando quando um requisito estará **preparado para ser puxado para uma Timebox**. Ele define os **critérios** que devem ser atendidos para que uma **user story**, **cenário** esteja **pronto para ser desenvolvido**. Isso garante **clareza nos requisitos** e **ausência de impedimentos**.
 
 Para um item do backlog ser considerado **Ready**:
 

@@ -14,7 +14,6 @@ A Engenharia de Requisitos é o processo de definir, documentar e manter os requ
 3.  **Declaração de Requisitos:**
     * Formalizamos os requisitos utilizando diferentes formatos para garantir clareza e compreensão por todos os envolvidos:
         * **Listas de requisitos textuais:** Para descrições concisas e diretas das funcionalidades.
-        * **Casos de uso:** Para detalhar as interações entre os usuários e o sistema.
         * **Histórias de usuário (User Stories):** Para descrever as necessidades do ponto de vista do usuário, seguindo o formato "Eu como [usuário], quero [ação], para que [benefício]".
 
 4.  **Representação de Requisitos:**
@@ -44,7 +43,7 @@ A Engenharia de Requisitos é o processo de definir, documentar e manter os requ
 | *Refinement*    | Representação             | Desenvolvimento de protótipos e testes iniciais    | Storyboard                                 | Produtos em desenvolvimento de acordo com os requisitos priorizados                  |
 |                   | Verificação e Validação   | Testes e feedbacks contínuos                       | Critérios de Aceitação, DoR                           | Produtos testados em relação aos critérios definidos                                 |
 |                   | Organização e Atualização | Atualização de backlog                             | Product Backlog Building (PBB), Priorizações com MoSCoW              | Backlog atualizado com base no progresso e novas descobertas                         |
-| *Consolidation* | Análise e Consenso        | Revisão de requisitos incompletos ou mal definidos | Revisão de Casos de Uso                | Conclusão dos itens pendentes e preparação para a entrega final                      |
+| *Consolidation* | Análise e Consenso        | Revisão de requisitos incompletos ou mal definidos | Revisão de user stories                 | Conclusão dos itens pendentes e preparação para a entrega final                      |
 |                   | Declaração                | Revisão final dos critérios de aceite              | Checklist, INVEST, DoD                                                    | Confirmação de que todos os itens estão prontos para entrega                         |
 | *Close-out*     | Verificação e Validação   | Aceitação formal dos entregáveis                   | Feedback do cliente, Workshop de Revisão                                  | Entrega validada pelo cliente e stakeholders                                         |
 |                   | Organização e Atualização | Documentação e retrospectiva                       | Revisão, Retrospectiva, Lições aprendidas                                 | Melhoria contínua com base no aprendizado do timebox                                 |
