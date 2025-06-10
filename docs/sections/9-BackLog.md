@@ -73,10 +73,10 @@ Os **Temas**, por sua vez, funcionam como **agrupamentos de histórias e épicos
 
 **Épico: Gestão de Mensagens Automatizadas (EP04)**
 
-* **US08:** Eu, como **gestor**, quero **criar novas mensagens automatizadas (informativos, promocionais, avisos)**, para **comunicar informações importantes aos usuários.** (RF06)
-* **US09:** Eu, como **usuário**, quero **enviar mensagens automáticas para os clientes** com **base** em **regras predefinidas**, para melhorar a comunicação e o engajamento. (RF07)
+* **US07:** Eu, como **gestor**, quero **criar novas mensagens automatizadas (informativos, promocionais, avisos)**, para **comunicar informações importantes aos usuários.** (RF06)
+* **US08:** Eu, como **usuário**, quero **enviar mensagens automáticas para os clientes** com **base** em **regras predefinidas**, para melhorar a comunicação e o engajamento. (RF07)
 
-* **US010: Gerenciar Comunicações Automatizadas:** Eu, como **gestor**, quero ter controle sobre as mensagens automatizadas, podendo **editar seu conteúdo, ativar/inativar seu envio e criar, editar e apagar as regras que definem quando elas devem ser enviadas**, para manter a comunicação sempre atualizada e no fluxo desejado. (RF08, RF09, RF10, RF11, RF12, RF13, RF14)
+* **US09: Gerenciar Comunicações Automatizadas:** Eu, como **gestor**, quero ter controle sobre as mensagens automatizadas, podendo **editar seu conteúdo, ativar/inativar seu envio e criar, editar e apagar as regras que definem quando elas devem ser enviadas**, para manter a comunicação sempre atualizada e no fluxo desejado. (RF08, RF09, RF10, RF11, RF12, RF13, RF14)
 
 <!--
 * **US10:** Eu, como **gestor**, quero **editar o conteúdo de mensagens automatizadas existentes**, para **manter a comunicação atualizada.** (RF08)
@@ -92,21 +92,21 @@ Os **Temas**, por sua vez, funcionam como **agrupamentos de histórias e épicos
 -->
 **Épico: Integração de Dados da Plataforma Original (EP06)**
 
-* **US11:** Eu, como **usuário**, quero **importar um arquivo CSV com os dados de reservas de aula da Plataforma Original**, para **trazer os dados para o novo sistema.** (RF23)
-* **US12:** Eu, como **sistema**, quero **ler o arquivo CSV importado e integrar os dados na base de dados de aulas**, para **garantir a consistência das informações.** (RF24)
+* **US10:** Eu, como **usuário**, quero **importar um arquivo CSV com os dados de reservas de aula da Plataforma Original**, para **trazer os dados para o novo sistema.** (RF23)
+* **US11:** Eu, como **sistema**, quero **ler o arquivo CSV importado e integrar os dados na base de dados de aulas**, para **garantir a consistência das informações.** (RF24)
 
 **Épico: Visualização de Dados de Análise (EP07)**
 
-* **US13:** Eu, como **gestor**, quero **visualizar dados de reservas (total, por dia/semana/mês) em gráficos (barras/pizza)**, para **analisar o volume de agendamentos.** (RF15)
-* **US14:** Eu, como **gestor**, quero **visualizar dados de primeiras aulas (total, por período) em gráficos (barras/pizza)**, para **acompanhar o crescimento da base de alunos.** (RF16)
-* **US15:** Eu, como **gestor**, quero **visualizar dados de aulas por professor (total, por período) em gráficos (barras/pizza)**, para **avaliar a performance dos instrutores.** (RF17)
-* **US16:** Eu, como **gestor**, quero **visualizar os horários com maior número de reservas em gráficos (barras/pizza)**, para **identificar picos de demanda.** (RF18)
+* **US12:** Eu, como **gestor**, quero **visualizar dados de reservas (total, por dia/semana/mês) em gráficos (barras/pizza)**, para **analisar o volume de agendamentos.** (RF15)
+* **US13:** Eu, como **gestor**, quero **visualizar dados de primeiras aulas (total, por período) em gráficos (barras/pizza)**, para **acompanhar o crescimento da base de alunos.** (RF16)
+* **US14:** Eu, como **gestor**, quero **visualizar dados de aulas por professor (total, por período) em gráficos (barras/pizza)**, para **avaliar a performance dos instrutores.** (RF17)
+* **US15:** Eu, como **gestor**, quero **visualizar os horários com maior número de reservas em gráficos (barras/pizza)**, para **identificar picos de demanda.** (RF18)
 
 **Épico: Interação com Consultas de Análise (EP08)**
 
-* **US17:** Eu, como **gestor**, quero **salvar consultas com filtros aplicados como favoritas**, para **acessar rapidamente as análises mais importantes.** (RF20)
-* **US18:** Eu, como **gestor**, quero **exportar dashboards criados em formato CSV**, para **compartilhar ou utilizar os dados em outras ferramentas.** (RF21)
-* **US19:** Eu, como **gestor**, quero **exportar dashboards em formato PDF**, para **compartilhar relatórios de forma visual.** (RF22)
+* **US16:** Eu, como **gestor**, quero **salvar consultas com filtros aplicados como favoritas**, para **acessar rapidamente as análises mais importantes.** (RF20)
+* **US17:** Eu, como **gestor**, quero **exportar dashboards criados em formato CSV**, para **compartilhar ou utilizar os dados em outras ferramentas.** (RF21)
+* **US18:** Eu, como **gestor**, quero **exportar dashboards em formato PDF**, para **compartilhar relatórios de forma visual.** (RF22)
 
 
 
