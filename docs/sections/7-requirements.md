@@ -84,9 +84,9 @@ A tabela a seguir apresenta os Requisitos Não Funcionais criados para o projeto
 | RNF01 | Tempo de carregamento de tela                        | O frontend deve ter um tempo de carregamento inferior a 3 segundos| Performance          |
 | RNF02 | Clareza das mensagens de erro                         | O sistema deve exibir mensagens de erro para o usuário e suas possíveis causas.                    | Usabilidade          |
 | RNF03 | Navegação utilizando menus laterais e bem visíveis.                                 | Usabilidade          |
-| RNF04 | Acessibilidade para usuários com dificuldade de visualização    | O sistema deve conter ajustes para tamanho de fontes.              | Usabilidade          |
-| RNF05 | Capacidade de usuários simultâneos                     | O sistema deve suportar pelo menos 100 usuários simultâneos sem degradação significativa no tempo de resposta.          | Performance          |
-| RNF06 | Manutenibilidade do código                    | O código do sistema deve ser bem estruturado e comentado para facilitar a manutenção e futuras atualizações. Devendo ser mantida uma arquitetura de projeto bem definida           | Outros (Manutenibilidade) |
+| RNF04 | Acessibilidade para usuários com dificuldade de visualização    | O sistema deve conter ajustes para tamanho de fontes para 12px, 16px, 20px.              | Usabilidade          |
+| RNF05 | Capacidade de usuários simultâneos                     | O sistema deve suportar pelo menos 100 usuários simultâneos, mantendo tempo de resposta inferior a 3 segundos por requisição em 95% das requisições.      | Performance          |
+| RNF06 | Manutenibilidade do código                    | O código do sistema deve ser bem estruturado em pastas autodescritivas e comentado para facilitar a manutenção e futuras atualizações.          | Outros (Manutenibilidade) |
 | RNF7 | Compatibilidade com navegadores web modernos          | O sistema deve ser totalmente compatível com as versões do Chrome, Firefox e Safari referentes ao ano de 2025.                       | Outros (Portabilidade) |
 
 
@@ -96,4 +96,7 @@ A tabela a seguir apresenta os Requisitos Não Funcionais criados para o projeto
 | :--------- | :----- | :------------------------- | :----------------- | :---------------------- |
 | 26/05/2025 | 1.0    | Criação do Documento     | **Luis Eduardo Lima** | **Eduardo Waski** |
 | 04/06/2025 | 1.1    | Revisão dos RFs          | **Luis Eduardo Lima** | **Eduardo Waski** |
-| 04/06/2025 | 1.2    | Revisão dos RNFs         | **Eduardo Waski**     | **Luis Eduardo**  |
+| 04/06/2025 | 1.3    | Detalhamento dos RNFs         | **Eduardo Waski**     | **Cibelly, Henrique**  |
+
+
+

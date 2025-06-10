@@ -69,13 +69,16 @@ Os **Temas**, por sua vez, funcionam como **agrupamentos de histórias e épicos
 
 **Épico: Consulta de Reservas (EP03)**
 
-* **US06:** Eu, como **usuário**, quero **consultar minhas reservas de aulas**, para **acompanhar meus agendamentos.** (RF05)
-* **US07:** Eu, como **usuário**, quero **filtrar minhas reservas por range de data da aula, primeira aula e instrutor**, para **encontrar reservas em um período específico ou com um instrutor desejado.** (RF05)
+* **US06:** Eu, como **usuário**, quero **acompanhar meus agendamentos**, **consultando minhas reservas por range de data da aula, primeira aula e instrutor**(RF05)
 
 **Épico: Gestão de Mensagens Automatizadas (EP04)**
 
 * **US08:** Eu, como **gestor**, quero **criar novas mensagens automatizadas (informativos, promocionais, avisos)**, para **comunicar informações importantes aos usuários.** (RF06)
-* **US09:** Eu, como **sistema**, quero **enviar mensagens automáticas para os usuários com base em regras predefinidas**, para **melhorar a comunicação e o engajamento.** (RF07)
+* **US09:** Eu, como **usuário**, quero **enviar mensagens automáticas para os clientes** com **base** em **regras predefinidas**, para melhorar a comunicação e o engajamento. (RF07)
+
+* **US010: Gerenciar Comunicações Automatizadas:** Eu, como **gestor**, quero ter controle sobre as mensagens automatizadas, podendo **editar seu conteúdo, ativar/inativar seu envio e criar, editar e apagar as regras que definem quando elas devem ser enviadas**, para manter a comunicação sempre atualizada e no fluxo desejado. (RF08, RF09, RF10, RF11, RF12, RF13, RF14)
+
+<!--
 * **US10:** Eu, como **gestor**, quero **editar o conteúdo de mensagens automatizadas existentes**, para **manter a comunicação atualizada.** (RF08)
 * **US11:** Eu, como **gestor**, quero **apagar mensagens automatizadas**, para **remover comunicações desnecessárias.** (RF09)
 * **US12:** Eu, como **gestor**, quero **consultar as mensagens automatizadas por range de data, nome e franquia**, para **ter uma visão geral das comunicações configuradas.** (RF10)
@@ -86,25 +89,24 @@ Os **Temas**, por sua vez, funcionam como **agrupamentos de histórias e épicos
 * **US14:** Eu, como **gestor**, quero **criar regras de envio para mensagens automatizadas**, para **definir quando as comunicações devem ser enviadas.** (RF12)
 * **US15:** Eu, como **gestor**, quero **editar regras de envio existentes**, para **ajustar as condições de envio das mensagens.** (RF13)
 * **US16:** Eu, como **gestor**, quero **apagar regras de envio**, para **remover condições de envio desnecessárias.** (RF14)
-
+-->
 **Épico: Integração de Dados da Plataforma Original (EP06)**
 
-* **US17:** Eu, como **usuário**, quero **importar um arquivo CSV com os dados de reservas de aula da Plataforma Original**, para **trazer os dados para o novo sistema.** (RF23)
-* **US18:** Eu, como **sistema**, quero **ler o arquivo CSV importado e integrar os dados na base de dados de aulas**, para **garantir a consistência das informações.** (RF24)
+* **US11:** Eu, como **usuário**, quero **importar um arquivo CSV com os dados de reservas de aula da Plataforma Original**, para **trazer os dados para o novo sistema.** (RF23)
+* **US12:** Eu, como **sistema**, quero **ler o arquivo CSV importado e integrar os dados na base de dados de aulas**, para **garantir a consistência das informações.** (RF24)
 
 **Épico: Visualização de Dados de Análise (EP07)**
 
-* **US19:** Eu, como **gestor**, quero **visualizar dados de reservas (total, por dia/semana/mês) em gráficos (barras/pizza)**, para **analisar o volume de agendamentos.** (RF15)
-* **US20:** Eu, como **gestor**, quero **visualizar dados de primeiras aulas (total, por período) em gráficos (barras/pizza)**, para **acompanhar o crescimento da base de alunos.** (RF16)
-* **US21:** Eu, como **gestor**, quero **visualizar dados de aulas por professor (total, por período) em gráficos (barras/pizza)**, para **avaliar a performance dos instrutores.** (RF17)
-* **US22:** Eu, como **gestor**, quero **visualizar os horários com maior número de reservas em gráficos (barras/pizza)**, para **identificar picos de demanda.** (RF18)
+* **US13:** Eu, como **gestor**, quero **visualizar dados de reservas (total, por dia/semana/mês) em gráficos (barras/pizza)**, para **analisar o volume de agendamentos.** (RF15)
+* **US14:** Eu, como **gestor**, quero **visualizar dados de primeiras aulas (total, por período) em gráficos (barras/pizza)**, para **acompanhar o crescimento da base de alunos.** (RF16)
+* **US15:** Eu, como **gestor**, quero **visualizar dados de aulas por professor (total, por período) em gráficos (barras/pizza)**, para **avaliar a performance dos instrutores.** (RF17)
+* **US16:** Eu, como **gestor**, quero **visualizar os horários com maior número de reservas em gráficos (barras/pizza)**, para **identificar picos de demanda.** (RF18)
 
 **Épico: Interação com Consultas de Análise (EP08)**
 
-* **US23:** Eu, como **gestor**, quero **aplicar filtros para visualizar dados específicos nas consultas (ex: filtrar reservas por data, aulas por professor e período)**, para **personalizar minhas análises.** (RF19)
-* **US24:** Eu, como **gestor**, quero **salvar consultas com filtros aplicados como favoritas**, para **acessar rapidamente as análises mais importantes.** (RF20)
-* **US25:** Eu, como **gestor**, quero **exportar dashboards criados em formato CSV**, para **compartilhar ou utilizar os dados em outras ferramentas.** (RF21)
-* **US26:** Eu, como **gestor**, quero **exportar dashboards em formato PDF**, para **compartilhar relatórios de forma visual.** (RF22)
+* **US17:** Eu, como **gestor**, quero **salvar consultas com filtros aplicados como favoritas**, para **acessar rapidamente as análises mais importantes.** (RF20)
+* **US18:** Eu, como **gestor**, quero **exportar dashboards criados em formato CSV**, para **compartilhar ou utilizar os dados em outras ferramentas.** (RF21)
+* **US19:** Eu, como **gestor**, quero **exportar dashboards em formato PDF**, para **compartilhar relatórios de forma visual.** (RF22)
 
 
 
@@ -180,12 +182,7 @@ Os **Temas**, por sua vez, funcionam como **agrupamentos de histórias e épicos
 
 **Épico: Criação e Gestão de Mensagens Automatizadas (EP05)**
 
-* **US11:** Eu, como gestor, quero criar novas mensagens automatizadas, para comunicar informações importantes aos usuários. (RF09)
-* **US12:** Eu, como gestor, quero editar mensagens automatizadas existentes, para manter a comunicação atualizada. (RF10)
-* **US13:** Eu, como gestor, quero apagar mensagens automatizadas, para remover comunicações desnecessárias. (RF11)
-* **US14:** Eu, como gestor, quero listar todas as mensagens automatizadas, para ter uma visão geral das comunicações configuradas. (RF12)
-* **US15:** Eu, como gestor, quero ativar mensagens automatizadas, para iniciar o envio de comunicações específicas. (RF13)
-* **US16:** Eu, como gestor, quero inativar mensagens automatizadas, para pausar o envio de comunicações específicas. (RF13)
+* **US011/16: Gerenciar Comunicações Automatizada** Eu, como gestor, quero ter controle sobre as mensagens automatizadas, podendo editar seu conteúdo, ativar/inativar seu envio e criar, editar e apagar as regras que definem quando elas devem ser enviadas, para manter a comunicação sempre atualizada e no fluxo desejado. (RF09, RF10, RF11, RF12, RF13)
 
 **Épico: Gestão de Regras de Envio (EP06)**
 
@@ -201,7 +198,6 @@ Os **Temas**, por sua vez, funcionam como **agrupamentos de histórias e épicos
 
 * **US21:** Eu, como gestor, quero criar filtros para os dados do dashboard, para analisar informações específicas. (RF18)
 * **US22:** Eu, como gestor, quero editar filtros existentes nos dashboards, para ajustar a análise de dados. (RF19)
-* **US23:** Eu, como gestor, quero listar os filtros disponíveis para os dashboards, para saber como posso analisar os dados. (RF20)
 
 **Épico: Interação com Dashboards (EP09)**
 
@@ -212,7 +208,7 @@ Os **Temas**, por sua vez, funcionam como **agrupamentos de histórias e épicos
 **Épico: Exportação de Dados da Plataforma (EP10)**
 
 * **US27:** Eu, como administrador, quero exportar os dados da plataforma original, para realizar análises mais detalhadas externamente. (RF24)
--->
+
 
 ## Critérios de Priorização
 
@@ -378,8 +374,9 @@ Os seguintes requisitos não funcionais também serão considerados no MVP para 
 * **RNF01: Tempo de carregamento de tela:** O frontend deve ter um tempo de carregamento inferior a 3 segundos.
 * **RNF02: Clareza das mensagens de erro:** O sistema deve exibir mensagens de erro claras e suas possíveis causas.
 * **RNF03: Navegação utilizando menus laterais e bem visíveis:** A navegação deve ser intuitiva e acessível.
-* **RNF05: Capacidade de usuários simultâneos:** O sistema deve suportar pelo menos 100 usuários simultâneos sem degradação significativa no tempo de resposta.
-* **RNF06: Manutenibilidade do código:** O código do sistema deve ser bem estruturado e comentado para facilitar a manutenção e futuras atualizações.
+* **RNF04: Acessibilidade para usuários com dificuldade de visualização:** O sistema deve conter ajustes para tamanho de fontes para 12px, 16px, 20px.
+* **RNF05: Capacidade de usuários simultâneos:** O sistema deve suportar pelo menos 100 usuários simultâneos, mantendo tempo de resposta inferior a 3 segundos por requisição em 95% das requisições.
+* **RNF06: Manutenibilidade do código:** O código do sistema deve ser bem estruturado em pastas autodescritivas e comentado para facilitar a manutenção e futuras atualizações.          | Outros 
 * **RNF07: Compatibilidade com navegadores web modernos:** O sistema deve ser totalmente compatível com as versões do Chrome, Firefox e Safari referentes ao ano de 2025.
 
 O foco do MVP é entregar um produto funcional que permita a validação das principais funcionalidades e a coleta de feedback inicial dos usuários, servindo como base para as próximas iterações e desenvolvimento de funcionalidades adicionais.
@@ -392,3 +389,7 @@ O foco do MVP é entregar um produto funcional que permita a validação das pri
 | :--------- | :----- | :------------------------- | :----------------- | :---------------------- |
 | 26/04/2025 | 1.0    | Criação do Documento     | **Eduardo Waski, Luis Eduardo Lima, Isabelly** | **Henrique, Filipe, Cibelly** |
 | 05/06/2025 | 1.1    | Modificação do backlog | **Luis Eduardo Lima, Isabelly** | **Henrique, Filipe, Cibelly, Eduardo Waski** |
+| 05/06/2025 | 1.1    | Modificação das User Stories | **Luis Eduardo Lima, Isabelly, Eduardo** | **Henrique, Cibelly, Eduardo Waski** |
+
+
+
