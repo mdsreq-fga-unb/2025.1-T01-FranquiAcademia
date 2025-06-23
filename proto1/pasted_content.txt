@@ -1,0 +1,24 @@
+RF01	Cadastrar usuários	O sistema deve permitir o cadastro de novos usuários, incluindo informações como nome, e-mail, etc.	OE04
+RF02	Editar usuários	O sistema deve permitir a edição das informações de usuários já cadastrados.	OE04
+RF03	Realizar login	O sistema deve permitir que usuários autenticados acessem suas funcionalidades através de um processo de login seguro.	OE01
+RF04	Consultar Aulas	O sistema deve permitir que os usuários consultem as aulas disponíveis, aplicando filtros por critérios específicos (range de data, tema, instrutor) e exibindo os resultados em uma lista.	OE05
+RF05	Consultar Reservas	O sistema deve permitir que os usuários consultem suas reservas de aulas, aplicando filtros por critérios específicos (range de data da aula, primeira aula, instrutor) e exibindo os resultados em uma lista.	OE05
+RF06	Criar Mensagens Automatizadas	O sistema deve permitir a criação de novas mensagens automatizadas, definindo seu conteúdo (informativos, promocionais, aviso sobre a reserva da aula...).	OE03
+RF07	Enviar Mensagens Automatizadas	O sistema deve ser capaz de enviar mensagens automáticas para os usuários com base em regras predefinidas.	OE03
+RF08	Editar Mensagens Automatizadas	O sistema deve permitir a edição do conteúdo de mensagens automatizadas existentes.	OE03
+RF09	Apagar Mensagens Automatizadas	O sistema deve permitir a exclusão de mensagens automatizadas.	OE03
+RF10	Consultar Mensagens Automatizadas	O sistema deve permitir que usuários consultem mensagens automatizadas aplicando filtros por critérios específicos (range de data, nome, franquia) e exibindo os resultados em uma lista.	OE03
+RF11	Ativar ou Inativar Mensagens Automatizadas	O sistema deve permitir ativar ou desativar o envio de mensagens automatizadas específicas.	OE03
+RF12	Criar Regras de Envio	O sistema deve permitir a criação de regras que determinam quando as mensagens automatizadas devem ser enviadas.	OE03
+RF13	Editar Regras de Envio	O sistema deve permitir a edição das regras de envio existentes.	OE03
+RF14	Apagar Regras de Envio	O sistema deve permitir a exclusão de regras de envio.	OE03
+RF15	Consultar Dados de Reservas	O sistema deve permitir visualizar os dados de reservas (total de reservas, reservas por dia/semana/mês, etc.) no formato de gráficos de barras e/ou pizza.	OE02
+RF16	Consultar Dados de Primeiras Aulas	O sistema deve permitir visualizar os dados de primeiras aulas (total de primeiras aulas, primeiras aulas por período, etc.) no formato de gráficos de barras e/ou pizza.	OE02
+RF17	Consultar Dados de Aulas por Professor	O sistema deve permitir visualizar os dados de aulas por professor (total de aulas ministradas por professor, aulas ministradas por professor por período, etc.) no formato de gráficos de barras e/ou pizza.	OE02
+RF18	Consultar Horários de Maior Reserva	O sistema deve permitir visualizar os horários com maior número de reservas (horários com mais reservas por dia/semana, etc.) no formato de gráficos de barras e/ou pizza.	OE02
+RF19	Filtrar Dados de Consultas	O sistema deve permitir que os usuários apliquem filtros para visualizar dados específicos nas consultas (ex: filtrar reservas por data, filtrar aulas por professor e período, etc.).	OE02
+RF20	Salvar Consultas Favoritas de Análise de Dados	O sistema deve permitir que os usuários salvem consultas com filtros aplicados como favoritas para acesso rápido.	OE02
+RF21	Exportar Dashboard criados pelo usuário em CSV	O sistema deve permitir a exportação dos dashboards criados pelo cliente em formato CSV.	OE02
+RF22	Exportar Dashboards em PDF	O sistema deve permitir a exportação dos dashboards em formato PDF adequado.	OE02
+RF23	Importar planilha csv de dados das reservas de aulas da Plataforma Original	O sistema deve permitir que o usuário importe um arquivo CSV com os dados da planilha de reservas de aula da plataforma original.	OE03
+RF24	Integrar planilha csv de dados das reservas de aulas da Plataforma Original com o banco de dados de aulas	O sistema deve ser capaz de ler o arquivo CSV e integrar na base de dados de aula do sistema.	OE03
