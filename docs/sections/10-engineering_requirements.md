@@ -32,24 +32,23 @@ A Engenharia de Requisitos é o processo de definir, documentar e manter os requ
 
 
 
+## Alinhamento com as Fases do DSDM
 
-| *Fase do DSDM*  | *Atividades de ER*      | *Práticas*                                       | *Técnicas*                                                              | *Resultado Esperado*                                                               |
-| ----------------- | ------------------------- | -------------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| *Kick-off*      | Elicitação e Descoberta   | Apresentação e alinhamento inicial do projeto      | Brainstorming                                     | Clareza sobre objetivos do timebox, entendimento comum sobre escopo e metas do ciclo |
-|                   | Análise e Consenso        | Alinhamento de expectativas com stakeholders       | Entrevistas, Análise de Stakeholders                                      | Aceitação dos objetivos e metas do timebox por todos os envolvidos                   |
-| *Investigation* | Elicitação e Descoberta   | Levantamento de requisitos específicos             | User Story Mapping | Levantamento completo dos requisitos funcionais e não funcionais                     |
-|                   | Declaração                | Definição dos critérios e entregas esperadas       | User Stories, Épicos, Visão de Produto                                    | Produtos esperados definidos com critérios de aceitação e medidas de sucesso         |
-|                   | Verificação e Validação   | Revisão inicial de requisitos e produtos           | Checklist de Verificação, INVEST                                          | Alinhamento de critérios de aceitação e validação com os stakeholders                |
-| *Refinement*    | Representação             | Desenvolvimento de protótipos e testes iniciais    | Storyboard                                 | Produtos em desenvolvimento de acordo com os requisitos priorizados                  |
-|                   | Verificação e Validação   | Testes e feedbacks contínuos                       | Critérios de Aceitação, DoR                           | Produtos testados em relação aos critérios definidos                                 |
-|                   | Organização e Atualização | Atualização de backlog                             | Product Backlog Building (PBB), Priorizações com MoSCoW              | Backlog atualizado com base no progresso e novas descobertas                         |
-| *Consolidation* | Análise e Consenso        | Revisão de requisitos incompletos ou mal definidos | Revisão de user stories                 | Conclusão dos itens pendentes e preparação para a entrega final                      |
-|                   | Declaração                | Revisão final dos critérios de aceite              | Checklist, INVEST, DoD                                                    | Confirmação de que todos os itens estão prontos para entrega                         |
-| *Close-out*     | Verificação e Validação   | Aceitação formal dos entregáveis                   | Feedback do cliente, Workshop de Revisão                                  | Entrega validada pelo cliente e stakeholders                                         |
-|                   | Organização e Atualização | Documentação e retrospectiva                       | Revisão, Retrospectiva, Lições aprendidas                                 | Melhoria contínua com base no aprendizado do timebox                                 |
+| Fase do DSDM                              | Atividades de ER               | Práticas                                  | Técnicas                                  | Resultado Esperado                                         |
+|-----------------------------------------------|------------------------------------|-----------------------------------------------|-----------------------------------------------|----------------------------------------------------------------|
+| Pré-Projeto (Pre-Project)                 | Elicitação e Descoberta            | Alinhamento inicial com stakeholders          | Brainstorming, Entrevistas                    | Clareza sobre objetivos iniciais e compreensão das necessidades |
+| Estudo de Viabilidade (Feasibility Study) | Análise e Consenso                 | Avaliação técnica e de escopo inicial         | Análise de Stakeholders, Discussões Técnicas  | Verificação da viabilidade do projeto                          |
+| Estudo de Negócio (Business Study)        | Declaração de Requisitos           | Definição da visão de produto e objetivos     | User Stories, Épicos, Visão de Produto         | Requisitos organizados e alinhados com o negócio               |
+| Iteração do Modelo Funcional (Functional Model Iteration) | Representação                      | Criação de protótipos e modelagens            | Storyboard, Protótipos                        | Visualização inicial do sistema e validação de funcionalidades |
+|                                               | Verificação e Validação            | Testes iniciais com stakeholders              | Critérios de Aceitação, INVEST                | Alinhamento entre expectativas e implementação                 |
+| Iteração de Design e Construção (Design and Build Iteration) | Organização e Atualização          | Manutenção e evolução do backlog              |  MoSCoW        | Backlog refinado e priorizado com base no progresso            |
+|                                               | Verificação e Validação            | Feedbacks contínuos e entregas incrementais   | Testes de Aceitação, DoR                      | Funcionalidades testadas e aceitas iterativamente              |
+| Implementação (Implementation)            | Verificação e Validação            | Validação final com o cliente                 | Feedback, Workshop de Revisão                 | Entrega validada e aceita pelo cliente                         |
+|                                               | Organização e Atualização          | Documentação e retrospectiva                  | Revisão Final, Lições Aprendidas              | Encerramento com aprendizado e melhoria contínua               |
 
 ## Histórico de Versão:
 
 | Data       | Versão | Descrição                | Autor              | Revisores               |
 | :--------- | :----- | :------------------------- | :----------------- | :---------------------- |
 | 26/05/2025 | 1.0    | Criação do Documento     | **Filipe Bressanelli** | **Eduardo Waski** |
+| 22/06/2025 | 1.1    | Modifiação das fases | **Eduardo e Henrique** | **Luis Eduardo** |
