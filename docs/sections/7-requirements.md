@@ -83,7 +83,7 @@ A tabela a seguir apresenta os Requisitos Não Funcionais criados para o projeto
 |-------|--------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|----------------------|
 | RNF01 | Tempo de carregamento de tela                        | O frontend deve ter um tempo de carregamento inferior a 3 segundos| Performance          |
 | RNF02 | Clareza das mensagens de erro                         | O sistema deve exibir mensagens de erro para o usuário e suas possíveis causas.                    | Usabilidade          |
-| RNF03 | Navegação utilizando menus laterais e bem visíveis.                                 | Usabilidade          |
+| RNF03 | Navegação utilizando menus laterais e bem visíveis.                                 | Usabilidade          | O sistema deve permitir o usuário navegar por meio de um menu lateral de fácil visualização
 | RNF04 | Acessibilidade para usuários com dificuldade de visualização    | O sistema deve conter ajustes para tamanho de fontes para 12px, 16px, 20px.              | Usabilidade          |
 | RNF05 | Capacidade de usuários simultâneos                     | O sistema deve suportar pelo menos 100 usuários simultâneos, mantendo tempo de resposta inferior a 3 segundos por requisição em 95% das requisições.      | Performance          |
 | RNF06 | Manutenibilidade do código                    | O código do sistema deve ser bem estruturado em pastas autodescritivas e comentado para facilitar a manutenção e futuras atualizações.          | Outros (Manutenibilidade) |
