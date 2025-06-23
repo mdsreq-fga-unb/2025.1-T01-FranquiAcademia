@@ -5,7 +5,8 @@
 
 ## 1. Visão do Produto
 
-Esta seção consolida os problemas identificados e as expectativas para o sistema HealthNet, definindo o propósito e o valor do produto.
+Esta seção consolida os problemas identificados e as expectativas para o sistema HealthNet, definindo o propósito e o valor do produto. 
+[Link para o board no Miro](https://miro.com/app/board/uXjVIm7zf9g=/?share_link_id=469408609513)
 
 ### 1.1. Problemas Atuais
 
