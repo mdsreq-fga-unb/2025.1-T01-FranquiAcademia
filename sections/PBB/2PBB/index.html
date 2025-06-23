@@ -1,0 +1,1224 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>Product Backlog Building - DeltaCore</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/styles.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#product-backlog-building" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../../.." title="DeltaCore" class="md-header__button md-logo" aria-label="DeltaCore" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DeltaCore
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Product Backlog Building
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/mdsreq-fga-unb/2025.1-T01-FranquiAcademia" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2025.1-T01-FranquiAcademia
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="DeltaCore" class="md-nav__button md-logo" aria-label="DeltaCore" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    DeltaCore
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/mdsreq-fga-unb/2025.1-T01-FranquiAcademia" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2025.1-T01-FranquiAcademia
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Início
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Visão do Produto e Projeto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Visão do Produto e Projeto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1-intro_client/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cenário Atual do Cliente e Negócio
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2-solution/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Solução Proposta
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3-approach/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Estratégias de Engenharia de Software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4-schedule/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cronograma e Entregas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-interection-po/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interação entre Equipe e Cliente
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../6-lessons-learned/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lições Aprendidas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../7-requirements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Requisitos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../8-DoR_DoD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DoR & DoD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../9-BackLog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Backlog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../10-engineering_requirements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Engenharia de Requisitos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PBB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PBB
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../USM/USM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    USM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Entregas
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Entregas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entregas/1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entrega 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entregas/2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entrega 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-visao-do-produto" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Visão do Produto
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Visão do Produto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-problemas-atuais" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1. Problemas Atuais
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-expectativas-para-a-solucao" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2. Expectativas para a Solução
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-personas" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Personas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Personas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#imagens-das-personas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Imagens das Personas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-mapa-de-funcionalidades-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Mapa de Funcionalidades (Features)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-product-backlog" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Product Backlog
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Product Backlog">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#funcionalidade-1-cadastro-centralizado-de-pacientes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funcionalidade 1: Cadastro Centralizado de Pacientes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcionalidade-2-prontuario-digital-integrado-pdi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funcionalidade 2: Prontuário Digital Integrado (PDI)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcionalidade-3-agendamento-inteligente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funcionalidade 3: Agendamento Inteligente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcionalidade-4-gestao-integrada-de-medicamentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funcionalidade 4: Gestão Integrada de Medicamentos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcionalidade-5-portal-do-paciente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funcionalidade 5: Portal do Paciente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcionalidade-6-sistema-de-compliance-e-relatorios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funcionalidade 6: Sistema de Compliance e Relatórios
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcionalidade-7-painel-de-gestao-tecnologica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funcionalidade 7: Painel de Gestão Tecnológica
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="product-backlog-building">Product Backlog Building</h1>
+<p>É uma sigla para Product Backlog Building (PBB). É uma técnica para criar e manter uma lista de itens de trabalho para um projeto de software. O PBB tem como objetivo principal construir um backlog de forma colaborativa, de modo que todos os envolvidos no projeto compreendam o contexto do negócio. É um processo contínuo que começa antes do início do projeto e continua durante todo o ciclo de vida do projeto.</p>
+<h2 id="1-visao-do-produto">1. Visão do Produto</h2>
+<p>Esta seção consolida os problemas identificados e as expectativas para o sistema HealthNet, definindo o propósito e o valor do produto.</p>
+<h3 id="11-problemas-atuais">1.1. Problemas Atuais</h3>
+<p>A empresa enfrenta desafios significativos que impactam a eficiência operacional e a qualidade do atendimento ao paciente. Os principais problemas identificados são:</p>
+<ul>
+<li><strong>Sistemas Fragmentados:</strong> Utilização de múltiplos sistemas incompatíveis entre as unidades, resultando em ilhas de informação.</li>
+<li><strong>Gestão de Prontuários Ineficiente:</strong> Dificuldade em acessar um histórico unificado e completo dos pacientes, levando a diagnósticos e tratamentos fragmentados.</li>
+<li><strong>Processos Manuais Excessivos:</strong> Dependência de processos manuais para agendamento, registro e gestão de medicamentos, aumentando o risco de erros.</li>
+<li><strong>Agendamento Ineficaz:</strong> Falta de uma visão centralizada das agendas dos profissionais, causando conflitos, sobreposições e ociosidade.</li>
+<li><strong>Controle de Medicamentos Deficiente:</strong> Risco elevado de erros na dispensação de medicamentos por falta de verificação de interações e alergias.</li>
+<li><strong>Baixa Conformidade Regulatória:</strong> Dificuldade em gerar relatórios e garantir a conformidade com as normas de saúde expondo a organização a riscos legais.</li>
+</ul>
+<p><img alt="Mapa de Problemas" src="../images/Problemas-miro.png" /></p>
+<h3 id="12-expectativas-para-a-solucao">1.2. Expectativas para a Solução</h3>
+<p>O sistema HealthNet visa transformar o cenário atual, entregando os seguintes resultados:</p>
+<ul>
+<li><strong>Integração Total:</strong> Um ecossistema de saúde unificado, onde dados de pacientes, prontuários e agendamentos são compartilhados em tempo real entre todas as unidades.</li>
+<li><strong>Usabilidade Superior:</strong> Interfaces intuitivas e amigáveis para todas as personas, reduzindo a curva de aprendizado e otimizando o tempo de execução das tarefas.</li>
+<li><strong>Automação de Processos:</strong> Automatização de tarefas repetitivas como agendamentos, notificações, verificações de conformidade e geração de relatórios.</li>
+<li><strong>Segurança do Paciente Aprimorada:</strong> Redução drástica de erros médicos através de alertas inteligentes, checagem de interações medicamentosas e acesso rápido a históricos completos.</li>
+<li><strong>Conformidade Assegurada:</strong> Ferramentas que garantem a adesão às regulamentações de saúde, com trilhas de auditoria e relatórios automáticos.</li>
+<li><strong>Melhor Experiência do Usuário:</strong> Uma jornada mais fluida e satisfatória tanto para a equipe de saúde quanto para os pacientes.</li>
+</ul>
+<p><img alt="Expectativa da Solução" src="../images/expectativa.png" /></p>
+<h2 id="2-personas">2. Personas</h2>
+<p>As personas a seguir representam os principais usuários do sistema e suas necessidades.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Persona</th>
+<th style="text-align: left;">Papel Principal (O que faz)</th>
+<th style="text-align: left;">Expectativa com o Sistema (O que espera)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Maria</strong></td>
+<td style="text-align: left;">Recepcionista responsável pelo primeiro contato, registro e atualização de dados dos pacientes.</td>
+<td style="text-align: left;">Interface simples e rápida para inserção de dados e agendamento.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Dr. João</strong></td>
+<td style="text-align: left;">Médico Clínico Geral focado no atendimento clínico, diagnóstico e prescrição.</td>
+<td style="text-align: left;">Acesso imediato ao histórico completo do paciente e suporte à decisão clínica (alertas).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lívia</strong></td>
+<td style="text-align: left;">Farmacêutica que gerencia a dispensação de medicamentos.</td>
+<td style="text-align: left;">Sistema que valide prescrições e verifique alergias e interações medicamentosas automaticamente.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Rafael</strong></td>
+<td style="text-align: left;">Coordenador de Agendamento que otimiza as agendas dos profissionais de saúde.</td>
+<td style="text-align: left;">Ferramenta unificada para gerenciar agendas, evitar conflitos e maximizar a ocupação.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sra. Clara</strong></td>
+<td style="text-align: left;">Paciente que utiliza os serviços da clínica de forma regular.</td>
+<td style="text-align: left;">Autonomia para agendar consultas online e acessar seu histórico de saúde e exames.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sr. Roberto</strong></td>
+<td style="text-align: left;">Diretor de Tecnologia que supervisiona a infraestrutura de TI.</td>
+<td style="text-align: left;">Solução segura, escalável, de fácil manutenção e em conformidade com as regulamentações.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="imagens-das-personas">Imagens das Personas</h3>
+<p><img alt="Persona Maria" src="../images/personas_maria.png" />
+<img alt="Persona Dr. João" src="../images/personas_dr_joao.png" />
+<img alt="Persona Lívia" src="../images/personas_livia_farmaceutica.png" />
+<img alt="Persona Rafael" src="../images/personass_rafael_coordenador.png" />
+<img alt="Persona Sra. Clara" src="../images/personas_sra_clara_paciente.png" />
+<img alt="Persona Sr. Roberto" src="../images/personas_sr_roberto_diretor.png" /></p>
+<h2 id="3-mapa-de-funcionalidades-features">3. Mapa de Funcionalidades (Features)</h2>
+<p>As funcionalidades abaixo representam as grandes capacidades do sistema, que agrupam as histórias de usuário.</p>
+<ol>
+<li><strong>Cadastro Centralizado de Pacientes</strong></li>
+<li><strong>Prontuário Digital Integrado (PDI)</strong></li>
+<li><strong>Agendamento Inteligente</strong></li>
+<li><strong>Gestão Integrada de Medicamentos</strong></li>
+<li><strong>Portal do Paciente</strong></li>
+<li><strong>Sistema de Compliance e Relatórios</strong></li>
+<li><strong>Painel de Gestão Tecnológica</strong></li>
+</ol>
+<!-- ![Funcionalidades do Sistema](images/func_gestao_integrada.png)
+-->
+<p><img alt="Funcionalidade de Cadastro" src="../images/func_cadastro.png" />
+<img alt="Funcionalidade de Prontuário" src="../images/func_prontuario.png" />
+<img alt="Funcionalidade de Agendamento" src="../images/func_agendamento.png" />
+<img alt="Funcionalidade de Gestão" src="../images/func_gestao.png" />
+<img alt="Funcionalidade do Portal" src="../images/func_portal.png" />
+<img alt="Funcionalidade do Sistema de Compliance" src="../images/func_sistema_compliance.png" />
+<img alt="Funcionalidade de Gestão de Tecnologia" src="../images/func_gestao_tecnologia.png" /></p>
+<h2 id="4-product-backlog">4. Product Backlog</h2>
+<p>A seguir, o detalhamento do Product Backlog em formato de tabelas por funcionalidade.</p>
+<h3 id="funcionalidade-1-cadastro-centralizado-de-pacientes">Funcionalidade 1: Cadastro Centralizado de Pacientes</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">ID</th>
+<th style="text-align: left;">História de Usuário</th>
+<th style="text-align: left;">Critérios de Aceitação</th>
+<th style="text-align: left;">Cenário BDD (Gherkin)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>HU-01</strong></td>
+<td style="text-align: left;">Como <strong>Maria (Recepcionista)</strong>, eu quero <strong>registrar um novo paciente com dados completos</strong>, para que <strong>suas informações estejam centralizadas e acessíveis para futuros atendimentos.</strong></td>
+<td style="text-align: left;">1. O formulário deve conter os campos obrigatórios: nome completo, CPF, data de nascimento e contato.<br>2. O sistema deve validar o formato do CPF e impedir registros duplicados.<br>3. Após o registro, o paciente deve receber um número de identificação único no sistema.<br>4. Os dados devem estar imediatamente disponíveis para todas as unidades da franquia.</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>HU-02</strong></td>
+<td style="text-align: left;">Como <strong>Dr. João (Médico)</strong>, eu quero <strong>consultar os dados cadastrais integrados de um paciente</strong>, para que <strong>eu tenha uma visão completa e possa confirmar sua identidade antes do atendimento.</strong></td>
+<td style="text-align: left;">1. A busca por paciente pode ser feita por nome completo, CPF ou número de identificação.<br>2. O resultado da busca deve exibir os dados pessoais e o histórico de unidades visitadas.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>HU-03</strong></td>
+<td style="text-align: left;">Como <strong>Sr. Roberto (Diretor de TI)</strong>, eu quero que <strong>os dados dos pacientes sejam atualizados automaticamente entre as unidades</strong>, para que <strong>se garanta a consistência da informação e se evite retrabalho.</strong></td>
+<td style="text-align: left;">1. Qualquer alteração no cadastro de um paciente feita em uma unidade deve ser replicada para todas as outras.<br>2. O sistema deve manter um log de todas as alterações, indicando quem fez, o que foi alterado e quando.</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="PBIs de Cadastro" src="../images/pbis_cadastro.png" /></p>
+<h3 id="funcionalidade-2-prontuario-digital-integrado-pdi">Funcionalidade 2: Prontuário Digital Integrado (PDI)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">ID</th>
+<th style="text-align: left;">História de Usuário</th>
+<th style="text-align: left;">Critérios de Aceitação</th>
+<th style="text-align: left;">Cenário BDD (Gherkin)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>HU-04</strong></td>
+<td style="text-align: left;">Como <strong>Dr. João (Médico)</strong>, eu quero <strong>acessar o histórico completo de consultas, exames e diagnósticos de um paciente em uma única tela</strong>, para que <strong>eu possa tomar decisões clínicas mais seguras e informadas.</strong></td>
+<td style="text-align: left;">1. A visualização deve ser cronológica, do atendimento mais recente ao mais antigo.<br>2. Deve ser possível filtrar o histórico por tipo de evento (consulta, exame, prescrição).<br>3. Dados de todas as unidades da franquia devem ser consolidados na mesma visão.</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>HU-05</strong></td>
+<td style="text-align: left;">Como <strong>Dr. João (Médico)</strong>, eu quero <strong>inserir novas informações no prontuário, como diagnósticos e pedidos de exames</strong>, para que <strong>o registro do paciente se mantenha atualizado.</strong></td>
+<td style="text-align: left;">1. O sistema deve usar CID-10 para o registro de diagnósticos.<br>2. Os pedidos de exame devem ser associados ao atendimento atual.<br>3. A inserção deve ser assinada digitalmente (login do médico) e não pode ser alterada após salva, apenas adicionado um registro de retificação.</td>
+<td style="text-align: left;"><strong>Cenário:</strong> Registro de um novo diagnóstico<br><strong>Dado</strong> que o Dr. João está na tela do prontuário da Sra. Clara<br><strong>E</strong> está realizando uma nova consulta<br><strong>Quando</strong> ele insere o diagnóstico "Hipertensão" (CID I10)<br><strong>E</strong> salva o registro da consulta<br><strong>Então</strong> o diagnóstico deve aparecer no histórico da Sra. Clara<br><strong>E</strong> deve estar associado à data e ao nome do Dr. João.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>HU-06</strong></td>
+<td style="text-align: left;">Como <strong>Dr. João (Médico)</strong>, eu quero <strong>receber alertas automáticos sobre informações críticas ou faltantes no prontuário (ex: alergias não registradas)</strong>, para que <strong>a segurança do paciente seja aumentada.</strong></td>
+<td style="text-align: left;">1. Ao abrir um prontuário pela primeira vez, o sistema deve exibir um alerta proeminente se o campo "Alergias" estiver vazio.<br>2. O alerta deve permanecer visível até que o médico confirme a ciência ou preencha a informação.</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="PBIs de Prontuário" src="../images/pbis_prontuario.png" /></p>
+<h3 id="funcionalidade-3-agendamento-inteligente">Funcionalidade 3: Agendamento Inteligente</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">ID</th>
+<th style="text-align: left;">História de Usuário</th>
+<th style="text-align: left;">Critérios de Aceitação</th>
+<th style="text-align: left;">Cenário BDD (Gherkin)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>HU-07</strong></td>
+<td style="text-align: left;">Como a <strong>Sra. Clara (Paciente)</strong>, eu quero <strong>agendar consultas online através do portal</strong>, para que <strong>eu tenha conveniência e não precise ligar para a clínica.</strong></td>
+<td style="text-align: left;">1. O portal deve exibir os horários disponíveis por médico e especialidade.<br>2. Após a seleção, o sistema deve pedir uma confirmação antes de efetivar o agendamento.<br>3. Um e-mail/SMS de confirmação deve ser enviado imediatamente para a paciente.</td>
+<td style="text-align: left;"><pre><code><strong>Cenário:</strong> Agendamento com sucesso<br><strong>Dado</strong> que a Sra. Clara está logada no Portal<br><strong>E</strong> ela seleciona a especialidade e o médico<br><strong>E</strong> escolhe um horário disponível<br><strong>Quando</strong> ela clica em "Confirmar Agendamento"<br><strong>Então</strong> o sistema deve exibir "Consulta agendada!"<br><strong>E</strong> o horário deve ficar indisponível na agenda.</code></pre></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>HU-07</strong></td>
+<td style="text-align: left;">Como a <strong>Sra. Clara (Paciente)</strong>, eu quero <strong>agendar consultas online através do portal</strong>, para que <strong>eu tenha conveniência e não precise ligar para a clínica.</strong></td>
+<td style="text-align: left;"><pre><code><strong>Funcionalidade:</strong> Agendamento Online de Consultas<br><strong>Cenário:</strong> Agendamento de consulta com sucesso<br><strong>Dado</strong> que a Sra. Clara está logada no Portal do Paciente<br><strong>E</strong> ela seleciona a especialidade "Clínico Geral" e o "Dr. João"<br><strong>E</strong> escolhe um horário disponível na agenda, como "25/06/2025 às 10:00"<br><strong>Quando</strong> ela clica no botão "Confirmar Agendamento"<br><strong>Então</strong> o sistema deve exibir a mensagem "Consulta agendada com sucesso!"<br><strong>E</strong> o horário de "25/06/2025 às 10:00" deve ficar indisponível na agenda do Dr. João.</code></pre></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>HU-08</strong></td>
+<td style="text-align: left;">Como <strong>Rafael (Coordenador)</strong>, eu quero que <strong>os pacientes sejam notificados automaticamente sobre suas consultas</strong>, para que <strong>se reduza a taxa de não comparecimento (no-show).</strong></td>
+<td style="text-align: left;">1. A notificação de confirmação é enviada no momento do agendamento.<br>2. A notificação de lembrete é enviada 24 horas antes da consulta.<br>3. O paciente deve ter a opção de confirmar ou cancelar a consulta através do lembrete.</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>HU-09</strong></td>
+<td style="text-align: left;">Como <strong>Rafael (Coordenador)</strong>, eu quero <strong>visualizar a disponibilidade integrada de todos os médicos em uma única tela</strong>, para que <strong>eu possa otimizar a alocação de horários.</strong></td>
+<td style="text-align: left;">1. A visualização deve ser em formato de calendário (diário, semanal, mensal).<br>2. Deve ser possível filtrar por unidade e por especialidade.<br>3. Horários ocupados, livres e bloqueados devem ter cores distintas.</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="PBIs de Agendamento" src="../images/pbis_agendamento.png" /></p>
+<h3 id="funcionalidade-4-gestao-integrada-de-medicamentos">Funcionalidade 4: Gestão Integrada de Medicamentos</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">ID</th>
+<th style="text-align: left;">História de Usuário</th>
+<th style="text-align: left;">Critérios de Aceitação</th>
+<th style="text-align: left;">Cenário BDD (Gherkin)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>HU-10</strong></td>
+<td style="text-align: left;">Como <strong>Lívia (Farmacêutica)</strong>, eu quero que <strong>o sistema verifique interações medicamentosas automaticamente</strong>, para que <strong>se evite reações adversas.</strong></td>
+<td style="text-align: left;">1. O sistema deve cruzar a nova prescrição com o histórico de medicamentos do paciente.<br>2. Se uma interação de risco for detectada, um alerta bloqueante deve ser exibido.<br>3. O alerta deve detalhar os medicamentos e o risco associado.</td>
+<td style="text-align: left;"><pre><code><strong>Cenário:</strong> Alerta de interação de alto risco<br><strong>Dado</strong> que a Sra. Clara usa "Varfarina"<br><strong>E</strong> o Dr. João prescreve "Aspirina"<br><strong>Quando</strong> Lívia valida a nova prescrição<br><strong>Então</strong> o sistema exibe "ALERTA DE INTERAÇÃO GRAVE"<br><strong>E</strong> a dispensação é bloqueada.</code></pre></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>HU-11</strong></td>
+<td style="text-align: left;">Como <strong>Lívia (Farmacêutica)</strong>, eu quero <strong>registrar a dispensação de cada medicamento prescrito</strong>, para que <strong>haja um controle de estoque e um histórico preciso.</strong></td>
+<td style="text-align: left;">1. A dispensação só pode ser registrada para uma prescrição válida.<br>2. O sistema deve registrar data, hora, quantidade e o farmacêutico responsável.</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>HU-12</strong></td>
+<td style="text-align: left;">Como <strong>Dr. João (Médico)</strong>, eu quero que <strong>o sistema me alerte sobre alergias conhecidas do paciente ao prescrever</strong>, para que <strong>se evitem reações alérgicas graves.</strong></td>
+<td style="text-align: left;">1. Ao digitar um medicamento ao qual o paciente é alérgico, um alerta deve aparecer.<br>2. O sistema deve impedir a conclusão da prescrição desse medicamento.</td>
+<td style="text-align: left;"><pre><code><strong>Cenário:</strong> Tentativa de prescrever medicação alergênica<br><strong>Dado</strong> que Sra. Clara tem alergia a "Penicilina"<br><strong>Quando</strong> Dr. João tenta prescrever "Amoxicilina"<br><strong>Então</strong> o sistema exibe "ALERTA DE ALERGIA"<br><strong>E</strong> impede de salvar a prescrição.</code></pre></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>HU-12</strong></td>
+<td style="text-align: left;">Como <strong>Dr. João (Médico)</strong>, eu quero que <strong>o sistema me alerte automaticamente sobre alergias conhecidas do paciente ao prescrever um medicamento</strong>, para que <strong>se evitem reações alérgicas graves.</strong></td>
+<td style="text-align: left;"><pre><code><strong>Funcionalidade:</strong> Alerta de Alergia a Medicamentos<br><strong>Cenário:</strong> Médico tenta prescrever medicamento ao qual o paciente é alérgico<br><strong>Dado</strong> que no prontuário da Sra. Clara está registrada uma alergia a "Penicilina"<br><strong>Quando</strong> o Dr. João tenta prescrever "Amoxicilina" (um derivado da penicilina) para ela<br><strong>Então</strong> o sistema deve exibir um alerta bloqueante com a mensagem: "ALERTA DE ALERGIA: Paciente possui alergia a Penicilina."<br><strong>E</strong> o botão para salvar a prescrição deve ficar desabilitado.</code></pre></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><img alt="PBIs de Gestão Integrada" src="../images/pbis_gestao_integrada.png" /></p>
+<h3 id="funcionalidade-5-portal-do-paciente">Funcionalidade 5: Portal do Paciente</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">ID</th>
+<th style="text-align: left;">História de Usuário</th>
+<th style="text-align: left;">Critérios de Aceitação</th>
+<th style="text-align: left;">Cenário BDD (Gherkin)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>HU-13</strong></td>
+<td style="text-align: left;">Como a <strong>Sra. Clara (Paciente)</strong>, eu quero <strong>consultar meus resultados de exames e histórico pelo portal</strong>, para que <strong>eu possa acompanhar minha saúde.</strong></td>
+<td style="text-align: left;">1. O portal deve listar todos os exames com seus respectivos laudos.<br>2. O acesso deve ser protegido por autenticação de dois fatores.</td>
+<td style="text-align: left;"><pre><code><strong>Cenário:</strong> Paciente consulta resultado<br><strong>Dado</strong> que Sra. Clara está logada no Portal<br><strong>E</strong> navega para "Meus Exames"<br><strong>Quando</strong> ela clica no "Hemograma Completo"<br><strong>Então</strong> o sistema deve exibir o laudo do exame.</code></pre></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>HU-13</strong></td>
+<td style="text-align: left;">Como a <strong>Sra. Clara (Paciente)</strong>, eu quero <strong>consultar meus resultados de exames e meu histórico de saúde pelo portal</strong>, para que <strong>eu possa acompanhar minha saúde de forma proativa.</strong></td>
+<td style="text-align: left;"><pre><code><strong>Funcionalidade:</strong> Acesso a Resultados de Exames no Portal<br><strong>Cenário:</strong> Paciente consulta um resultado de exame recente<br><strong>Dado</strong> que a Sra. Clara está logada no Portal do Paciente<br><strong>E</strong> ela navega para a seção "Meus Exames"<br><strong>Quando</strong> ela clica no exame "Hemograma Completo" realizado na última semana<br><strong>Então</strong> o sistema deve exibir o laudo completo do exame em formato PDF<br><strong>E</strong> o status do exame deve ser "Resultado Disponível".</code></pre></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>HU-14</strong></td>
+<td style="text-align: left;">Como a <strong>Sra. Clara (Paciente)</strong>, eu quero <strong>receber notificações e lembretes importantes sobre minha saúde pelo portal</strong>, para que <strong>eu não perca compromissos.</strong></td>
+<td style="text-align: left;">1. O portal deve ter uma área de "Notificações".<br>2. Notificações devem ser geradas para: confirmação de consulta, lembrete, resultado de exame disponível.</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="PBIs do Portal" src="../images/pbis_portal.png" /></p>
+<h3 id="funcionalidade-6-sistema-de-compliance-e-relatorios">Funcionalidade 6: Sistema de Compliance e Relatórios</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">ID</th>
+<th style="text-align: left;">História de Usuário</th>
+<th style="text-align: left;">Critérios de Aceitação</th>
+<th style="text-align: left;">Cenário BDD (Gherkin)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>HU-15</strong></td>
+<td style="text-align: left;">Como <strong>Sr. Roberto (Diretor de TI)</strong>, eu quero que <strong>o sistema colete e consolide dados para conformidade regulatória automaticamente</strong>, para que <strong>se reduza o esforço manual em auditorias.</strong></td>
+<td style="text-align: left;">1. O sistema deve registrar todos os acessos aos prontuários (quem, quando, o quê).<br>2. Os logs devem ser armazenados de forma segura e inviolável.</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>HU-16</strong></td>
+<td style="text-align: left;">Como <strong>Sr. Roberto (Diretor de TI)</strong>, eu quero <strong>gerar relatórios de conformidade e operacionais</strong>, para que <strong>a gestão tenha dados para a tomada de decisão.</strong></td>
+<td style="text-align: left;">1. O sistema deve oferecer uma biblioteca de relatórios pré-definidos.<br>2. Deve ser possível exportar os relatórios nos formatos PDF e CSV.</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>HU-16</strong></td>
+<td style="text-align: left;">Como <strong>Sr. Roberto (Diretor de TI)</strong>, eu quero <strong>gerar relatórios de conformidade e operacionais (ex: taxa de no-show, tempo médio de atendimento)</strong>, para que <strong>a gestão tenha dados para a tomada de decisão estratégica.</strong></td>
+<td style="text-align: left;"><pre><code><strong>Funcionalidade:</strong> Geração de Relatórios<br><strong>Cenário:</strong> Diretor de TI gera um relatório de taxa de não comparecimento<br><strong>Dado</strong> que o Sr. Roberto, Diretor de TI, está logado no sistema com permissões de administrador<br><strong>E</strong> ele navega para a seção de "Relatórios Operacionais"<br><strong>Quando</strong> ele seleciona o relatório "Taxa de Não Comparecimento (No-Show)" para o último mês<br><strong>E</strong> clica em "Gerar Relatório"<br><strong>Então</strong> o sistema deve exibir um relatório detalhando a porcentagem de consultas em que os pacientes não compareceram<br><strong>E</strong> deve haver uma opção para exportar o relatório em formato PDF.</code></pre></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><img alt="PBIs do Sistema de Compliance" src="../images/pbis_sistema_compliance.png" /></p>
+<h3 id="funcionalidade-7-painel-de-gestao-tecnologica">Funcionalidade 7: Painel de Gestão Tecnológica</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">ID</th>
+<th style="text-align: left;">História de Usuário</th>
+<th style="text-align: left;">Critérios de Aceitação</th>
+<th style="text-align: left;">Cenário BDD (Gherkin)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>HU-17</strong></td>
+<td style="text-align: left;">Como <strong>Sr. Roberto (Diretor de TI)</strong>, eu quero <strong>monitorar a segurança e o desempenho do sistema através de um painel</strong>, para que <strong>eu possa garantir a disponibilidade e a integridade da solução.</strong></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>HU-17</strong></td>
+<td style="text-align: left;">Como <strong>Sr. Roberto (Diretor de TI)</strong>, eu quero <strong>monitorar a segurança e o desempenho do sistema através de um painel</strong>, para que <strong>eu possa garantir a disponibilidade e a integridade da solução.</strong></td>
+<td style="text-align: left;"><pre><code><strong>Funcionalidade:</strong> Monitoramento de Desempenho do Sistema<br><strong>Cenário:</strong> Diretor de TI verifica o status do sistema no painel<br><strong>Dado</strong> que o Sr. Roberto, Diretor de TI, acessa o "Painel de Gestão Tecnológica"<br><strong>Quando</strong> a página do painel carrega<br><strong>Então</strong> ele deve visualizar widgets mostrando o tempo de atividade (uptime) do sistema, o tempo médio de resposta das requisições e o uso atual da CPU<br><strong>E</strong> o status geral do sistema deve ser exibido como "Operacional" com um indicador verde.</code></pre></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>HU-18</strong></td>
+<td style="text-align: left;">Como <strong>Sr. Roberto (Diretor de TI)</strong>, eu quero <strong>gerenciar o suporte técnico de forma integrada</strong>, para que <strong>os chamados dos usuários sejam resolvidos eficientemente.</strong></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="PBIs de Gestão" src="../images/pbis_gestao.png" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "content.tabs.link", "header.autohide", "navigation.instant", "navigation.top", "navigation.tracking"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+    
+  </body>
+</html>
