@@ -17,7 +17,13 @@
 
 **Resultado Esperado:** Maior autonomia da equipe, melhora no fluxo de trabalho mesmo com agendas diferentes, redução de dependências de reuniões e agilidade na execução das atividades, sem comprometer a qualidade da comunicação e do acompanhamento.
 
+## Unidade 3: 
 
+**Desafio:** Durante a elaboração do Product Backlog e do User Story Mapping, a equipe percebeu que algumas das histórias de usuário iniciais eram muito amplas ou ambíguas. Isso gerava incertezas sobre o escopo exato de cada funcionalidade e dificultava a criação de Critérios de Aceitação claros.
+
+**Ação de Melhoria:** A equipe instituiu um processo de refinamento iterativo. As histórias foram quebradas em partes menores e mais gerenciáveis. Adotou-se a prática de escrever os Critérios de Aceitação e os cenários BDD de forma colaborativa, garantindo que tanto a visão de negócio quanto a perspectiva técnica estivessem alinhadas antes do início do desenvolvimento.
+
+**Resultado Esperado:** Um backlog mais claro, robusto e com menos ambiguidades. Redução do risco de retrabalho, estimativas mais precisas e uma maior confiança da equipe na compreensão do que precisa ser entregue em cada etapa.
 
 ## Histórico de Versão:
 
@@ -25,3 +31,4 @@
 | :--------- | :----- | :------------------------- | :----------------- | :---------------------- |
 | 22/04/2025 | 1.0    | Criação do Documento     | **Cibelly** | **Luis Eduardo Lima** |
 | 26/05/2025 | 1.1    | Edição do Documento     | **Filipe** | **Cibelly** |
+| 23/06/2025 | 1.2 | Adição das Lições Aprendidas da Unidade 3 | **Filipe** | **Cibelly, Luis Eduardo Lima** |

@@ -97,6 +97,9 @@ A tabela a seguir apresenta os Requisitos Não Funcionais criados para o projeto
 | 26/05/2025 | 1.0    | Criação do Documento     | **Luis Eduardo Lima** | **Eduardo Waski** |
 | 04/06/2025 | 1.1    | Revisão dos RFs          | **Luis Eduardo Lima** | **Eduardo Waski** |
 | 04/06/2025 | 1.3    | Detalhamento dos RNFs         | **Eduardo Waski**     | **Cibelly, Henrique**  |
+| 23/06/2025 | 1.4    | Detalhamento dos RNFs 03         | **Isabelly**     | **Cibelly, Henrique**  |
+
+
 
 
 

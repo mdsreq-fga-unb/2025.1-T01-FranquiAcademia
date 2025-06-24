@@ -150,3 +150,11 @@ A seguir, o detalhamento do Product Backlog em formato de tabelas por funcionali
 | **HU-18**| Como **Sr. Roberto (Diretor de TI)**, eu quero **gerenciar o suporte técnico de forma integrada**, para que **os chamados dos usuários sejam resolvidos eficientemente.** | - | - |
 
 ![PBIs de Gestão](images/pbis_gestao.png)
+
+## Histórico de Versão:
+
+| Data       | Versão | Descrição                | Autor              | Revisores               |
+| :--------- | :----- | :------------------------- | :----------------- | :---------------------- |
+| 23/06/2025 | 1.0    | Criação do Documento     | **Eduardo Waski, Luis Eduardo Lima, Isabelly** | **Henrique, Filipe, Cibelly** |
+|
+

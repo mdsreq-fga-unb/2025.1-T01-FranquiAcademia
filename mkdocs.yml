@@ -25,6 +25,7 @@ nav:
   - Entregas:
     - Entrega 1: entregas/1.md
     - Entrega 2: entregas/2.md
+    - Entrega 3: entregas/3.md
 
 theme:
   name: material 

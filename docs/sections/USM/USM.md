@@ -131,5 +131,10 @@ Este documento apresenta a aplicação da técnica de **User Story Mapping (USM)
 |        |                                                          |                                                                                                          | - O certificado deve estar disponível para download após o evento.                                                |
 |        |                                                          |                                                                                                          | - O organizador deve poder validar manualmente o cumprimento da participação antes da emissão do certificado.     |
 
+## Histórico de Versão:
 
+| Data       | Versão | Descrição                | Autor              | Revisores               |
+| :--------- | :----- | :------------------------- | :----------------- | :---------------------- |
+| 23/06/2025 | 1.0    | Criação do Documento     | **Eduardo Waski, Luis Eduardo Lima, Isabelly** | **Henrique, Filipe, Cibelly** |
+|
 

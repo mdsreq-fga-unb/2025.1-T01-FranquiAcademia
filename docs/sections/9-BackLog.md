@@ -437,7 +437,8 @@ O foco do MVP é entregar um produto funcional que permita a validação das pri
 | :--------- | :----- | :------------------------- | :----------------- | :---------------------- |
 | 26/04/2025 | 1.0    | Criação do Documento     | **Eduardo Waski, Luis Eduardo Lima, Isabelly** | **Henrique, Filipe, Cibelly** |
 | 05/06/2025 | 1.1    | Modificação do backlog | **Luis Eduardo Lima, Isabelly** | **Henrique, Filipe, Cibelly, Eduardo Waski** |
-| 05/06/2025 | 1.1    | Modificação das User Stories | **Luis Eduardo Lima, Isabelly, Eduardo** | **Henrique, Cibelly, Eduardo Waski** |
+| 05/06/2025 | 1.2    | Modificação das User Stories | **Luis Eduardo Lima, Isabelly, Eduardo** | **Henrique, Cibelly, Eduardo Waski** |
+| 23/06/2025 | 1.3    | Modificação da priorizacão | **Isabelly, Eduardo, Filipe** | **Luis Eduardo Lima, Henrique, Cibelly, Eduardo Waski** |
 
 
 
