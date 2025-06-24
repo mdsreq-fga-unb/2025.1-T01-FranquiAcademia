@@ -577,6 +577,63 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#criterios-de-priorizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Critérios de Priorização
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Critérios de Priorização">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#moscow" class="md-nav__link">
+    <span class="md-ellipsis">
+      MoSCoW
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wsjf-weighted-shortest-job-first" class="md-nav__link">
+    <span class="md-ellipsis">
+      WSJF (Weighted Shortest Job First)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="WSJF (Weighted Shortest Job First)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fatores-avaliados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fatores Avaliados:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formula-original" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fórmula original:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#priorizacao-de-requisitos-com-wsjf" class="md-nav__link">
     <span class="md-ellipsis">
       Priorização de Requisitos com WSJF
@@ -850,6 +907,63 @@
   <a href="#user-stories" class="md-nav__link">
     <span class="md-ellipsis">
       User Stories
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criterios-de-priorizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Critérios de Priorização
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Critérios de Priorização">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#moscow" class="md-nav__link">
+    <span class="md-ellipsis">
+      MoSCoW
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wsjf-weighted-shortest-job-first" class="md-nav__link">
+    <span class="md-ellipsis">
+      WSJF (Weighted Shortest Job First)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="WSJF (Weighted Shortest Job First)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fatores-avaliados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fatores Avaliados:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formula-original" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fórmula original:
     </span>
   </a>
   
@@ -1254,6 +1368,76 @@ O foco do MVP é entregar um produto funcional que permita a validação das pri
 
 --- -- -->
 <blockquote></blockquote>
+<h2 id="criterios-de-priorizacao">Critérios de Priorização</h2>
+<h3 id="moscow">MoSCoW</h3>
+<p>O <strong>MoSCoW</strong> é uma técnica utilizada para categorizar a importância de cada item (requisito, funcionalidade) sob a perspectiva do cliente, informando o <strong>valor de negócio</strong>. Essa priorização qualitativa é convertida em valores numéricos que serão utilizados na fórmula do <strong>WSJF</strong>, enquanto os demais fatores da fórmula são estimados pela equipe de desenvolvimento.</p>
+<p><strong>MoSCoW</strong> é um acrônimo que representa quatro níveis de prioridade:</p>
+<table>
+<thead>
+<tr>
+<th>Letra</th>
+<th>Significado</th>
+<th>Descrição</th>
+<th>Peso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M</td>
+<td><strong>Must have</strong></td>
+<td>Requisitos <strong>obrigatórios</strong> para o funcionamento do sistema. Sem eles, o projeto é considerado um fracasso.</td>
+<td>4</td>
+</tr>
+<tr>
+<td>S</td>
+<td><strong>Should have</strong></td>
+<td>Requisitos <strong>importantes</strong>, mas não cruciais. Podem ser adiados se houver necessidade.</td>
+<td>3</td>
+</tr>
+<tr>
+<td>C</td>
+<td><strong>Could have</strong></td>
+<td>Requisitos <strong>desejáveis</strong> que agregam valor ao produto, mas são opcionais.</td>
+<td>2</td>
+</tr>
+<tr>
+<td>W</td>
+<td><strong>Won’t have (this time)</strong></td>
+<td>Requisitos que <strong>não serão incluídos</strong> na entrega atual, mas poderão ser considerados em futuras iterações.</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="wsjf-weighted-shortest-job-first">WSJF (Weighted Shortest Job First)</h2>
+<p>O <strong>WSJF</strong> é um método empregado para priorizar funcionalidades com base na relação entre o <strong>valor a ser entregue</strong> e o <strong>esforço necessário</strong> para sua implementação.</p>
+<h3 id="fatores-avaliados">Fatores Avaliados:</h3>
+<ul>
+<li><strong>Valor do Negócio</strong>: Pontuação derivada da priorização MoSCoW (escala de 1 a 4).</li>
+<li><strong>Urgência</strong>: Avaliação da <strong>criticidade temporal</strong> da entrega da funcionalidade (escala de 1 a 5).<ul>
+<li><strong>1 (Muito Urgente):</strong> A funcionalidade precisa ser entregue o mais rápido possível para evitar perdas significativas ou aproveitar uma oportunidade imediata.</li>
+<li><strong>2 (Urgente):</strong> A entrega da funcionalidade é importante e deve ser priorizada logo após os itens muito urgentes.</li>
+<li><strong>3 (Média Urgência):</strong> A funcionalidade pode ser entregue em um prazo razoável, sem impacto imediato crítico.</li>
+<li><strong>4 (Pouco Urgente):</strong> A entrega da funcionalidade pode ser planejada para um momento posterior, sem grande impacto.</li>
+<li><strong>5 (Não Urgente):</strong> A entrega da funcionalidade pode ser adiada significativamente ou até mesmo reconsiderada.</li>
+</ul>
+</li>
+<li><strong>Redução de Risco</strong>: Avaliação de como a funcionalidade contribui para <strong>mitigar riscos</strong> do projeto (escala de 1 a 5).<ul>
+<li><strong>5 (Baixa Redução de Risco):</strong> A funcionalidade tem pouco ou nenhum impacto na redução de riscos do projeto.</li>
+<li><strong>4 (Baixa a Média Redução de Risco):</strong> A funcionalidade oferece uma pequena contribuição para a redução de riscos.</li>
+<li><strong>3 (Média Redução de Risco):</strong> A funcionalidade contribui moderadamente para a redução de riscos.</li>
+<li><strong>2 (Média a Alta Redução de Risco):</strong> A funcionalidade é importante para mitigar riscos significativos.</li>
+<li><strong>1 (Alta Redução de Risco):</strong> A funcionalidade é crucial para evitar ou mitigar riscos críticos que podem impactar severamente o projeto.</li>
+</ul>
+</li>
+</ul>
+<h3 id="formula-original">Fórmula original:</h3>
+<p><code>WSJF = (Valor do Negócio + Urgência + Redução de Risco) / Tamanho do Trabalho</code></p>
+<p>Para o contexto da disciplina, onde se consideadaptaremos a fórmula original do WSJF para focar no valor entregue, utilizando a seguinte adaptação.</p>
+<p><code>WSJF = (Valor do Negócio + Urgência + Redução de Risco)</code></p>
+<blockquote>
+<p>Quanto maior o valor do WSJF, maior a prioridade do requisito.</p>
+</blockquote>
 <h1 id="priorizacao-de-requisitos-com-wsjf">Priorização de Requisitos com WSJF</h1>
 <h3 id="priorizacao-de-requisitos-com-wsjf_1">Priorização de Requisitos com WSJF</h3>
 <table>
