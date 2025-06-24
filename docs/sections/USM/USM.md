@@ -57,6 +57,8 @@ O mapa abaixo organiza as tarefas dos usuários (linhas) ao longo da jornada do 
 
 Este documento apresenta a aplicação da técnica de **User Story Mapping (USM)** para planejar o desenvolvimento do sistema "EventFlow". O USM organiza um backlog de produto em uma representação visual e estruturada, focada na jornada do usuário. O mapa mostra a "espinha dorsal" do produto e detalha as funcionalidades em releases incrementais.
 
+[Link para o board no Miro](https://miro.com/app/board/uXjVImBBpoM=/?share_link_id=114219219767)
+
 ## 1. Personas do EventFlow
 
 | Persona | O que faz | O que espera |
