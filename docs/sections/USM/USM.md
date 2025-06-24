@@ -16,7 +16,8 @@ Este documento apresenta a aplicação da técnica de **User Story Mapping (USM)
 
 ![Organizador do Evento](images/organizador_evento.png) 
 ![Fornecedor Local](images/fornecedor_local.png) 
-![Participante do Evento](images/patrocinador.png) 
+![Participante do Evento](images/participante_evento.png) 
+![Patrocinador do Evento](images/patrocinador.png) 
 ![Voluntários do Evento](images/voluntarios.png)
 
 ## 2. Histórias de Usuário por Atividade e Release
