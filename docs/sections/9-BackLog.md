@@ -316,6 +316,54 @@ Os seguintes requisitos não funcionais também serão considerados no MVP para 
 O foco do MVP é entregar um produto funcional que permita a validação das principais funcionalidades e a coleta de feedback inicial dos usuários, servindo como base para as próximas iterações e desenvolvimento de funcionalidades adicionais.
 
 --- -- -->>
+## Critérios de Priorização
+
+### MoSCoW
+
+O **MoSCoW** é uma técnica utilizada para categorizar a importância de cada item (requisito, funcionalidade) sob a perspectiva do cliente, informando o **valor de negócio**. Essa priorização qualitativa é convertida em valores numéricos que serão utilizados na fórmula do **WSJF**, enquanto os demais fatores da fórmula são estimados pela equipe de desenvolvimento.
+
+**MoSCoW** é um acrônimo que representa quatro níveis de prioridade:
+
+| Letra | Significado          | Descrição                                                                 | Peso |
+|-------|----------------------|---------------------------------------------------------------------------|------|
+| M     | **Must have** | Requisitos **obrigatórios** para o funcionamento do sistema. Sem eles, o projeto é considerado um fracasso. | 4    |
+| S     | **Should have** | Requisitos **importantes**, mas não cruciais. Podem ser adiados se houver necessidade. | 3    |
+| C     | **Could have** | Requisitos **desejáveis** que agregam valor ao produto, mas são opcionais. | 2    |
+| W     | **Won’t have (this time)** | Requisitos que **não serão incluídos** na entrega atual, mas poderão ser considerados em futuras iterações. | 1    |
+
+---
+
+## WSJF (Weighted Shortest Job First)
+
+O **WSJF** é um método empregado para priorizar funcionalidades com base na relação entre o **valor a ser entregue** e o **esforço necessário** para sua implementação.
+
+### Fatores Avaliados:
+
+* **Valor do Negócio**: Pontuação derivada da priorização MoSCoW (escala de 1 a 4).
+* **Urgência**: Avaliação da **criticidade temporal** da entrega da funcionalidade (escala de 1 a 5).
+    * **1 (Muito Urgente):** A funcionalidade precisa ser entregue o mais rápido possível para evitar perdas significativas ou aproveitar uma oportunidade imediata.
+    * **2 (Urgente):** A entrega da funcionalidade é importante e deve ser priorizada logo após os itens muito urgentes.
+    * **3 (Média Urgência):** A funcionalidade pode ser entregue em um prazo razoável, sem impacto imediato crítico.
+    * **4 (Pouco Urgente):** A entrega da funcionalidade pode ser planejada para um momento posterior, sem grande impacto.
+    * **5 (Não Urgente):** A entrega da funcionalidade pode ser adiada significativamente ou até mesmo reconsiderada.
+* **Redução de Risco**: Avaliação de como a funcionalidade contribui para **mitigar riscos** do projeto (escala de 1 a 5).
+    * **5 (Baixa Redução de Risco):** A funcionalidade tem pouco ou nenhum impacto na redução de riscos do projeto.
+    * **4 (Baixa a Média Redução de Risco):** A funcionalidade oferece uma pequena contribuição para a redução de riscos.
+    * **3 (Média Redução de Risco):** A funcionalidade contribui moderadamente para a redução de riscos.
+    * **2 (Média a Alta Redução de Risco):** A funcionalidade é importante para mitigar riscos significativos.
+    * **1 (Alta Redução de Risco):** A funcionalidade é crucial para evitar ou mitigar riscos críticos que podem impactar severamente o projeto.
+
+### Fórmula original:
+
+`WSJF = (Valor do Negócio + Urgência + Redução de Risco) / Tamanho do Trabalho`
+
+Para o contexto da disciplina, onde se consideadaptaremos a fórmula original do WSJF para focar no valor entregue, utilizando a seguinte adaptação.
+
+`WSJF = (Valor do Negócio + Urgência + Redução de Risco)`
+
+> Quanto maior o valor do WSJF, maior a prioridade do requisito.
+
+
 
 # Priorização de Requisitos com WSJF
 
