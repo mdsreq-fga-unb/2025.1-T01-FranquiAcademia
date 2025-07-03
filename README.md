@@ -100,3 +100,28 @@ Para manter um histórico de commits limpo e informativo, adotamos as seguintes 
 
 Ao seguir estas políticas de branch e commit, podemos manter o repositório organizado, facilitar a colaboração e garantir a qualidade do projeto DeltaCore.
     
+
+usecase "Pousada Animal" {
+    actor Cliente
+    actor Funcionario
+
+    (Cadastrar animal) as UC3
+    (Gerenciar conta de usuário) as UC2
+    (Fazer pré-agendamento) as UC5
+    (Gerenciar dados do animal) as UC6
+    
+    Cliente --|> (Cadastrar na Plataforma)
+    Cliente --|> (Fazer Login)
+    Cliente --|> (Consultar status do animal)
+    Cliente --|> UC2
+    Cliente --|> UC3
+    
+    Funcionario --|> (Analisar pedido de hospedagem)
+    Funcionario --|> (Definir serviços)
+    Funcionario --|> (Definir datas disponíveis)
+    Funcionario --|> (Informar status do animal)
+    Funcionario --|> (Fazer Login)
+
+    UC2 ..> UC3 : extends
+    UC5 ..> UC6 : extends
+}
