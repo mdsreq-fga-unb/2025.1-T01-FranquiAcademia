@@ -32,13 +32,12 @@ A tabela abaixo detalha os atores que interagem com o sistema e as ações (caso
 
 O diagrama também especifica relações entre os casos de uso, que indicam como eles se conectam:
 
-* **`<<include>>`**: Indica que um caso de uso obrigatoriamente inclui a funcionalidade de outro.
-    * `Agendar Consulta` inclui `Avaliar Atendimento`.
-    * `Agendar Exame` inclui `Avaliar Atendimento`.
 * **`<<extend>>`**: Indica que um caso de uso pode, opcionalmente, estender a funcionalidade de outro.
     * `Buscar serviço de Saúde` estende `Agendar Consulta`.
     * `Visualizar Histórico Médico` estende `Agendar Consulta`.
     * `Atualizar prontuário do paciente` estende `Acessar prontuário do paciente`.
+    * `Agendar Consulta` estende  `Avaliar Atendimento`.
+    * `Agendar Exame` estende  `Avaliar Atendimento`.
 
 ### Generalização/Especialização de Atores
 
