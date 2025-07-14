@@ -46,155 +46,340 @@ O diagrama também especifica relações entre os casos de uso, que indicam como
 
 
 ### **Especificação de Casos de Uso – ConnectCare**
-### UC 01: Gerenciar Perfil
+## UC01 – Gerenciar Perfil   
+**Ator Principal**: Paciente  
 
-* **1. Breve Descrição**: Permite ao paciente visualizar e atualizar seus dados cadastrais e pessoais.
-* **2. Atores**: Paciente.
-* **3. Precondições**: O paciente deve estar autenticado no sistema.
-* **4. Pós-condições**: O perfil do paciente é atualizado no banco de dados e a operação é registrada em log de auditoria.
-* **5. Fluxo Principal**:
-    1.  Paciente seleciona a opção “Gerenciar Perfil”.
-    2.  Sistema exibe um formulário com os dados atuais.
-    3.  Paciente edita os campos desejados.
-    4.  Paciente confirma as alterações.
-    5.  Sistema valida os dados (formato, obrigatoriedade).
-    6.  Sistema salva as alterações e exibe mensagem de sucesso.
-    7.  Fim do caso de uso.
-* **6. Fluxos de Exceção**:
-    * **[FE01] Cancelar edição**: Paciente cancela a edição; o sistema descarta as alterações e retorna.
-    * **[FE02] Dados inválidos**: O sistema detecta erro de validação, destaca os campos problemáticos e solicita a correção.
-* **7. Regras de Negócio**:
-    * **RN01**: E-mail deve ter formato válido e ser único no sistema.
-    * **RN02**: CPF deve seguir a máscara padrão e ser validado.
-    * **RN03**: Nome completo, data de nascimento, CPF e e-mail são obrigatórios.
-* **8. Requisitos Especiais**:
-    * Dados sensíveis devem ser criptografados.
-    * Interface responsiva para dispositivos móveis.
+### 1. Breve Descrição  
+Este caso de uso permite ao paciente consultar e editar seus dados cadastrais, como nome completo, CPF, e-mail, data de nascimento, entre outros. As alterações são validadas e salvas no sistema, com registro da operação em log.
 
----
+### 2. Atores Envolvidos  
+- Paciente
 
-### UC 02: Visualizar Campanhas de Saúde
+### 3. Pré-condições  
+- O paciente deve estar autenticado no sistema.  
 
-* **1. Breve Descrição**: Permite ao paciente encontrar e visualizar informações sobre campanhas de saúde ativas em sua região.
-* **2. Atores**: Paciente.
-* **3. Precondições**: O paciente deve estar logado na plataforma.
-* **4. Pós-condições**: O paciente visualiza os detalhes da campanha de seu interesse.
-* **5. Fluxo Principal**:
-    1.  Paciente seleciona a opção “Campanhas de Saúde”.
-    2.  Sistema solicita e obtém a localização do paciente (GPS ou manual).
-    3.  Sistema exibe uma lista de campanhas ativas na região.
-    4.  Paciente seleciona uma campanha para ver os detalhes (tipo, local, data, etc.).
-    5.  Fim do caso de uso.
-* **6. Fluxos de Exceção**:
-    * **[FE01] Erro de conexão**: O sistema informa a falha e exibe dados offline, se disponíveis.
-    * **[FE02] Localização não informada**: O sistema solicita a inserção manual de uma região.
-* **7. Requisitos Especiais**:
-    * Funcionalidade offline após o primeiro carregamento.
-    * Filtros por tipo de campanha.
+### 4. Pós-condições  
+- Os dados do perfil são atualizados nos registros.  
+- A operação é registrada no log de auditoria.
+
+### 5. Fluxo Principal de Eventos  
+1. O paciente acessa o sistema e seleciona a opção “Gerenciar Perfil”.  
+2. O sistema apresenta um formulário com os dados cadastrados.  
+3. O paciente realiza as alterações desejadas.  
+4. O paciente confirma a edição.  
+5. O sistema valida os campos editados (formato, obrigatoriedade).  
+6. O sistema salva as alterações e registra no log.  
+7. O sistema apresenta mensagem de confirmação de sucesso.
+
+### 6. Fluxos Alternativos  
+**[FA01] – Cancelamento da Edição**  
+- O paciente cancela a edição antes de confirmar.  
+- O sistema descarta as alterações e retorna à tela inicial do perfil.  
+
+### 7. Fluxos de Exceção  
+**[FE01] – Dados Inválidos**  
+- O sistema identifica erros nos campos preenchidos.  
+- O sistema destaca os campos com erro e solicita correção antes de prosseguir.  
+
+### 8. Regras de Negócio  
+- **RN01**: O e-mail deve estar em formato válido e ser único no sistema.  
+- **RN02**: O CPF deve obedecer ao padrão de formatação brasileiro (XXX.XXX.XXX-XX).  
+- **RN03**: Os campos nome completo, data de nascimento, CPF e e-mail são obrigatórios.
+
+### 9. Requisitos Especiais  
+- **RE01**: Os dados sensíveis devem ser criptografados.  
+- **RE02**: A funcionalidade deve ser compatível com dispositivos móveis (layout responsivo).  
 
 ---
 
-### UC 03: Agendar Exame
+## UC02 – Visualizar Campanhas de Saúde
 
-* **1. Breve Descrição**: Permite ao paciente ou agente comunitário agendar exames em unidades parceiras.
-* **2. Atores**: Paciente, Agente Comunitário.
-* **3. Precondições**: O usuário deve estar autenticado.
-* **4. Pós-condições**: O exame é agendado, e o paciente recebe uma confirmação.
-* **5. Fluxo Principal**:
-    1.  Usuário seleciona “Agendar Exame”.
-    2.  Sistema exibe os tipos de exame.
-    3.  Usuário escolhe o exame.
-    4.  Sistema apresenta locais, datas e horários disponíveis.
-    5.  Usuário seleciona a opção desejada e confirma.
-    6.  Sistema valida a disponibilidade e salva o agendamento.
-    7.  Fim do caso de uso.
-* **6. Fluxos de Exceção**:
-    * **[FE01] Horário indisponível**: O sistema informa a indisponibilidade e apresenta novas opções.
-    * **[FE02] Sem conexão**: O pedido é salvo localmente para sincronização automática posterior.
-* **7. Regras de Negócio**:
-    * **RN01**: Agendamento deve ter antecedência mínima de 24 horas.
-    * **RN02**: Paciente não pode ter dois exames no mesmo horário.
-* **8. Requisitos Especiais**:
-    * Suporte a modo offline.
-    * Criptografia de dados pessoais (LGPD).
+### 1. Breve Descrição
+* Permite ao paciente consultar campanhas de saúde ativas em sua região, com base em sua localização geográfica, visualizando detalhes como tipo, data, local e orientações.
 
----
+### 2. Atores
+* Paciente.
 
-### UC 04: Agendar Consulta
+### 3. Precondições
+* O paciente deve estar autenticado na plataforma.
 
-* **1. Breve Descrição**: Permite ao paciente localizar e agendar consultas médicas.
-* **2. Atores**: Paciente.
-* **3. Relações**: Inclui `Avaliar Atendimento`; Estende `Buscar Serviço de Saúde`, `Visualizar Histórico Médico`.
-* **4. Precondições**: Paciente logado e com perfil básico.
-* **5. Pós-condições**: Consulta agendada e confirmada para o paciente e profissional.
-* **6. Fluxo Principal**:
-    1.  Paciente seleciona “Agendar Consulta”.
-    2.  Sistema sugere unidades de saúde próximas (Ponto de Extensão: `Buscar Serviço de Saúde`).
-    3.  Paciente visualiza e seleciona um horário disponível.
-    4.  Paciente confirma o agendamento.
-    5.  Sistema salva, envia confirmação e atualiza a agenda do profissional.
-    6.  Fim do caso de uso.
-* **7. Fluxos de Exceção**:
-    * **[FA01] Visualizar Histórico**: Paciente pode visualizar seu histórico antes de agendar.
-    * **[FE01] Horário indisponível**: O sistema informa e exibe novamente os horários.
-    * **[FE02] Falha de conexão**: O sistema permite tentar novamente ou salva localmente.
-* **8. Requisitos Especiais**:
-    * Envio de notificações de lembrete.
-    * Disponibilização de mapa offline para o local da consulta.
+### 4. Pós-condições
+* O paciente visualiza informações detalhadas sobre uma campanha de saúde.
+* A localização do paciente pode ser registrada temporariamente para exibir campanhas relevantes.
+
+### 5. Fluxo Principal
+1. O paciente acessa a funcionalidade “Campanhas de Saúde”.
+2. O sistema solicita a localização do paciente (via GPS ou entrada manual).
+3. O sistema exibe uma lista de campanhas ativas com base na localização.
+4. O paciente seleciona uma campanha da lista.
+5. O sistema apresenta os detalhes da campanha: tipo, local, data, horário, público-alvo e orientações.
+6. Fim do caso de uso.
+
+### 6. Fluxos de Exceção
+* **[FE01] Erro de Conexão**: O sistema não consegue acessar o servidor. Exibe mensagem informando o erro e, se possível, apresenta dados em cache (offline).
+* **[FE02] Localização Não Informada**: Caso o GPS falhe ou o paciente negue o acesso à localização, o sistema solicita entrada manual de um bairro ou CEP.
+
+### 7. Regras de Negócio
+* **RN01**: A listagem de campanhas deve considerar apenas aquelas em andamento ou com data futura.
+* **RN02**: A localização pode ser obtida via GPS, mas deve haver opção de entrada manual.
+* **RN03**: As campanhas devem ser filtradas por proximidade geográfica.
+
+### 8. Requisitos Especiais
+* **RE01**: Funcionalidade de cache para acesso offline após o primeiro carregamento.
+* **RE02**: Interface adaptada para dispositivos móveis.
+* **RE03**: Suporte a filtros por tipo de campanha (ex.: vacinação, exames, palestras).
 
 ---
 
-### **UC 05: Avaliar Atendimento**
+## UC03 – Agendar Exame
 
-* **1. Breve Descrição**: Permite que o paciente forneça feedback sobre a qualidade do atendimento recebido após uma consulta ou exame, contribuindo para a melhoria contínua dos serviços oferecidos.
-* **2. Atores**: Paciente.
-* **3. Relações**: É incluído (`<<include>>`) pelos casos de uso `Agendar Consulta` e `Agendar Exame`.
-* **4. Precondições**:
-    * O paciente deve ter finalizado um atendimento (consulta ou exame) agendado pelo ConnectCare.
-    * O paciente deve estar logado na plataforma.
-* **5. Pós-condições**:
-    * A avaliação é registrada no sistema.
-    * Os pontos de fidelidade são creditados na conta do paciente.
-* **6. Fluxo Principal**:
-    1.  Após o atendimento, o sistema solicita que o paciente avalie a experiência.
-    2.  O paciente atribui notas à qualidade do serviço e à eficiência do aplicativo.
-    3.  O paciente, opcionalmente, adiciona comentários escritos sobre a experiência.
-    4.  O paciente submete a avaliação.
-    5.  O sistema registra a avaliação e credita os pontos de fidelidade ao paciente como incentivo.
-    6.  Fim do caso de uso.
-* **7. Fluxos de Exceção**:
-    * **[FE01] Avaliação não concluída**: Se o paciente sair da tela antes de submeter, o sistema pode oferecer a opção de salvar o rascunho ou lembrá-lo de concluir posteriormente.
-    * **[FE02] Atendimento já avaliado**: Se o paciente tentar avaliar um atendimento que já possui uma avaliação, o sistema informa o ocorrido e não permite uma nova submissão.
-    * **[FE03] Falha de conexão**: Se a conexão falhar durante a submissão, o sistema informa o problema, salva a avaliação localmente e permite que o paciente tente enviá-la novamente quando a conexão for restabelecida.
-* **8. Regras de Negócio**:
-    * **RN01**: As avaliações contribuem para a melhoria contínua dos serviços.
-    * **RN02**: Os pontos de fidelidade podem ser utilizados para descontos em farmácias parceiras.
-    * **RN03**: Os dados das avaliações são usados para a gestão de saúde local e planejamento de ações futuras.
-* **9. Requisitos Especiais**:
-    * O aplicativo deve ser projetado para funcionar em dispositivos simples e com conexões de internet limitadas.
-    * A plataforma deve incentivar ativamente o paciente a fornecer feedback.
-    * O sistema deve incluir um mecanismo de pontos de fidelidade como incentivo.
+### 1. Breve Descrição
+* Este caso de uso permite que o paciente ou agente comunitário realize o agendamento de exames médicos por meio da plataforma. O sistema apresenta os tipos de exames disponíveis, locais de atendimento, datas e horários, permitindo a seleção e confirmação de uma opção.
+
+### 2. Atores
+* Paciente  
+* Agente Comunitário
+
+### 3. Precondições
+* O ator deve estar devidamente autenticado no sistema.  
+* Devem existir locais e horários disponíveis previamente cadastrados no sistema.
+
+### 4. Pós-condições
+* Um novo exame é agendado e associado ao paciente.  
+* O sistema atualiza a agenda da unidade de atendimento.
+
+### 5. Fluxo Principal
+1. O ator seleciona a funcionalidade “Agendar Exame” no menu principal.  
+2. O sistema exibe uma lista de tipos de exame disponíveis.  
+3. O ator escolhe o tipo de exame desejado.  
+4. O sistema apresenta os locais que oferecem o exame, com datas e horários disponíveis.  
+5. O ator seleciona a unidade, data e horário desejados.  
+6. O sistema exibe os dados do agendamento para confirmação.  
+7. O ator confirma o agendamento.  
+8. O sistema registra o agendamento, atualiza a agenda da unidade e exibe mensagem de confirmação.
+
+### 6. Fluxos Alternativos
+**[FA01] – Reagendar Exame**  
+- Em vez de iniciar um novo agendamento, o ator seleciona um exame previamente agendado.  
+- O sistema permite selecionar uma nova data e horário.  
+- O fluxo retorna ao passo 6 do Fluxo Principal.
+
+**[FA02] – Cancelar Agendamento**  
+- O ator opta por cancelar um exame já agendado.  
+- O sistema solicita confirmação.  
+- Ao confirmar, o sistema remove o exame da agenda do paciente e da unidade de atendimento.
+
+### 7. Fluxos de Exceção
+**[FE01] – Nenhuma Disponibilidade Encontrada**  
+- O sistema não encontra datas ou horários disponíveis para o exame selecionado.  
+- Exibe mensagem ao usuário e retorna ao passo 2 do Fluxo Principal.
+
+**[FE02] – Falha na Comunicação com o Sistema**  
+- Ocorre uma falha de conexão no momento da confirmação do agendamento.  
+- O sistema informa o erro e solicita que o ator tente novamente mais tarde.  
+- O caso de uso é encerrado.
+
+### 8. Regras de Negócio
+* **RN01**: O agendamento de exames deve respeitar um intervalo mínimo de 24 horas entre a solicitação e o atendimento.  
+* **RN02**: O paciente não pode ter dois exames marcados para o mesmo horário.  
+* **RN03**: Cada exame deve ser vinculado a um local e profissional habilitado.
+
+### 9. Requisitos Especiais
+* **RE01**: A interface de agendamento deve ser otimizada para uso em dispositivos móveis.  
+* **RE02**: O sistema deve oferecer suporte a modo offline, salvando solicitações para sincronização posterior.  
+* **RE03**: As informações pessoais e de saúde devem ser protegidas conforme a LGPD.
 
 ---
 
-### UC 06: Registrar Visita Domiciliar
+## UC04 – Agendar Consulta
 
-* **1. Breve Descrição**: Permite que um agente de saúde registre os detalhes de uma visita domiciliar.
-* **2. Atores**: Agente de Saúde.
-* **3. Precondições**: Agente de Saúde autenticado; Paciente já cadastrado.
-* **4. Pós-condições**: A visita é registrada e associada ao histórico do paciente.
-* **5. Fluxo Principal**:
-    1.  Agente seleciona a funcionalidade de registro de visita.
-    2.  Agente preenche o formulário (paciente, data, motivo, etc.).
-    3.  Agente confirma o registro.
-    4.  Sistema valida e salva os dados, exibindo mensagem de sucesso.
-    5.  Fim do caso de uso.
-* **6. Fluxos de Exceção**:
-    * **[FE01] Campos obrigatórios não preenchidos**: O sistema informa quais campos são necessários.
-    * **[FE02] Erro de conexão**: O sistema permite salvar para sincronização posterior.
-* **7. Regras de Negócio**:
-    * **RN01**: Data e hora devem estar em formato válido (DD/MM/AAAA HH:MM).
-    * **RN02**: Paciente, data, hora, endereço e motivo da visita são campos obrigatórios.
-* **8. Requisitos Especiais**:
-    * Formulário responsivo para uso em campo.
-    * Funcionalidade offline com sincronização automática.
+### 1. Breve Descrição
+* Este caso de uso permite ao paciente localizar e agendar consultas médicas por meio da plataforma. O sistema oferece opções com base na localização do paciente, permitindo a escolha da especialidade, unidade de saúde, data e horário desejados.
+
+### 2. Atores
+* Paciente
+
+### 3. Precondições
+* O paciente deve estar autenticado no sistema.  
+* Devem existir profissionais e unidades com horários disponíveis cadastrados.  
+* O perfil do paciente deve estar completo e validado.
+
+### 4. Pós-condições
+* Uma nova consulta é registrada no sistema, associada ao paciente e ao profissional selecionado.  
+* A agenda do profissional de saúde é atualizada.  
+* Uma confirmação é enviada ao paciente.
+
+### 5. Fluxo Principal
+1. O paciente acessa a funcionalidade “Agendar Consulta”.  
+2. O sistema solicita critérios de busca (ex: especialidade, sintomas, localidade).  
+3. O paciente informa os critérios desejados.  
+4. O sistema apresenta uma lista de unidades e profissionais com horários disponíveis.  
+5. O paciente seleciona uma opção de local, data e horário.  
+6. O sistema exibe os detalhes do agendamento.  
+7. O paciente confirma o agendamento.  
+8. O sistema registra a consulta, atualiza a agenda do profissional e exibe mensagem de confirmação.
+
+### 6. Fluxos Alternativos
+**[FA01] – Reagendar Consulta**  
+- O paciente opta por alterar uma consulta previamente agendada.  
+- O sistema exibe a lista de agendamentos futuros.  
+- O paciente seleciona um deles e segue o fluxo a partir do passo 3 do Fluxo Principal.
+
+**[FA02] – Cancelar Consulta**  
+- O paciente escolhe uma consulta agendada para cancelamento.  
+- O sistema solicita confirmação.  
+- Após confirmar, o sistema remove a consulta da agenda do profissional e do histórico do paciente.
+
+**[FA03] – Avaliação do Atendimento (Extensão)**  
+- Após o comparecimento à consulta, o sistema pode sugerir ao paciente que avalie o atendimento.  
+- O paciente escolhe se deseja realizar a avaliação.  
+- Caso aceite, o sistema ativa o caso de uso “Avaliar Atendimento”.
+
+### 7. Fluxos de Exceção
+**[FE01] – Falta de Disponibilidade**  
+- O sistema não encontra horários disponíveis conforme os critérios informados.  
+- Uma mensagem é exibida, e o fluxo retorna ao passo 2 para nova busca.
+
+**[FE02] – Falha de Comunicação**  
+- Ocorre uma falha técnica no momento da confirmação.  
+- O sistema informa o erro e salva os dados localmente para tentativa posterior.
+
+**[FE03] – Dados Obrigatórios Não Preenchidos**  
+- O paciente tenta avançar sem preencher informações mínimas.  
+- O sistema impede o prosseguimento e solicita o preenchimento.
+
+### 8. Regras de Negócio
+* **RN01**: O paciente não pode agendar duas consultas simultâneas no mesmo horário.  
+* **RN02**: Consultas devem ser agendadas com no mínimo 2 horas de antecedência.  
+* **RN03**: O sistema deve permitir cancelamento de consulta com no mínimo 1 hora de antecedência.
+
+### 9. Requisitos Especiais
+* **RE01**: O sistema deve disponibilizar lembretes automáticos da consulta (ex: 24h e 1h antes).  
+* **RE02**: A interface deve apresentar mapa interativo e opção de visualização offline da localização.  
+* **RE03**: Toda comunicação deve ser criptografada, em conformidade com a LGPD.
+
+
+---
+
+## UC05 – Avaliar Atendimento
+
+### 1. Breve Descrição
+* Este caso de uso permite que o paciente avalie um atendimento previamente realizado — seja consulta ou exame — fornecendo notas e comentários sobre a qualidade do serviço recebido. A avaliação serve como insumo para gestão de qualidade e atribuição de pontos de fidelidade ao paciente.
+
+### 2. Atores
+* Paciente
+
+### 3. Relações com outros casos de uso
+* Este caso de uso é uma extensão opcional (`<<extend>>`) de:
+  - UC03 – Agendar Exame  
+  - UC04 – Agendar Consulta
+
+### 4. Precondições
+* O paciente deve estar autenticado no sistema.  
+* Deve existir ao menos um atendimento finalizado vinculado ao paciente e ainda não avaliado.
+
+### 5. Pós-condições
+* A avaliação é registrada no sistema.  
+* Os pontos de fidelidade são creditados ao paciente.  
+* A avaliação passa a compor o histórico do atendimento avaliado.
+
+### 6. Fluxo Principal
+1. O sistema identifica um atendimento finalizado e exibe convite para avaliação.  
+2. O paciente acessa a funcionalidade “Avaliar Atendimento”.  
+3. O sistema apresenta uma lista de atendimentos elegíveis para avaliação.  
+4. O paciente seleciona um atendimento.  
+5. O sistema exibe o formulário de avaliação (notas e comentários).  
+6. O paciente preenche e envia a avaliação.  
+7. O sistema salva a avaliação, atualiza o histórico e credita os pontos de fidelidade.  
+8. O sistema exibe mensagem de agradecimento e confirmação.
+
+### 7. Fluxos Alternativos
+**[FA01] – Avaliar Atendimento a Qualquer Momento**  
+- O paciente acessa manualmente seu histórico e seleciona um atendimento para avaliar.  
+- O sistema verifica elegibilidade e, se permitido, segue o fluxo a partir do passo 5 do Fluxo Principal.
+
+### 8. Fluxos de Exceção
+**[FE01] – Atendimento Já Avaliado**  
+- O paciente tenta avaliar um atendimento já avaliado.  
+- O sistema bloqueia a ação e informa que a avaliação já foi registrada.
+
+**[FE02] – Falha de Comunicação**  
+- Ocorre uma falha técnica durante o envio da avaliação.  
+- O sistema salva a avaliação localmente e agenda o envio posterior.  
+- Uma mensagem informa que a submissão será concluída automaticamente.
+
+**[FE03] – Dados Incompletos na Avaliação**  
+- O paciente tenta enviar o formulário sem preencher os campos obrigatórios.  
+- O sistema impede o envio e solicita correção.
+
+### 9. Regras de Negócio
+* **RN01**: Cada atendimento só pode ser avaliado uma única vez.  
+* **RN02**: O paciente deve atribuir, no mínimo, uma nota obrigatória para submissão.  
+* **RN03**: O envio da avaliação gera pontos de fidelidade, creditados automaticamente.
+
+### 10. Requisitos Especiais
+* **RE01**: O sistema deve funcionar em dispositivos móveis de baixo desempenho.  
+* **RE02**: O mecanismo de pontos deve ser flexível, com possibilidade de parametrização futura.  
+* **RE03**: Todos os dados de avaliação devem ser armazenados de forma segura e anônima, conforme a LGPD.
+
+---
+
+## UC06 – Registrar Visita Domiciliar
+
+### 1. Breve Descrição
+* Este caso de uso permite ao agente comunitário de saúde registrar formalmente uma visita domiciliar realizada a um paciente ou família. O processo envolve preenchimento de informações como data, hora, motivo da visita, observações, encaminhamentos e, opcionalmente, mídias (fotos ou áudios).
+
+### 2. Atores
+* Agente Comunitário
+
+### 3. Precondições
+* O agente deve estar autenticado no sistema.  
+* O paciente ou a família visitada deve estar previamente cadastrada, ou o sistema deve permitir o cadastro durante o processo.
+
+### 4. Pós-condições
+* A visita é registrada no banco de dados e associada ao paciente ou grupo familiar.  
+* As informações ficam disponíveis para consulta por profissionais autorizados.  
+* O prontuário do paciente é atualizado com o registro da visita.
+
+### 5. Fluxo Principal
+1. O agente acessa a funcionalidade “Registrar Visita Domiciliar”.  
+2. O sistema apresenta um formulário padrão de registro de visita.  
+3. O agente busca e seleciona o paciente ou grupo familiar visitado.  
+4. O agente informa os dados da visita:  
+    - Data e hora  
+    - Motivo principal  
+    - Observações  
+    - Encaminhamentos ou pendências  
+5. O agente anexa mídias (opcional).  
+6. O agente confirma o envio.  
+7. O sistema valida os dados e salva o registro.  
+8. O sistema exibe mensagem de confirmação.
+
+### 6. Fluxos Alternativos
+**[FA01] – Paciente ou Família Não Cadastrado**  
+- O agente não encontra o paciente ou grupo na busca.  
+- O sistema oferece a opção de “Cadastrar Novo Paciente/Família”.  
+- Após o cadastro, o fluxo retorna ao passo 3 do Fluxo Principal.
+
+**[FA02] – Anexar Mídia**  
+- Durante o preenchimento, o agente opta por anexar fotos ou áudios da visita.  
+- O sistema permite upload e visualização do conteúdo antes da confirmação.
+
+### 7. Fluxos de Exceção
+**[FE01] – Dados Obrigatórios Incompletos**  
+- O agente tenta concluir o registro sem preencher todos os campos obrigatórios.  
+- O sistema indica os campos que precisam ser preenchidos e impede o envio.
+
+**[FE02] – Falha no Registro**  
+- Ocorre uma falha de conexão no momento do envio.  
+- O sistema salva localmente o registro e informa que ele será sincronizado automaticamente.
+
+### 8. Regras de Negócio
+* **RN01**: O registro da visita só pode ser finalizado se todos os campos obrigatórios estiverem preenchidos.  
+* **RN02**: A data e hora da visita devem ser coerentes com a data atual (não podem ser futuras).  
+* **RN03**: O registro da visita deve ser vinculado ao prontuário do paciente, quando aplicável.
+
+### 9. Requisitos Especiais
+* **RE01**: O formulário deve ser responsivo, com campos otimizados para uso em dispositivos móveis.  
+* **RE02**: O sistema deve funcionar offline e realizar sincronização automática quando houver conexão.  
+* **RE03**: As informações da visita devem ser armazenadas de forma segura, com criptografia em repouso e em trânsito.
