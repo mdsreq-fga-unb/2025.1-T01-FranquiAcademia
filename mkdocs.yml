@@ -19,6 +19,7 @@ nav:
   - PBB: sections/PBB/PBB.md
   - USM: sections/USM/USM.md
   - Casos de Uso: sections/UsesCases/Uses_cases.md
+  - Deploy: sections/Deploy/Deploy.md
   - Reuniões:
     - 14/04: sections/reunioes/14-04.md
     - 28/04: sections/reunioes/28-04.md
