@@ -45,4 +45,3 @@ services:
     name: franqui-academia-db
     env: postgres
     plan: starter
-    ipAllowList: [] 
