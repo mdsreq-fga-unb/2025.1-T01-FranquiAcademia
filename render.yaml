@@ -17,10 +17,6 @@ services:
         value: src/main.py
       - key: PYTHON_VERSION
         value: 3.11.0
-      - key: SECRET_KEY
-        generateValue: true
-      - key: JWT_SECRET_KEY
-        generateValue: true
     healthCheckPath: /api/health
     autoDeploy: true
 
@@ -49,5 +45,4 @@ services:
     name: franqui-academia-db
     env: postgres
     plan: starter
-    ipAllowList: []
-    maxConnections: 10 
+    ipAllowList: [] 
