@@ -3,7 +3,6 @@ services:
   - type: web
     name: franqui-academia-backend
     env: python
-    plan: starter
     buildCommand: |
       cd aula_management_system
       pip install -r requirements.txt
@@ -24,7 +23,6 @@ services:
   - type: web
     name: franqui-academia-frontend
     env: static
-    plan: starter
     buildCommand: |
       cd aula-management-frontend
       npm install -g pnpm
