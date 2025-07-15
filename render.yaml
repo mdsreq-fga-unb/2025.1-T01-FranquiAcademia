@@ -39,9 +39,3 @@ services:
         source: /*
         destination: /index.html
     autoDeploy: true
-
-  # PostgreSQL Database
-  - type: pserv
-    name: franqui-academia-db
-    env: postgres
-    plan: starter
