@@ -32,8 +32,9 @@ const EditarPerfil = () => {
     setLoading(true);
     setMessage({ type: '', text: '' });
 
+    const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5001';
     try {
-      const response = await fetch(`http://localhost:5001/api/usuarios/${user.id}`, {
+      const response = await fetch(`${API_BASE}/api/usuarios/${user.id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

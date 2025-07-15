@@ -31,9 +31,10 @@ export default function MensagemForm() {
     setErro('');
     setSucesso('');
 
+    const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5001';
     try {
       const resp = await fetch(
-        `${import.meta.env.VITE_API_BASE_URL}/api/mensagens`,
+        `${API_BASE}/api/mensagens`,
         {
           method: 'POST',
           headers: {

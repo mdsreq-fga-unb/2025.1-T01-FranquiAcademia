@@ -27,7 +27,7 @@ export const AuthProvider = ({ children }) => {
 
   // Configurar base URL do axios
   useEffect(() => {
-    axios.defaults.baseURL = 'http://localhost:5001/api';
+    axios.defaults.baseURL = (import.meta.env.VITE_API_URL || 'http://localhost:5001') + '/api';
   }, []);
 
   // Verificar se o usuário está autenticado ao carregar a aplicação
