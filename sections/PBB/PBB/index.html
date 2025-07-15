@@ -1290,19 +1290,19 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>HU-01</strong></td>
-<td style="text-align: left;">Como <strong>Maria (Recepcionista)</strong>, eu quero <strong>registrar um novo paciente com dados completos</strong>, para que <strong>suas informações estejam centralizadas e acessíveis para futuros atendimentos.</strong></td>
+<td style="text-align: left;">Como <strong>Recepcionista</strong>, eu quero <strong>registrar um novo paciente com dados completos</strong>, para que <strong>suas informações estejam centralizadas e acessíveis para futuros atendimentos.</strong></td>
 <td style="text-align: left;">1. O formulário deve conter os campos obrigatórios: nome completo, CPF, data de nascimento e contato.<br>2. O sistema deve validar o formato do CPF e impedir registros duplicados.<br>3. Após o registro, o paciente deve receber um número de identificação único no sistema.<br>4. Os dados devem estar imediatamente disponíveis para todas as unidades da franquia.</td>
 <td style="text-align: left;">-</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>HU-02</strong></td>
-<td style="text-align: left;">Como <strong>Dr. João (Médico)</strong>, eu quero <strong>consultar os dados cadastrais integrados de um paciente</strong>, para que <strong>eu tenha uma visão completa e possa confirmar sua identidade antes do atendimento.</strong></td>
+<td style="text-align: left;">Como <strong>Médico</strong>, eu quero <strong>consultar os dados cadastrais integrados de um paciente</strong>, para que <strong>eu tenha uma visão completa e possa confirmar sua identidade antes do atendimento.</strong></td>
 <td style="text-align: left;">1. A busca por paciente pode ser feita por nome completo, CPF ou número de identificação.<br>2. O resultado da busca deve exibir os dados pessoais e o histórico de unidades visitadas.</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>HU-03</strong></td>
-<td style="text-align: left;">Como <strong>Sr. Roberto (Diretor de TI)</strong>, eu quero que <strong>os dados dos pacientes sejam atualizados automaticamente entre as unidades</strong>, para que <strong>se garanta a consistência da informação e se evite retrabalho.</strong></td>
+<td style="text-align: left;">Como <strong>Diretor de TI</strong>, eu quero que <strong>os dados dos pacientes sejam atualizados automaticamente entre as unidades</strong>, para que <strong>se garanta a consistência da informação e se evite retrabalho.</strong></td>
 <td style="text-align: left;">1. Qualquer alteração no cadastro de um paciente feita em uma unidade deve ser replicada para todas as outras.<br>2. O sistema deve manter um log de todas as alterações, indicando quem fez, o que foi alterado e quando.</td>
 <td style="text-align: left;">-</td>
 </tr>
@@ -1322,19 +1322,19 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>HU-04</strong></td>
-<td style="text-align: left;">Como <strong>Dr. João (Médico)</strong>, eu quero <strong>acessar o histórico completo de consultas, exames e diagnósticos de um paciente em uma única tela</strong>, para que <strong>eu possa tomar decisões clínicas mais seguras e informadas.</strong></td>
+<td style="text-align: left;">Como <strong>Médico</strong>, eu quero <strong>acessar o histórico completo de consultas, exames e diagnósticos de um paciente em uma única tela</strong>, para que <strong>eu possa tomar decisões clínicas mais seguras e informadas.</strong></td>
 <td style="text-align: left;">1. A visualização deve ser cronológica, do atendimento mais recente ao mais antigo.<br>2. Deve ser possível filtrar o histórico por tipo de evento (consulta, exame, prescrição).<br>3. Dados de todas as unidades da franquia devem ser consolidados na mesma visão.</td>
 <td style="text-align: left;">-</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>HU-05</strong></td>
-<td style="text-align: left;">Como <strong>Dr. João (Médico)</strong>, eu quero <strong>inserir novas informações no prontuário, como diagnósticos e pedidos de exames</strong>, para que <strong>o registro do paciente se mantenha atualizado.</strong></td>
+<td style="text-align: left;">Como <strong>Médico</strong>, eu quero <strong>inserir novas informações no prontuário, como diagnósticos e pedidos de exames</strong>, para que <strong>o registro do paciente se mantenha atualizado.</strong></td>
 <td style="text-align: left;">1. O sistema deve usar CID-10 para o registro de diagnósticos.<br>2. Os pedidos de exame devem ser associados ao atendimento atual.<br>3. A inserção deve ser assinada digitalmente (login do médico) e não pode ser alterada após salva, apenas adicionado um registro de retificação.</td>
-<td style="text-align: left;"><strong>Cenário:</strong> Registro de um novo diagnóstico<br><strong>Dado</strong> que o Dr. João está na tela do prontuário da Sra. Clara<br><strong>E</strong> está realizando uma nova consulta<br><strong>Quando</strong> ele insere o diagnóstico "Hipertensão" (CID I10)<br><strong>E</strong> salva o registro da consulta<br><strong>Então</strong> o diagnóstico deve aparecer no histórico da Sra. Clara<br><strong>E</strong> deve estar associado à data e ao nome do Dr. João.</td>
+<td style="text-align: left;"><strong>Cenário</strong>: Registro de diagnóstico com CID-10<br><strong>Dado</strong> que o médico "João de Almeida" está autenticado no sistema<br><strong>E</strong> acessa o prontuário da paciente "Clara Mendes Falcão"<br><strong>Quando</strong> ele insere o diagnóstico "Hipertensão" com o código CID-10 "I10"E clica em "Salvar Consulta"<br><strong>Então</strong> o diagnóstico deve constar no histórico da paciente com data "14/07/2025" e médico "João de Almeida"<br><strong>E</strong> o sistema deve registrar a assinatura digital do médico</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>HU-06</strong></td>
-<td style="text-align: left;">Como <strong>Dr. João (Médico)</strong>, eu quero <strong>receber alertas automáticos sobre informações críticas ou faltantes no prontuário (ex: alergias não registradas)</strong>, para que <strong>a segurança do paciente seja aumentada.</strong></td>
+<td style="text-align: left;">Como <strong>Médico</strong>, eu quero <strong>receber alertas automáticos sobre informações críticas ou faltantes no prontuário (ex: alergias não registradas)</strong>, para que <strong>a segurança do paciente seja aumentada.</strong></td>
 <td style="text-align: left;">1. Ao abrir um prontuário pela primeira vez, o sistema deve exibir um alerta proeminente se o campo "Alergias" estiver vazio.<br>2. O alerta deve permanecer visível até que o médico confirme a ciência ou preencha a informação.</td>
 <td style="text-align: left;">-</td>
 </tr>
@@ -1354,19 +1354,19 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>HU-07</strong></td>
-<td style="text-align: left;">Como a <strong>Sra. Clara (Paciente)</strong>, eu quero <strong>agendar consultas online através do portal</strong>, para que <strong>eu tenha conveniência e não precise ligar para a clínica.</strong></td>
+<td style="text-align: left;">Como  <strong>Paciente</strong>, eu quero <strong>agendar consultas online através do portal</strong>, para que <strong>eu tenha conveniência e não precise ligar para a clínica.</strong></td>
 <td style="text-align: left;">1. O portal deve exibir os horários disponíveis por médico e especialidade.<br>2. Após a seleção, o sistema deve pedir uma confirmação antes de efetivar o agendamento.<br>3. Um e-mail/SMS de confirmação deve ser enviado imediatamente para a paciente.</td>
-<td style="text-align: left;"><strong>Cenário:</strong> Agendamento com sucesso<br><strong>Dado</strong> que a Sra. Clara está logada no Portal<br><strong>E</strong> ela seleciona a especialidade e o médico<br><strong>E</strong> escolhe um horário disponível<br><strong>Quando</strong> ela clica em "Confirmar Agendamento"<br><strong>Então</strong> o sistema deve exibir "Consulta agendada!"<br><strong>E</strong> o horário deve ficar indisponível na agenda.</td>
+<td style="text-align: left;"><strong>Cenário</strong>: Agendamento com sucesso<br><strong>Dado</strong> que a paciente "Clara Mendes Falcão" está logada no Portal<br><strong>E</strong> seleciona a especialidade "Ginecologia" e o médico "João de Almeida"<br><strong>E</strong> escolhe o horário "10h00" do dia "08/07/2025", que está disponível<br><strong>Quando</strong> ela clica em "Confirmar Agendamento"<br><strong>Então</strong> o sistema deve exibir a mensagem "Consulta agendada!"<br><strong>E</strong> o horário "08/07/2025 - 10h00" deve ficar indisponível na agenda do médico "João de Almeida"<br><strong>E</strong> um e-mail/SMS de confirmação deve ser enviado para "clara.mfalcao@email.com"</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>HU-08</strong></td>
-<td style="text-align: left;">Como <strong>Rafael (Coordenador)</strong>, eu quero que <strong>os pacientes sejam notificados automaticamente sobre suas consultas</strong>, para que <strong>se reduza a taxa de não comparecimento (no-show).</strong></td>
+<td style="text-align: left;">Como <strong>Coordenador</strong>, eu quero que <strong>os pacientes sejam notificados automaticamente sobre suas consultas</strong>, para que <strong>se reduza a taxa de não comparecimento (no-show).</strong></td>
 <td style="text-align: left;">1. A notificação de confirmação é enviada no momento do agendamento.<br>2. A notificação de lembrete é enviada 24 horas antes da consulta.<br>3. O paciente deve ter a opção de confirmar ou cancelar a consulta através do lembrete.</td>
 <td style="text-align: left;">-</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>HU-09</strong></td>
-<td style="text-align: left;">Como <strong>Rafael (Coordenador)</strong>, eu quero <strong>visualizar a disponibilidade integrada de todos os médicos em uma única tela</strong>, para que <strong>eu possa otimizar a alocação de horários.</strong></td>
+<td style="text-align: left;">Como <strong>Coordenador</strong>, eu quero <strong>visualizar a disponibilidade integrada de todos os médicos em uma única tela</strong>, para que <strong>eu possa otimizar a alocação de horários.</strong></td>
 <td style="text-align: left;">1. A visualização deve ser em formato de calendário (diário, semanal, mensal).<br>2. Deve ser possível filtrar por unidade e por especialidade.<br>3. Horários ocupados, livres e bloqueados devem ter cores distintas.</td>
 <td style="text-align: left;">-</td>
 </tr>
@@ -1386,21 +1386,21 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>HU-10</strong></td>
-<td style="text-align: left;">Como <strong>Lívia (Farmacêutica)</strong>, eu quero que <strong>o sistema verifique interações medicamentosas automaticamente</strong>, para que <strong>se evite reações adversas.</strong></td>
+<td style="text-align: left;">Como <strong>Farmacêutica</strong>, eu quero que <strong>o sistema verifique interações medicamentosas automaticamente</strong>, para que <strong>se evite reações adversas.</strong></td>
 <td style="text-align: left;">1. O sistema deve cruzar a nova prescrição com o histórico de medicamentos do paciente.<br>2. Se uma interação de risco for detectada, um alerta bloqueante deve ser exibido.<br>3. O alerta deve detalhar os medicamentos e o risco associado.</td>
-<td style="text-align: left;"><strong>Cenário:</strong> Alerta de interação de alto risco<br><strong>Dado</strong> que a Sra. Clara usa "Varfarina"<br><strong>E</strong> o Dr. João prescreve "Aspirina"<br><strong>Quando</strong> Lívia valida a nova prescrição<br><strong>Então</strong> o sistema exibe "ALERTA DE INTERAÇÃO GRAVE"<br><strong>E</strong> a dispensação é bloqueada.</td>
+<td style="text-align: left;"><strong>Cenário</strong>: Alerta de interação de alto risco<br><strong>Dado</strong> que a paciente "Clara Mendes Falcão" faz uso do medicamento "Dipirona" registrado em seu histórico<br><strong>E</strong> o médico "João de Almeida" prescreve o medicamento "Aspirina" em uma nova consulta<br><strong>Quando</strong> a farmacêutica "Lívia Nunes" valida a nova prescrição no sistema<br><strong>Então</strong> o sistema deve exibir a mensagem "ALERTA DE INTERAÇÃO GRAVE entre Dipirona e Aspirina"<br><strong>E</strong> a dispensação da prescrição deve ser bloqueada automaticamente pelo sistema</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>HU-11</strong></td>
-<td style="text-align: left;">Como <strong>Lívia (Farmacêutica)</strong>, eu quero <strong>registrar a dispensação de cada medicamento prescrito</strong>, para que <strong>haja um controle de estoque e um histórico preciso.</strong></td>
+<td style="text-align: left;">Como <strong>Farmacêutica</strong>, eu quero <strong>registrar a dispensação de cada medicamento prescrito</strong>, para que <strong>haja um controle de estoque e um histórico preciso.</strong></td>
 <td style="text-align: left;">1. A dispensação só pode ser registrada para uma prescrição válida.<br>2. O sistema deve registrar data, hora, quantidade e o farmacêutico responsável.</td>
 <td style="text-align: left;">-</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>HU-12</strong></td>
-<td style="text-align: left;">Como <strong>Dr. João (Médico)</strong>, eu quero que <strong>o sistema me alerte sobre alergias conhecidas do paciente ao prescrever</strong>, para que <strong>se evitem reações alérgicas graves.</strong></td>
+<td style="text-align: left;">Como <strong>Médico</strong>, eu quero que <strong>o sistema me alerte sobre alergias conhecidas do paciente ao prescrever</strong>, para que <strong>se evitem reações alérgicas graves.</strong></td>
 <td style="text-align: left;">1. Ao digitar um medicamento ao qual o paciente é alérgico, um alerta deve aparecer.<br>2. O sistema deve impedir a conclusão da prescrição desse medicamento.</td>
-<td style="text-align: left;"><strong>Cenário:</strong> Tentativa de prescrever medicação alergênica<br><strong>Dado</strong> que Sra. Clara tem alergia a "Penicilina"<br><strong>Quando</strong> Dr. João tenta prescrever "Amoxicilina"<br><strong>Então</strong> o sistema exibe "ALERTA DE ALERGIA"<br><strong>E</strong> impede de salvar a prescrição.</td>
+<td style="text-align: left;"><strong>Cenário</strong>: Tentativa de prescrever medicação alergênica<br><strong>Dado</strong> que a paciente "Clara Mendes Falcão" possui alergia registrada ao medicamento "Penicilina"<br><strong>Quando</strong> o médico "João de Almeida" tenta prescrever "Amoxicilina" em uma nova consulta<br><strong>Então</strong> o sistema deve exibir a mensagem "ALERTA DE ALERGIA: paciente alérgica à Penicilina"<br><strong>E</strong> o sistema deve impedir a finalização da prescrição com este medicamento</td>
 </tr>
 </tbody>
 </table>
@@ -1418,13 +1418,13 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>HU-13</strong></td>
-<td style="text-align: left;">Como a <strong>Sra. Clara (Paciente)</strong>, eu quero <strong>consultar meus resultados de exames e histórico pelo portal</strong>, para que <strong>eu possa acompanhar minha saúde.</strong></td>
+<td style="text-align: left;">Como a <strong>Paciente</strong>, eu quero <strong>consultar meus resultados de exames e histórico pelo portal</strong>, para que <strong>eu possa acompanhar minha saúde.</strong></td>
 <td style="text-align: left;">1. O portal deve listar todos os exames com seus respectivos laudos.<br>2. O acesso deve ser protegido por autenticação de dois fatores.</td>
-<td style="text-align: left;"><strong>Cenário:</strong> Paciente consulta resultado<br><strong>Dado</strong> que Sra. Clara está logada no Portal<br><strong>E</strong> navega para "Meus Exames"<br><strong>Quando</strong> ela clica no "Hemograma Completo"<br><strong>Então</strong> o sistema deve exibir o laudo do exame.</td>
+<td style="text-align: left;"><strong>Cenário</strong>: Paciente consulta resultado<br><strong>Dado</strong> que a paciente "Clara Mendes Falcão" está logada no Portal com autenticação em dois fatores<br><strong>E</strong> navega até a seção "Meus Exames"<br><strong>Quando</strong> ela clica no exame "Hemograma Completo" realizado em "01/07/2025"<br><strong>Então</strong> o sistema deve exibir o laudo correspondente com data, valores de referência e assinatura do laboratório</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>HU-14</strong></td>
-<td style="text-align: left;">Como a <strong>Sra. Clara (Paciente)</strong>, eu quero <strong>receber notificações e lembretes importantes sobre minha saúde pelo portal</strong>, para que <strong>eu não perca compromissos.</strong></td>
+<td style="text-align: left;">Como a <strong>Paciente</strong>, eu quero <strong>receber notificações e lembretes importantes sobre minha saúde pelo portal</strong>, para que <strong>eu não perca compromissos.</strong></td>
 <td style="text-align: left;">1. O portal deve ter uma área de "Notificações".<br>2. Notificações devem ser geradas para: confirmação de consulta, lembrete, resultado de exame disponível.</td>
 <td style="text-align: left;">-</td>
 </tr>
@@ -1444,13 +1444,13 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>HU-15</strong></td>
-<td style="text-align: left;">Como <strong>Sr. Roberto (Diretor de TI)</strong>, eu quero que <strong>o sistema colete e consolide dados para conformidade regulatória automaticamente</strong>, para que <strong>se reduza o esforço manual em auditorias.</strong></td>
+<td style="text-align: left;">Como <strong>Diretor de TI</strong>, eu quero que <strong>o sistema colete e consolide dados para conformidade regulatória automaticamente</strong>, para que <strong>se reduza o esforço manual em auditorias.</strong></td>
 <td style="text-align: left;">1. O sistema deve registrar todos os acessos aos prontuários (quem, quando, o quê).<br>2. Os logs devem ser armazenados de forma segura e inviolável.</td>
 <td style="text-align: left;">-</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>HU-16</strong></td>
-<td style="text-align: left;">Como <strong>Sr. Roberto (Diretor de TI)</strong>, eu quero <strong>gerar relatórios de conformidade e operacionais</strong>, para que <strong>a gestão tenha dados para a tomada de decisão.</strong></td>
+<td style="text-align: left;">Como <strong>Diretor de TI</strong>, eu quero <strong>gerar relatórios de conformidade e operacionais</strong>, para que <strong>a gestão tenha dados para a tomada de decisão.</strong></td>
 <td style="text-align: left;">1. O sistema deve oferecer uma biblioteca de relatórios pré-definidos.<br>2. Deve ser possível exportar os relatórios nos formatos PDF e CSV.</td>
 <td style="text-align: left;">-</td>
 </tr>
@@ -1470,13 +1470,13 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>HU-17</strong></td>
-<td style="text-align: left;">Como <strong>Sr. Roberto (Diretor de TI)</strong>, eu quero <strong>monitorar a segurança e o desempenho do sistema através de um painel</strong>, para que <strong>eu possa garantir a disponibilidade e a integridade da solução.</strong></td>
+<td style="text-align: left;">Como <strong>Diretor de TI</strong>, eu quero <strong>monitorar a segurança e o desempenho do sistema através de um painel</strong>, para que <strong>eu possa garantir a disponibilidade e a integridade da solução.</strong></td>
 <td style="text-align: left;">-</td>
 <td style="text-align: left;">-</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>HU-18</strong></td>
-<td style="text-align: left;">Como <strong>Sr. Roberto (Diretor de TI)</strong>, eu quero <strong>gerenciar o suporte técnico de forma integrada</strong>, para que <strong>os chamados dos usuários sejam resolvidos eficientemente.</strong></td>
+<td style="text-align: left;">Como <strong>Diretor de TI</strong>, eu quero <strong>gerenciar o suporte técnico de forma integrada</strong>, para que <strong>os chamados dos usuários sejam resolvidos eficientemente.</strong></td>
 <td style="text-align: left;">-</td>
 <td style="text-align: left;">-</td>
 </tr>
@@ -1503,11 +1503,11 @@
 <td style="text-align: left;"><strong>Henrique, Filipe, Cibelly</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">14/07/2025</td>
+<td style="text-align: left;">1.1</td>
+<td style="text-align: left;">Alterações para adequação à Issue #30</td>
+<td style="text-align: left;"><strong>Eduardo Waski</strong></td>
+<td style="text-align: left;"><strong>Filipe</strong></td>
 </tr>
 </tbody>
 </table>
