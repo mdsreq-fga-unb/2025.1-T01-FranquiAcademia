@@ -123,8 +123,8 @@ const Dashboard = () => {
       {/* Header */}
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
         <div>
-          <h1 className="text-3xl font-bold text-gradient">Dashboard</h1>
-          <p className="text-muted-foreground mt-1">Visão geral do sistema de aulas</p>
+          <h1 className="text-3xl font-bold text-gradient">Dashboard DeltaCore</h1>
+          <p className="text-muted-foreground mt-1">Visão geral da performance da sua franquia</p>
         </div>
         <Button 
           onClick={carregarDados} 
@@ -208,27 +208,27 @@ const Dashboard = () => {
       {/* Métricas Principais */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <MetricCard
-          title="Total de Reservas"
+          title="Total de Agendamentos"
           value={reservasData?.total_reservas || 0}
           icon={Calendar}
           trend="+12% este mês"
           color="blue"
         />
         <MetricCard
-          title="Primeiras Aulas"
+          title="Novos Alunos"
           value={primeirasAulasData?.total_primeiras_aulas || 0}
           icon={Users}
           trend="+8% este mês"
           color="green"
         />
         <MetricCard
-          title="Professores Ativos"
+          title="Instrutores Ativos"
           value={aulasPorProfessorData?.length || 0}
           icon={BookOpen}
           color="purple"
         />
         <MetricCard
-          title="Horários Diferentes"
+          title="Horários Disponíveis"
           value={horariosData?.length || 0}
           icon={Clock}
           color="orange"

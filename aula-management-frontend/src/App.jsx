@@ -33,8 +33,8 @@ const LoadingScreen = () => (
         </div>
       </div>
       <div className="space-y-2">
-        <h2 className="text-xl font-semibold text-gradient">Carregando Sistema</h2>
-        <p className="text-muted-foreground">Preparando sua experiência...</p>
+        <h2 className="text-xl font-semibold text-gradient">Carregando DeltaCore</h2>
+        <p className="text-muted-foreground">Preparando sua experiência de gestão...</p>
       </div>
     </div>
   </div>
@@ -80,8 +80,8 @@ const MainApp = () => {
       case 'reservas':
         return (
           <ComingSoonPage
-            title="Reservas"
-            description="Gerencie todas as reservas de aulas do sistema"
+            title="Agendamentos"
+            description="Gerencie todos os agendamentos de aulas da sua franquia"
           />
         );
       case 'mensagens':
@@ -90,15 +90,15 @@ const MainApp = () => {
       case 'regras':
         return (
           <ComingSoonPage
-            title="Regras de Envio"
-            description="Defina regras para envio de mensagens"
+            title="Automação de Comunicação"
+            description="Configure regras para envio automático de mensagens aos alunos"
           />
         );
       case 'importacao':
         return (
           <ComingSoonPage
             title="Importação de Dados"
-            description="Importe dados de planilhas CSV"
+            description="Importe dados de planilhas CSV para sua franquia"
           />
         );
       case 'perfil':
@@ -120,12 +120,12 @@ const MainApp = () => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-sm text-muted-foreground">
-              © 2024 Sistema de Gerenciamento de Aulas. Todos os direitos reservados.
+              © 2024 DeltaCore - Sistema de Gestão Inteligente. Todos os direitos reservados.
             </div>
             <div className="flex items-center gap-4 text-sm text-muted-foreground">
               <span>Versão 1.0.0</span>
               <span>•</span>
-              <span>Desenvolvido com ❤️</span>
+              <span>Transformando academias em franquias de sucesso</span>
             </div>
           </div>
         </div>

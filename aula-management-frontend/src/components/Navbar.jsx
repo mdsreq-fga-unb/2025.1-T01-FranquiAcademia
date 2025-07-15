@@ -30,10 +30,10 @@ const Navbar = ({ currentPage, onPageChange }) => {
 
   const menuItems = [
     { id: 'dashboard', label: 'Dashboard', icon: BarChart3, description: 'Visão geral e métricas' },
-    { id: 'aulas', label: 'Aulas', icon: BookOpen, description: 'Gerenciar aulas' },
-    { id: 'reservas', label: 'Reservas', icon: Calendar, description: 'Controlar reservas' },
-    { id: 'mensagens', label: 'Mensagens', icon: MessageSquare, description: 'Mensagens automáticas' },
-    { id: 'regras', label: 'Regras', icon: Settings, description: 'Regras de envio' },
+    { id: 'aulas', label: 'Aulas', icon: BookOpen, description: 'Gerenciar aulas e créditos' },
+    { id: 'reservas', label: 'Agendamentos', icon: Calendar, description: 'Controlar reservas' },
+    { id: 'mensagens', label: 'Comunicação', icon: MessageSquare, description: 'Mensagens automáticas' },
+    { id: 'regras', label: 'Automação', icon: Settings, description: 'Regras de envio' },
     { id: 'importacao', label: 'Importação', icon: Upload, description: 'Importar dados' },
   ];
 
@@ -96,8 +96,8 @@ const Navbar = ({ currentPage, onPageChange }) => {
                 <BookOpenCheck className="w-6 h-6 text-primary-foreground" />
               </div>
               <div className="hidden sm:block">
-                <h1 className="text-xl font-bold text-gradient">Sistema de Aulas</h1>
-                <p className="text-xs text-muted-foreground">Gestão inteligente</p>
+                <h1 className="text-xl font-bold text-gradient">DeltaCore</h1>
+                <p className="text-xs text-muted-foreground">Gestão inteligente de franquias</p>
               </div>
             </div>
             
@@ -177,8 +177,8 @@ const Navbar = ({ currentPage, onPageChange }) => {
                 <BookOpenCheck className="w-7 h-7 text-primary-foreground" />
               </div>
               <div>
-                <h1 className="text-lg font-bold text-gradient">Sistema de Aulas</h1>
-                <p className="text-sm text-muted-foreground">Gestão inteligente</p>
+                <h1 className="text-lg font-bold text-gradient">DeltaCore</h1>
+                <p className="text-sm text-muted-foreground">Gestão inteligente de franquias</p>
               </div>
             </div>
             

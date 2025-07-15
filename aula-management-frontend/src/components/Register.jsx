@@ -74,15 +74,15 @@ const Register = ({ onToggleMode }) => {
           <div className="inline-flex items-center justify-center w-16 h-16 bg-primary rounded-2xl mb-4 shadow-lg">
             <BookOpen className="w-8 h-8 text-primary-foreground" />
           </div>
-          <h1 className="text-2xl font-bold text-gradient">Criar Conta</h1>
-          <p className="text-muted-foreground mt-1">Junte-se ao nosso sistema</p>
+          <h1 className="text-2xl font-bold text-gradient">DeltaCore</h1>
+          <p className="text-muted-foreground mt-1">Junte-se ao sistema de gestão inteligente</p>
         </div>
 
         <Card className="card-modern shadow-xl border-0">
           <CardHeader className="space-y-1 pb-6">
-            <CardTitle className="text-2xl font-semibold text-center">Cadastro</CardTitle>
+            <CardTitle className="text-2xl font-semibold text-center">Criar Conta</CardTitle>
             <CardDescription className="text-center text-base">
-              Preencha os dados para criar sua conta
+              Preencha os dados para acessar o sistema de gestão da franquia
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-6">

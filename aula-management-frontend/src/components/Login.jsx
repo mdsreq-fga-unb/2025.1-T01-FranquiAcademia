@@ -39,15 +39,15 @@ const Login = ({ onToggleMode }) => {
           <div className="inline-flex items-center justify-center w-16 h-16 bg-primary rounded-2xl mb-4 shadow-lg">
             <BookOpen className="w-8 h-8 text-primary-foreground" />
           </div>
-          <h1 className="text-2xl font-bold text-gradient">Sistema de Aulas</h1>
-          <p className="text-muted-foreground mt-1">Gerencie suas aulas com facilidade</p>
+          <h1 className="text-2xl font-bold text-gradient">DeltaCore</h1>
+          <p className="text-muted-foreground mt-1">Sistema de gestão inteligente para franquias</p>
         </div>
 
         <Card className="card-modern shadow-xl border-0">
           <CardHeader className="space-y-1 pb-6">
-            <CardTitle className="text-2xl font-semibold text-center">Bem-vindo</CardTitle>
+            <CardTitle className="text-2xl font-semibold text-center">Bem-vindo à DeltaCore</CardTitle>
             <CardDescription className="text-center text-base">
-              Entre com suas credenciais para continuar
+              Entre com suas credenciais para acessar o sistema de gestão
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-6">

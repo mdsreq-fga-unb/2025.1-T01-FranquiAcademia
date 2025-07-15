@@ -90,10 +90,10 @@ const EditarPerfil = () => {
             </svg>
           </div>
           <h2 className="text-3xl font-bold text-gray-900">
-            Editar Perfil
+            Perfil da Franquia
           </h2>
           <p className="mt-2 text-gray-600">
-            Atualize suas informações pessoais
+            Atualize suas informações de gestão
           </p>
         </div>
 

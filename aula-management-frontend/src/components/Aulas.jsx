@@ -163,7 +163,7 @@ const Aulas = () => {
         </div>
         <h3 className="text-lg font-semibold mb-2">Nenhuma aula encontrada</h3>
         <p className="text-muted-foreground text-center mb-6 max-w-md">
-          Não encontramos aulas com os filtros aplicados. Tente ajustar os critérios de busca ou adicione uma nova aula.
+          Não encontramos aulas com os filtros aplicados. Tente ajustar os critérios de busca ou adicione uma nova modalidade à sua franquia.
         </p>
         <Button className="btn-primary">
           <Plus className="w-4 h-4 mr-2" />
@@ -178,8 +178,8 @@ const Aulas = () => {
       {/* Header */}
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
         <div>
-          <h1 className="text-3xl font-bold text-gradient">Aulas</h1>
-          <p className="text-muted-foreground mt-1">Gerencie e visualize todas as aulas do sistema</p>
+          <h1 className="text-3xl font-bold text-gradient">Gestão de Aulas</h1>
+          <p className="text-muted-foreground mt-1">Gerencie aulas, créditos e instrutores da sua franquia</p>
         </div>
         <div className="flex gap-3">
           <Button 
@@ -205,7 +205,7 @@ const Aulas = () => {
             <Filter className="w-5 h-5 text-primary" />
             <CardTitle className="text-lg">Filtros de Busca</CardTitle>
           </div>
-          <CardDescription>Filtre as aulas por data, tema ou instrutor para encontrar o que procura</CardDescription>
+          <CardDescription>Filtre as aulas por data, modalidade ou instrutor para encontrar o que procura</CardDescription>
         </CardHeader>
         <CardContent>
           <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
@@ -230,10 +230,10 @@ const Aulas = () => {
               />
             </div>
             <div className="form-field">
-              <Label htmlFor="tema" className="text-sm font-medium">Tema</Label>
+              <Label htmlFor="tema" className="text-sm font-medium">Modalidade</Label>
               <Input
                 id="tema"
-                placeholder="Ex: Yoga, Pilates..."
+                placeholder="Ex: Yoga, Pilates, Funcional..."
                 value={filtros.tema}
                 onChange={(e) => setFiltros(prev => ({ ...prev, tema: e.target.value }))}
                 className="form-input"
