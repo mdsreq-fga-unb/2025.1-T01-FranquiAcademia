@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  # Backend Flask API (Development)
+  backend-dev:
+    build:
+      context: ./aula_management_system
+      dockerfile: Dockerfile.dev
+    container_name: franqui-academia-backend-dev
+    ports:
+      - "5001:5001"
+    environment:
+      - FLASK_ENV=development
+      - FLASK_APP=src/main.py
+      - FLASK_DEBUG=1
+    volumes:
+      - ./aula_management_system:/app
+      - ./aula_management_system/src/database:/app/src/database
+    restart: unless-stopped
+    networks:
+      - franqui-dev-network
+
+  # Frontend React App (Development)
+  frontend-dev:
+    build:
+      context: ./aula-management-frontend
+      dockerfile: Dockerfile.dev
+    container_name: franqui-academia-frontend-dev
+    ports:
+      - "5174:5174"
+    environment:
+      - VITE_API_URL=http://localhost:5001
+    volumes:
+      - ./aula-management-frontend:/app
+      - /app/node_modules
+    depends_on:
+      - backend-dev
+    restart: unless-stopped
+    networks:
+      - franqui-dev-network
+
+  # SQLite for development (no external database needed)
+  # The SQLite file will be stored in the volume
+
+volumes:
+  postgres_data:
+
+networks:
+  franqui-dev-network:
+    driver: bridge 

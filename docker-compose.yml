@@ -1,0 +1,56 @@
+version: '3.8'
+
+services:
+  # Backend Flask API
+  backend:
+    build:
+      context: ./aula_management_system
+      dockerfile: Dockerfile
+    container_name: franqui-academia-backend
+    ports:
+      - "5001:5001"
+    environment:
+      - FLASK_ENV=production
+      - FLASK_APP=src/main.py
+    volumes:
+      - ./aula_management_system/src/database:/app/src/database
+    restart: unless-stopped
+    networks:
+      - franqui-network
+
+  # Frontend React App
+  frontend:
+    build:
+      context: ./aula-management-frontend
+      dockerfile: Dockerfile
+    container_name: franqui-academia-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+    networks:
+      - franqui-network
+
+  # PostgreSQL Database (for production)
+  postgres:
+    image: postgres:15-alpine
+    container_name: franqui-academia-db
+    environment:
+      POSTGRES_DB: franqui_academia
+      POSTGRES_USER: franqui_user
+      POSTGRES_PASSWORD: franqui_password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+    networks:
+      - franqui-network
+
+volumes:
+  postgres_data:
+
+networks:
+  franqui-network:
+    driver: bridge 

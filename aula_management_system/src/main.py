@@ -38,12 +38,31 @@ app.register_blueprint(dashboard_bp, url_prefix='/api')
 app.register_blueprint(importacao_bp, url_prefix='/api')
 
 # Configurar banco de dados
-app.config['SQLALCHEMY_DATABASE_URI'] = f"sqlite:///{os.path.join(os.path.dirname(__file__), 'database', 'app.db')}"
+# Verificar se estamos em produção (Render) ou desenvolvimento
+if os.environ.get('FLASK_ENV') == 'production':
+    # Usar PostgreSQL em produção
+    database_url = os.environ.get('DATABASE_URL')
+    if database_url:
+        # Render usa postgres:// mas SQLAlchemy espera postgresql://
+        if database_url.startswith('postgres://'):
+            database_url = database_url.replace('postgres://', 'postgresql://', 1)
+        app.config['SQLALCHEMY_DATABASE_URI'] = database_url
+    else:
+        # Fallback para SQLite se não houver DATABASE_URL
+        app.config['SQLALCHEMY_DATABASE_URI'] = f"sqlite:///{os.path.join(os.path.dirname(__file__), 'database', 'app.db')}"
+else:
+    # Usar SQLite em desenvolvimento
+    app.config['SQLALCHEMY_DATABASE_URI'] = f"sqlite:///{os.path.join(os.path.dirname(__file__), 'database', 'app.db')}"
+
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db.init_app(app)
 
 with app.app_context():
     db.create_all()
+
+@app.route('/api/health')
+def health_check():
+    return {'status': 'healthy', 'message': 'API is running'}, 200
 
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
