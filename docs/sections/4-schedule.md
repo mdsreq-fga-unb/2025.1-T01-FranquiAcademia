@@ -9,9 +9,10 @@ O projeto DeltaCore seguirá a metodologia ágil DSDM, com entregas incrementais
 | Pré-Projeto (Pré-Project)                              | 07/04 - 04/05      | Documento validado com os objetivos iniciais do projeto e com o levantamento das necessidades do stakeholder                                    | 
 | Estudo de Viabilidade (Feasibility Study)              | 05/05 – 27/05      | Relatório de viabilidade técnica e de negócio, visão preliminar do projeto e plano de negócios                                    |
 | Estudo de Negócio (Business Study)                    | 28/05 – 11/06      | Requisitos organizados, documento de requisitos priorizados (MoSCoW), protótipo inicial de interface e arquitetura                                    |
-| Iteração do Modelo Funcional (Functional Model Iteration) | 12/06 – 24/06      | Protótipos funcionais e incrementos com funcionalidades: Cadastro, Edição de Perfil, Login(US01, US02, US03) |
-| Iteração de Design e Construção (Design and Build Iteration) | 25/06 – 09/07      | Funcionalidades integradas de: Mensagens Automatizadas (US06, US07, US09, US10)    |
-| Implementação (Implementation)                | 10/07 – 21/07      | MVP final validado com stakeholders, incluindo funcionalidades de colsultas de dados (US15, US16, US17, US18, US19), documentação final e instruções de uso
+|Iteração: Gestão de Usuários (Design & Build) | 11/06 – 09/07      | Funcionalidades a serem implementadas:<br>- Cadastro de Usuários (US01)<br>- Edição de Informações de Usuários (US02)<br>- Login de Usuários (US03)<br>**Artefatos de Apoio:** Protótipos visuais refinados para estas funcionalidades. |
+| Iteração : Gestão de Aulas e Reservas (Design & Build) | 10/07 – 23/07      | Funcionalidades a serem implementadas:<br>- Consulta da lista de aulas disponíveis (US04)<br>- Filtragem da lista de aulas (US05)<br>- Acompanhamento de agendamentos e consulta de reservas (US06)<br>**Artefatos de Apoio:** Protótipos visuais refinados para estas funcionalidades. |
+
+
 
 ### 4.2 Reuniões e Revisões (Adaptado ao DSDM)
 
@@ -30,3 +31,4 @@ O projeto DeltaCore seguirá a metodologia ágil DSDM, com entregas incrementais
 | 22/04/2025 | 1.0    | Criação do Documento     | **Cibelly** | **Henrique Carvalho** |
 | 04/06/2025 | 1.1    | Modificando datas        | **Henrique Carvalho** | **Luis Lima** | 
 | 23/06/2025 | 1.2    | Modificando das fases do projeto | **Henrique Carvalho** | **Filipe** | 
+| 16/07/2025 | 1.3    | Modificando das fases do projeto | **Luis Eduardo** | **Eduardo** | 
