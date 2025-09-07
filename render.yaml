@@ -1,0 +1,39 @@
+services:
+  # Backend API Service
+  - type: web
+    name: franqui-academia-backend
+    env: python
+    buildCommand: |
+      cd aula_management_system
+      pip install -r requirements.txt
+    startCommand: |
+      cd aula_management_system
+      python src/main.py
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: FLASK_APP
+        value: src/main.py
+      - key: PYTHON_VERSION
+        value: 3.11.0
+    healthCheckPath: /api/health
+    autoDeploy: true
+
+  # Frontend Web Service
+  - type: web
+    name: franqui-academia-frontend
+    env: static
+    buildCommand: |
+      cd aula-management-frontend
+      npm install -g pnpm
+      pnpm install
+      pnpm build
+    staticPublishPath: ./aula-management-frontend/dist
+    envVars:
+      - key: VITE_API_URL
+        value: https://franqui-academia-backend.onrender.com
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    autoDeploy: true
